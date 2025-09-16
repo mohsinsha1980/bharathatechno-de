@@ -1,0 +1,142 @@
+.svg_icon {
+  transition: all 0.2s ease;
+}
+.logo_path_lg {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash_lg 1.5s linear forwards;
+  /* animation: dash_lg 1.5s linear alternate infinite; */
+}
+
+.logo_dot_lg {
+  opacity: 0;
+  animation: balls_lg 1.5s ease forwards;
+  /* animation: balls_lg 1.5s ease alternate infinite; */
+}
+
+@keyframes dash_lg {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  70%,
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes balls_lg {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  70%,
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logo_path_md {
+  stroke-dasharray: 800;
+  stroke-dashoffset: 800;
+  /* animation: dash_md 1.5s linear alternate infinite; */
+  animation: dash_md 1.5s linear forwards;
+}
+
+.logo_dot_md {
+  opacity: 0;
+  /* animation: balls_md 1.5s ease alternate infinite; */
+  animation: balls_md 1.5s ease forwards;
+}
+
+@keyframes dash_md {
+  0% {
+    stroke-dashoffset: 800;
+  }
+  70%,
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes balls_md {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  70%,
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logo_path_sm {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: dash_sm 1.5s linear forwards;
+  /* animation: dash_sm 1.5s linear alternate infinite; */
+}
+
+.logo_dot_sm {
+  opacity: 0;
+  animation: balls_sm 1.5s ease forwards;
+  /* animation: balls_sm 1.5s ease alternate infinite; */
+}
+
+@keyframes dash_sm {
+  0% {
+    stroke-dashoffset: 500;
+  }
+  70%,
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes balls_sm {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  70%,
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logo_path_xs {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  /* animation: dash_xs 1.5s linear alternate infinite; */
+  animation: dash_xs 1.5s linear forwards;
+}
+
+.logo_dot_xs {
+  opacity: 0;
+  /* animation: balls_xs 1.5s ease alternate infinite; */
+  animation: balls_xs 1.5s ease forwards;
+}
+
+@keyframes dash_xs {
+  0% {
+    stroke-dashoffset: 300;
+  }
+  70%,
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes balls_xs {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  70%,
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

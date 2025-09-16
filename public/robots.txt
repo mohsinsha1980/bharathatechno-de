@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.bharathatechno.com
+
+# Sitemaps
+Sitemap: https://www.bharathatechno.com/sitemap.xml
