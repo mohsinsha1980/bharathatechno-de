@@ -3,7 +3,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 export default function AboutBannerContent() {
-  const text1 = "Hello, we're";
+  const text1 = "Wir sind";
   // const text2 = `it resonates clearly.”`;
 
   const variants = {
@@ -66,18 +66,6 @@ export default function AboutBannerContent() {
         </motion.span>
         {/* <span className="highlight">it resonated clearly.&#8221;</span> */}
         <span className="highlight">
-          {/* {splittedText.map((current, i) => (
-            <motion.span
-              key={i}
-              ref={ref2}
-              variants={pullupVariant}
-              initial="initial"
-              animate={isInView2 ? "animate" : ""}
-              custom={i}
-            >
-              {current == " " ? <span>&nbsp;</span> : current}
-            </motion.span>
-          ))} */}
           <motion.span
             ref={ref2}
             variants={pullupVariant}
@@ -96,12 +84,14 @@ export default function AboutBannerContent() {
         animate={isInView3 ? "animate" : ""}
         className="text-center lg:text-left md:text-justify"
       >
-        Founded in November 2023 by Mohsin Shaikh and Rajesh Sivapalan,
-        BharathaTechno is among the emerging IT companies in Pune India, delivering
-        secure, scalable, and cost-effective web solutions tailored to business
-        needs. With strong expertise in full-stack development and IT
-        consulting, we turn ideas into high-performance digital products that
-        drive real value.
+        Bharatha Techno, gegründet im November 2023 von Mohsin Shaikh und Rajesh
+        Sivapalan, ist ein aufstrebendes IT-Unternehmen, das sich auf sichere
+        und skalierbare Weblösungen sowie flexible Outsourcing-Lösungen
+        spezialisiert hat. <br />
+        Unter der Leitung von Kourosh Bagherian expandieren wir 2025 mit einer
+        eigenständigen deutschen Gesellschaft nach Europa, um Ideen in
+        leistungsstarke digitale Produkte zu verwandeln und unsere Kunden
+        optimal zu unterstützen.
       </motion.h1>
     </div>
   );

@@ -13,7 +13,7 @@ export default function ShredNShapeImage() {
         />
       </Link>
 
-      <h3>Technologies Used</h3>
+      <h3>ENTWICKELT MIT</h3>
       <ul>
         <li>NextJs</li>
         <li>NodeJs</li>

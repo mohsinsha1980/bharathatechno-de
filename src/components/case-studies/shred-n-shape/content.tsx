@@ -9,21 +9,22 @@ export default function ShredNShapeContent() {
       </Link>
 
       <p>
-        Shred-n-Shape is a robust fitness web-app designed to help users achieve
-        their health goals through personalized workout plans, nutrition
-        tracking, and progress monitoring. Built with full stack development
-        using the MERN stack, this responsive web application ensures seamless
-        user experience across all devices.
+        Shred-n-Shape ist eine leistungsstarke Fitness-Web-App, die Nutzer:innen
+        dabei unterstützt, ihre Gesundheitsziele durch personalisierte
+        Trainingspläne, Ernährungs-Tracking und Fortschrittskontrolle zu
+        erreichen. Dank modernster Full-Stack-Entwicklung auf Basis des
+        MERN-Stacks bietet die Anwendung ein nahtloses, responsives
+        Nutzungserlebnis - auf jedem Endgerät.
       </p>
-      <h3>Key Features</h3>
+      <h3>Zentrale Funktionen</h3>
       <ul>
-        <li>Personalized workout and nutrition plans</li>
-        <li>Progress tracking with data visualization</li>
-        <li>User-friendly interface for easy navigation</li>
+        <li>Personalisierte Trainings- und Ernährungspläne</li>
+        <li>Fortschrittsverfolgung mit Datenvisualisierung</li>
+        <li>Benutzerfreundliche Oberfläche für einfache Navigation</li>
       </ul>
       <div className="link">
         <Link href="https://shrednshape.co.uk/" target="_blank">
-          <span>Visit Shred-n-Shape</span> <ArrowRight size={20} />
+          <span>Jetzt Shred-n-Shape besuchen</span> <ArrowRight size={20} />
         </Link>
       </div>
     </>

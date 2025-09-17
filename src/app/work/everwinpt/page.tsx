@@ -7,7 +7,7 @@ import ProjectSlider from "@/components/case-studies/projects-slider";
 export default async function EverwinptPage() {
   return (
     <article className="pg_work">
-      <CaseStudiesBanner data="Nikita's Curry Corner - A Canada-Based Cloud Kitchen with Real-Time Order Management and Delivery Tracking" />
+      <CaseStudiesBanner data="Umfassendes Website-Design für EverwinPT mit benutzerfreundlichem Layout und einfacher Navigation" />
       <div className="bl_case_studies">
         <div className="container container-medium">
           <CaseStudyTemplate>

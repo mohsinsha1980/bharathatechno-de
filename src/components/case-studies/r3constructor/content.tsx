@@ -9,20 +9,21 @@ export default function R3constructorContent() {
       </Link>
 
       <p>
-        To provide a digital presence for R3 Constructor that showcases the
-        company&apos;s services, completed and ongoing projects, and background,
-        while allowing potential clients to submit inquiries or reach out for
-        construction work.
+        Für R3 Constructor haben wir eine digitale Präsenz geschaffen, die die
+        Dienstleistungen des Unternehmens, abgeschlossene sowie laufende
+        Projekte und den Unternehmenshintergrund präsentiert. Potenzielle
+        Kund:innen können direkt Anfragen stellen oder Kontakt für Bauprojekte
+        aufnehmen.
       </p>
-      <h3>Key Features</h3>
+      <h3>Zentrale Funktionen</h3>
       <ul>
-        <li>Fast Loading Time</li>
-        <li>SEO optimization</li>
-        <li>Responsive Desgin</li>
+        <li>Schnelle Ladezeit</li>
+        <li>SEO-Optimierung</li>
+        <li>Responsives Design</li>
       </ul>
       <div className="link">
         <Link href="https://r3constructor.in/" target="_blank">
-          <span>Visit R3 Constructor</span> <ArrowRight size={20} />
+          <span>Jetzt R3 Constructor besuchen</span> <ArrowRight size={20} />
         </Link>
       </div>
     </>

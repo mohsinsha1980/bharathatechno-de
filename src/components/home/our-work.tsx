@@ -44,7 +44,7 @@ export default function OurWork() {
             className="mb-10 text-center"
             style={{ color: `var(--text-orange)` }}
           >
-            Our Work
+            Unsere Projekte
           </h2>
         </motion.div>
 
@@ -59,9 +59,9 @@ export default function OurWork() {
             <motion.div variants={items} className="relative" key="work_1">
               <OurWorkItem
                 imageSrc="/images/home/trendy-threads-case-study.webp"
-                label="#Case Study"
-                title="Establishing digital solution for a fashion brand"
-                list={["UI/UX Design", "Development", "E-Commerce"]}
+                label="#Fallstudie"
+                title="Aufbau einer digitalen Lösung für eine Modemarke"
+                list={["UI/UX-Design", "Entwicklung", "E-Commerce"]}
                 link="/work"
               />
             </motion.div>
@@ -69,18 +69,18 @@ export default function OurWork() {
             <motion.div variants={items} className="relative" key="work_2">
               <OurWorkItem
                 imageSrc="/images/home/shrednshape-case-study.webp"
-                label="#Case Study"
-                title="Design & Develop a fitness first platform"
-                list={["UI/UX Design", "Development", "Web-app"]}
+                label="#Fallstudie"
+                title="Entwerfen und entwickeln Sie eine Fitness-First-Plattform"
+                list={["UI/UX-Design", "Entwicklung", "Web-App"]}
                 link="/work"
               />
             </motion.div>
             <motion.div variants={items} className="relative" key="work_3">
               <OurWorkItem
                 imageSrc="/images/home/urban-axis-study.webp"
-                label="#Case Study"
-                title="Developing a website for urban aesthetis"
-                list={["UI/UX Design", "Development", "Responsive Design"]}
+                label="#Fallstudie"
+                title="Entwicklung einer Website für urbane Ästhetik"
+                list={["UI/UX-Design", "Entwicklung", "Responsive Design"]}
                 link="/work"
               />
             </motion.div>
@@ -88,9 +88,9 @@ export default function OurWork() {
             <motion.div variants={items} className="relative" key="work_4">
               <OurWorkItem
                 imageSrc="/images/home/nikitas-curry-corner-case-study.webp"
-                label="#Case Study"
-                title="Developing a cloud kitchen platform"
-                list={["UI/UX Design", "Development", "Web-app"]}
+                label="#Fallstudie"
+                title="Entwicklung einer Cloud-Kitchen-Plattform"
+                list={["UI/UX-Design", "Entwicklung", "Web-App"]}
                 link="/work"
               />
             </motion.div>
@@ -98,7 +98,7 @@ export default function OurWork() {
         </motion.div>
         <div className="text-center">
           <Link href="/work" className="link-btn">
-            Checkout more case studies
+            Weitere Projekte
           </Link>
         </div>
       </div>

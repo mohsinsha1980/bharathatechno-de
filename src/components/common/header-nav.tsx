@@ -8,22 +8,22 @@ import useOutsideClick from "@/hooks/useOutsideClick";
 const NAV_LIST = [
   {
     id: 0,
-    label: "About",
+    label: "Über uns",
     link: "/about",
   },
   {
     id: 1,
-    label: "Work",
+    label: "Referenzen",
     link: "/work",
   },
   {
     id: 2,
-    label: "Offerings",
+    label: "Leistungen",
     hasChild: true,
     children: [
       {
         id: 2.1,
-        label: "Products",
+        label: "Produkte",
         link: "/offerings/products",
         hasChild: false,
       },
@@ -188,7 +188,7 @@ export default function HeaderNav() {
                         ref={ref}
                       >
                         <motion.li variants={navItem} key="offerings-1">
-                          <Link href="/offerings/products">Products</Link>
+                          <Link href="/offerings/products">Produkte</Link>
                         </motion.li>
                         <motion.li variants={navItem} key="offerings-2">
                           <Link href="/offerings/services/full-stack-development">

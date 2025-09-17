@@ -12,7 +12,7 @@ export default function EverwinptImage() {
           height={460}
         />{" "}
       </Link>
-      <h3>Technologies Used</h3>
+      <h3>ENTWICKELT MIT</h3>
       <ul>
         <li>HTML</li>
         <li>CSS</li>

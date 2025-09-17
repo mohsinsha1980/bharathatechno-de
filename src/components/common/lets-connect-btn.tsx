@@ -14,7 +14,7 @@ export default function LetsConnectBtn() {
           screen.width > 1024 ? "header-btn large" : "header-btn small"
         }
       >
-        {screen.width > 1024 ? `Let's Connect` : <SendIcon />}
+        {screen.width > 1024 ? `Kontakt aufnehmen` : <SendIcon />}
       </Link>
     </div>
   );

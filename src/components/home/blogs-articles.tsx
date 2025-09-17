@@ -62,7 +62,7 @@ export default function BlogsArticles({BLOGS}: {BLOGS: PostDataType[]}){
           className="mb-10 text-center"
           style={{ color: `var(--text-orange)` }}
         >
-          Blogs &amp; Articles
+          Blogs &amp; Artikel
         </h2>
         <motion.div
           className="grid grid-cols-1 gap-[60px] lg:grid-cols-3 md:grid-cols-2 "

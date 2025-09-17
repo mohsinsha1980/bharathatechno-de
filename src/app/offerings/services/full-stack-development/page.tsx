@@ -80,7 +80,7 @@ export default function ServicesFullStackDevelopment() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
       <article className="pg_service">
-        <ServicesBanner data="Expert Full Stack Development in Pune for High-Performance Web Applications"/>
+        <ServicesBanner data="Fachmännische Full-Stack-Entwicklung in Pune für leistungsstarke Webanwendungen" />
         <ServicesList />
         <Summary>
           <motion.h2
@@ -100,29 +100,31 @@ export default function ServicesFullStackDevelopment() {
             className="text-center md:text-justify"
           >
             <p>
-              At BharathaTechno, we develop robust, scalable, and
-              high-performing web applications using the MERN and MEAN
-              technology stacks. These full stack development services are
-              designed for businesses that need flexible, modern, and long-term
-              digital solutions.
+              Bei BharathaTechno entwickeln wir leistungsstarke, skalierbare und
+              hochperformante Webanwendungen unter Einsatz der MERN- und
+              MEANTechnologiestacks. Unsere Full-Stack-Entwicklungsservices
+              richten sich an Unternehmen, die flexible, moderne und
+              langfristige digitale Lösungen benötigen.
             </p>
             <p>
-              Our platforms are tailored to meet specific business needs—whether
-              you&apos;re launching a new product, optimizing operations, or
-              replacing outdated systems.
+              Unsere Plattformen werden gezielt auf die spezifischen Bedürfnisse
+              Ihres Unternehmens zugeschnitten - egal, ob Sie ein neues Produkt
+              einführen, Ihre Geschäftsprozesse optimieren oder veraltete
+              Systeme ersetzen möchten.
             </p>
           </motion.div>
         </Summary>
-        <Technology title="Our Expertise" tech={SERVICE_FULL_STACK} />
+        <Technology title="Unsere Exptertise" tech={SERVICE_FULL_STACK} />
         <DetailsAccordion items={SERVICE_FULL_STACK_DETAILS} />
         <ServicesFeatures data={SERVICE_FULL_STACK_FEATURES} />
         <WeExcel
-          title="Technologies We Excel In"
+          title="Technologien, in denen wir neue Maßstäbe setzen"
           list={SERVICE_FULL_STACK_EXCEL}
         />
         <ServicesContact
-          title="Our Commitment to Quality"
-          description="For us, code is craft. Whether it's a small application or a large-scale enterprise application, our commitment to pristine, efficient, and scalable code is unwavering."
+          title="Unser Qualitätsversprechen"
+          description="Für uns ist Code mehr als nur Programmierung - er ist Handwerk. Ob kleine App oder groß angelegte EnterpriseLösung: Wir legen größten Wert auf hochwertigen, effizienten und skalierbaren Code, der Ihr Projekt langfristig
+erfolgreich macht."
         />
       </article>
     </>

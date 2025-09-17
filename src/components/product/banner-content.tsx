@@ -2,8 +2,8 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
-export default function BfitBannerContent(data: {data: string}) {
-  const text1 = "Our Ready to";
+export default function BfitBannerContent(data: { data: string }) {
+  const text1 = "Wachstumsorientierte Lösungen";
 
   const variants = {
     hidden: { opacity: 0 },
@@ -70,7 +70,7 @@ export default function BfitBannerContent(data: {data: string}) {
             animate={isInView2 ? "animate" : ""}
             className="inline-block"
           >
-            Grow Products
+            für Ihr Business
           </motion.span>
         </span>
       </p>

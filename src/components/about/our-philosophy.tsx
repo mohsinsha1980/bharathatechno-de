@@ -50,7 +50,7 @@ export default function OurPhilosophy() {
             className="text-center mb-4"
             style={{ color: `var(--text-orange)` }}
           >
-            BharathaTechno&apos;s Philosophy
+            Unsere Philosophy
           </h2>
         </motion.div>
 
@@ -62,10 +62,10 @@ export default function OurPhilosophy() {
           animate={isInView2 ? "animate" : ""}
         >
           <p className="text-center">
-            At BharathaTechno, we believe that great leadership is about more
-            than
+            Bei BharathaTechno sind wir überzeugt, dass großartige Führung mehr
+            ist als technisches
             <br />
-            just technical know-how or business acumen. It&apos;s about:
+            Know-how oder unternehmerisches Geschick. Es geht vielmehr darum:
           </p>
         </motion.div>
 
@@ -87,8 +87,9 @@ export default function OurPhilosophy() {
                 />
                 <h3>Innovation</h3>
                 <p>
-                  Constantly pushing the boundaries of what&apos;s possible in
-                  web &amp; mobile app development
+                  Wir treiben die Grenzen der Web- und MobileApp-Entwicklung
+                  stetig voran und setzen neue Maßstäbe für Innovation und
+                  Performance.
                 </p>
               </div>
             </motion.span>
@@ -100,10 +101,10 @@ export default function OurPhilosophy() {
                   width={160}
                   height={160}
                 />
-                <h3>Client-Centric Approach</h3>
+                <h3>Kundenorientierter Ansatz</h3>
                 <p>
-                  Putting our clients&apos; needs at the forefront of everything
-                  we do
+                  Wir stellen die Bedürfnisse unserer Kunden in den Mittelpunkt
+                  unseres Handelns
                 </p>
               </div>
             </motion.span>
@@ -115,10 +116,10 @@ export default function OurPhilosophy() {
                   width={160}
                   height={160}
                 />
-                <h3>Collaboration</h3>
+                <h3>Zusammenarbeit</h3>
                 <p>
-                  Fostering a team environment where creativity and expertise
-                  combine to produce exceptional results
+                  Wir fördern ein Teamumfeld, in dem Kreativität und Expertise
+                  zusammenkommen, um außergewöhnliche Ergebnisse zu erzielen.
                 </p>
               </div>
             </motion.span>
@@ -130,10 +131,11 @@ export default function OurPhilosophy() {
                   width={160}
                   height={160}
                 />
-                <h3>Continuous Learning</h3>
+                <h3>Kontinuierliches lernen</h3>
                 <p>
-                  Staying ahead of the curve in the rapidly evolving tech
-                  landscape
+                  Bei uns entstehen innovative Lösungen durch kontinuierliches
+                  Lernen und die stetige Weiterentwicklung unseres Wissens und
+                  unserer Fähigkeiten.
                 </p>
               </div>
             </motion.span>
@@ -148,12 +150,12 @@ export default function OurPhilosophy() {
           animate={isInView3 ? "animate" : ""}
         >
           <p className="text-center highlight">
-            “Under the guidance of Mohsin and Rajesh, BharathaTechno is not just
+            “Unter der Führung von Mohsin, Rajesh und Kourosh schafft
             <br />
-            building software, we&apos;re crafting digital futures and
-            cultivating lasting
+            BharathaTechno nicht einfach Software, sondern gestaltet digitale
             <br />
-            partnerships with our clients.”
+            Zukunftslösungen und baut langfristige Partnerschaften <br /> mit
+            unseren Kunden auf.”
           </p>
         </motion.div>
       </div>

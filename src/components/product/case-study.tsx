@@ -92,7 +92,7 @@ export default function CaseStudy({ data }: { data: ProductCaseStudy }) {
         initial="initial"
         animate={isInView3 ? "animate" : ""}
       >
-        Case Study: <span>{data.title}</span>
+        Praxisbeispiel: <span>{data.title}</span>
       </motion.h1>
 
       <motion.div
@@ -103,13 +103,13 @@ export default function CaseStudy({ data }: { data: ProductCaseStudy }) {
         className="bl_details container container-medium"
       >
         <p>
-          <strong>Client:</strong> {data.client}
+          <strong>Kunde:</strong> {data.client}
         </p>
         <p>
-          <strong>Industry:</strong> {data.industry}
+          <strong>Branche:</strong> {data.industry}
         </p>
         <p>
-          <strong>Use Case:</strong> {data.use}
+          <strong>Praxisanwendung:</strong> {data.use}
         </p>
       </motion.div>
 
@@ -121,8 +121,8 @@ export default function CaseStudy({ data }: { data: ProductCaseStudy }) {
           animate={isInView1 ? "show" : ""}
           variants={imageVariant}
         >
-            <h3>Before the platform:</h3>
-            <p>{data.before}</p>
+          <h3>Vor der Plattform:</h3>
+          <p>{data.before}</p>
         </motion.div>
         <motion.div
           className="bl_after"
@@ -131,8 +131,8 @@ export default function CaseStudy({ data }: { data: ProductCaseStudy }) {
           animate={isInView2 ? "show" : ""}
           variants={contentVariant}
         >
-            <h3>After launching platform:</h3>
-            <p>{data.after}</p>
+          <h3>Nach dem Launch:</h3>
+          <p>{data.after}</p>
         </motion.div>
       </div>
     </article>

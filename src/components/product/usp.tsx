@@ -2,11 +2,7 @@
 import { useInView, motion } from "framer-motion";
 import { useRef } from "react";
 
-export default function ProductUSP({
-  description,
-}: {
-  description: string;
-}) {
+export default function ProductUSP({ description }: { description: string }) {
   const pullupVariant = {
     initial: { y: 0, opacity: 0 },
     animate: {
@@ -45,7 +41,7 @@ export default function ProductUSP({
           initial="initial"
           animate={isInView2 ? "animate" : ""}
         >
-          Unique Selling Point
+          Alleinstellungsmerkmal
         </motion.h3>
 
         <motion.div
@@ -55,7 +51,7 @@ export default function ProductUSP({
           animate={isInView3 ? "animate" : ""}
           className="text-center md:text-left"
         >
-          <p>{description}</p>
+          <div dangerouslySetInnerHTML={{ __html: description }}></div>
         </motion.div>
       </div>
     </section>

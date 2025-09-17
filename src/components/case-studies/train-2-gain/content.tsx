@@ -9,19 +9,19 @@ export default function ShredNShapeContent() {
       </Link>
 
       <p>
-        Train2Gain&apos;s a WordPress-based platform, built to support offline
-        skill-building programs. This project focuses on lead generation,
-        content control, and seamless enrollment through a structured
-        subscription form.
+        Train2Gain ist eine WordPress-basierte Plattform, die
+        Offline-Weiterbildungsprogramme unterstützt. Der Schwerpunkt des
+        Projekts liegt auf Lead-Generierung, Content-Verwaltung und einer
+        nahtlosen Anmeldung über ein strukturiertes Abonnementformular.
       </p>
-      <h3>Key Features</h3>
+      <h3>Zentrale Funktionen</h3>
       <ul>
-        <li>Responsive Design</li>
-        <li>SEO-friendly structure</li>
+        <li>Responsives Design</li>
+        <li>SEO-freundliche Struktur</li>
       </ul>
       <div className="link">
         <Link href=" https://train2gain.in/" target="_blank">
-          <span>Visit Train2Gain</span> <ArrowRight size={20} />
+          <span>Jetzt Train2Gain besuchen </span> <ArrowRight size={20} />
         </Link>
       </div>
     </>

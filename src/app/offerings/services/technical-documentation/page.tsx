@@ -75,7 +75,7 @@ export default function ServicesTechnicalDocumentation() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
       <article className="pg_service">
-        <ServicesBanner data="Comprehensive Technical Documentation Services for Software and ERP Solutions"/>
+        <ServicesBanner data="Umfassende technische Dokumentationsdienste für Software- und ERP-Lösungen" />
         <ServicesList />
         <Summary>
           <motion.h2
@@ -85,7 +85,7 @@ export default function ServicesTechnicalDocumentation() {
             animate="animate"
             className="inline-block"
           >
-            Technical Documentation
+            Technische Dokumentation
           </motion.h2>
 
           <motion.div
@@ -96,17 +96,17 @@ export default function ServicesTechnicalDocumentation() {
             className="text-center md:text-justify"
           >
             <p>
-              At BharathaTechno, we provide technical documentation that&apos;s
-              built to support your software, systems, and internal workflows.
-              Our goal is simple — help businesses communicate complex
-              information clearly and efficiently, without slowing down
-              development or operations.
+              Bei BharathaTechno bieten wir technische Dokumentation, die Ihre
+              Software, Systeme und internen Arbeitsabläufeunterstützt. Unser
+              Ziel ist einfach - Unternehmen dabei zu helfen, komplexe
+              Informationen klar und effizient zu kommunizieren, ohne die
+              Entwicklung oder den Betrieb zu verlangsamen.
             </p>
             <p>
-              If you&apos;re rolling out a new product, managing a growing
-              platform, or documenting internal processes, we deliver
-              structured, accurate, and easy-to-navigate content that aligns
-              with your team, your users, and your goals.
+              Wenn Sie ein neues Produkt einführen, eine wachsende Plattform
+              verwalten oder interne Prozesse dokumentieren,liefern wir
+              strukturierte, präzise und leicht navigierbare Inhalte, die mit
+              Ihrem Team, Ihren Nutzern und Ihren Zielenübereinstimmen.
             </p>
           </motion.div>
         </Summary>
@@ -118,7 +118,7 @@ export default function ServicesTechnicalDocumentation() {
 
         <ServicesContact
           title=""
-          description="You focus on building — we'll make sure your documentation keeps up."
+          description="Sie konzentrieren sich auf den Aufbau - wir stellen sicher, dass Ihre Dokumentation mithält"
         />
       </article>
     </>

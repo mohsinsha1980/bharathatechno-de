@@ -7,7 +7,7 @@ import ProjectSlider from "@/components/case-studies/projects-slider";
 export default async function IntignusBiotechPage() {
   return (
     <article className="pg_work">
-      <CaseStudiesBanner data="Comprehensive WordPress Website for Intignus Biotech with Detailed Product Information"/>
+      <CaseStudiesBanner data="Umfassende WordPress-Website für Intignus Biotech mit detaillierten Produktinformationen"/>
       <div className="bl_case_studies">
         <div className="container container-medium">
           <CaseStudyTemplate>

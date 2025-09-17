@@ -213,7 +213,7 @@ export default function ContactForm() {
             animate={isInView2 ? "animate" : ""}
             className="mb-[80px]"
           >
-            &ldquo;Every great solution starts with a simple conversation&rdquo;
+            &ldquo;Jede großartige Lösung beginnt mit einem simplen Gespräch&rdquo;
           </motion.h2>
 
           <motion.div
@@ -242,7 +242,7 @@ export default function ContactForm() {
                     <input
                       type="text"
                       name="name"
-                      placeholder="Full Name"
+                      placeholder="Vor&Nachname"
                       value={contact.name}
                       onChange={inputChangeHandler}
                       className={formErrors.name.invalid ? "inputError" : ""}
@@ -256,7 +256,7 @@ export default function ContactForm() {
                     <input
                       type="email"
                       name="email"
-                      placeholder="Email ID"
+                      placeholder="E-Mail"
                       value={contact.email}
                       onChange={inputChangeHandler}
                       className={formErrors.email.invalid ? "inputError" : ""}
@@ -274,7 +274,7 @@ export default function ContactForm() {
                     <input
                       type="tel"
                       name="phone"
-                      placeholder="Phone Number (+1231234567890)"
+                      placeholder="Telefonnummer"
                       value={contact.phone}
                       onChange={inputChangeHandler}
                       className={formErrors.phone.invalid ? "inputError" : ""}
@@ -309,7 +309,7 @@ export default function ContactForm() {
                       cols={10}
                       rows={5}
                       name="message"
-                      placeholder="Tell us more about you & your idea"
+                      placeholder="Deine Naehrichtaums"
                       value={contact.message}
                       onChange={textareaChangeHandler}
                       autoComplete="off"

@@ -3,7 +3,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 export default function ContactBannerContent() {
-  const text1 = "Let's Build Something";
+  const text1 = "Lassen Sie uns";
 
   const variants = {
     hidden: { opacity: 0 },
@@ -70,7 +70,7 @@ export default function ContactBannerContent() {
             animate={isInView2 ? "animate" : ""}
             className="inline-block"
           >
-            Great Together
+            gemeinsam Großartiges erschaffen
           </motion.span>
         </span>
       </p>
@@ -81,10 +81,12 @@ export default function ContactBannerContent() {
         animate={isInView3 ? "animate" : ""}
         className="text-center lg:text-left"
       >
-        Whether you&apos;re building from the ground up or refining an existing
-        concept, our software development and consulting expertise can help
-        shape your vision. Let&apos;s connect, strategize, and bring your ideas to
-        life with purpose and precision—our inboxes are always open.
+        Egal, ob Sie ein Projekt von Grund auf neu aufbauen oder ein bestehendes
+        Konzept verfeinern möchten - unsere Expertise in Softwareentwicklung und
+        Beratung hilft Ihnen dabei, Ihre Vision zu gestalten. Lassen Sie uns in
+        Kontakt treten, gemeinsam Strategien entwickeln und Ihre Ideen mit
+        Zielstrebigkeit und Präzision zum Leben erwecken - wir sind stets für
+        Sie erreichbar.
       </motion.h1>
     </div>
   );

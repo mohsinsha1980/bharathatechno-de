@@ -30,11 +30,13 @@ export default function Work() {
       />
       <article className="pg_work">
         <CaseStudiesBanner
-          data="BharathaTechno is committed to delivering innovative and high-quality
-        solutions through full stack development tailored to meet the unique
-        needs of our clients. Below are some of our standout projects that
-        demonstrate our expertise in various domains, from fashion and fitness
-        to e-commerce and static business websites."
+          data={`BharathaTechno steht für innovative und qualitativ hochwertige Lösungen.
+Durch unsere umfassende Full-Stack-Entwicklung bieten wir maßgeschneiderte
+digitale Konzepte, die exakt auf die individuellen Anforderungen unserer Kunden
+abgestimmt sind. <br />
+Unsere Referenzen sprechen für sich: Von Mode und Fitness über E-Commerce bis hin
+zu statischen Unternehmens-Websites - wir realisieren Projekte, die
+Branchenstandards neu definieren und nachhaltige Werte schaffen.`}
         />
         <CaseStudies />
         <CaseStudiesContact />

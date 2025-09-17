@@ -3,7 +3,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 export default function PrivacyBannerContent() {
-  const text1 = "Privacy Policy";
+  const text1 = "Datenschutzerklärung";
 
   const variants = {
     hidden: { opacity: 0 },
@@ -55,9 +55,9 @@ export default function PrivacyBannerContent() {
         animate={isInView3 ? "animate" : ""}
         className="text-center lg:text-left"
       >
-        BharathaTechno IT Private Limited is committed to protecting the privacy
-        of its users. This Privacy Policy explains how we collect, use, and
-        share your personal information.
+        BharathaTechno IT EU verpflichtet sich, die Privatsphäre seiner Nutzer
+        zu schützen. Diese Datenschutzerklärung erläutert, wie wir Ihre
+        personenbezogenen Daten erheben, verwenden und weitergeben.
       </motion.h1>
     </div>
   );

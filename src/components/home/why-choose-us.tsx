@@ -46,7 +46,7 @@ export default function WhyChooseUs() {
               initial="initial"
               animate={isInView2 ? "animate" : ""}
             >
-              Why choose us?
+              So unterstüzuen wir Ihren Erfolg
             </motion.h2>
 
             <motion.div
@@ -56,16 +56,20 @@ export default function WhyChooseUs() {
               animate={isInView3 ? "animate" : ""}
             >
               <h3>
-                BharathaTechno was born from a shared vision of leveraging
-                technology to drive business success. As a global provider of
-                custom web application development and enterprise software, we
-                help businesses across industries streamline their operations
-                and scale efficiently. <br />
-                Our approach is agile, secure, and tailored to your needs.
+                Bharatha Techno wurde aus der gemeinsamen Vision gegründet,
+                Technologie gezielt für den Unternehmenserfolg unserer Klienten
+                einzusetzen. Als international tätiger Anbieter
+                maßgeschneiderter Webanwendungen und Unternehmenssoftware sowie
+                individueller Personaldienstleistungen und Outsourcing-Lösungen
+                unterstützen wir Unternehmen verschiedener Branchen dabei,
+                Prozesse zu optimieren und Effizienz nachhaltig zu steigern. <br/>
+                Unser Ansatz ist agil, erfüllt höchste Sicherheitsstandards und
+                wird individuell auf die Anforderungen unserer Kunden
+                zugeschnitten.
               </h3>
               <div className="action">
                 <Link href="/about" className="link-btn">
-                  Know Us
+                  Über uns
                 </Link>
               </div>
             </motion.div>

@@ -61,13 +61,13 @@ export default function ServicesCloudInfrastructure() {
   const isInView3 = useInView(ref3, { once: true });
 
   useEffect(() => {
-      const scroll = document.getElementById("services-list");
-      if (scroll) {
-        setTimeout(() => {
-          scroll.scrollIntoView({ behavior: "smooth", block: "start" });
-        }, 400);
-      }
-    }, []);
+    const scroll = document.getElementById("services-list");
+    if (scroll) {
+      setTimeout(() => {
+        scroll.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 400);
+    }
+  }, []);
   return (
     <>
       <Script
@@ -77,7 +77,7 @@ export default function ServicesCloudInfrastructure() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
       <article className="pg_service">
-        <ServicesBanner data="Comprehensive Cloud Infrastructure Management and Software Solutions for Efficiency, Security, and Scalability"/>
+        <ServicesBanner data="Umfassendes Cloud-Infrastrukturmanagement und Softwarelösungen für Effizienz, Sicherheit und Skalierbarkeit" />
         <ServicesList />
         <Summary>
           <motion.h2
@@ -87,7 +87,7 @@ export default function ServicesCloudInfrastructure() {
             animate="animate"
             className="inline-block"
           >
-            Cloud Infrastructure Management Services
+            Cloud-Infrastrukturmanagement
           </motion.h2>
 
           <motion.p
@@ -97,22 +97,26 @@ export default function ServicesCloudInfrastructure() {
             animate={isInView3 ? "animate" : ""}
             className="text-center md:text-justify"
           >
-            At BharathaTechno, we provide comprehensive cloud infrastructure
-            management services designed to optimize your IT resources, enhance
-            scalability, and ensure robust security. Our expertise in cloud
-            technologies enables businesses to leverage the full potential of
-            cloud computing, driving efficiency and innovation.
+            Bei BharathaTechno bieten wir umfassende
+            Cloud-Infrastrukturmanagement-Dienste an, die darauf ausgelegt sind,
+            Ihre IT-Ressourcen zu optimieren, die Skalierbarkeit zu verbessern
+            und eine robuste Sicherheit zu gewährleisten. Unsere Expertise in
+            Cloud-Technologien ermöglicht es Unternehmen, das volle Potenzial
+            des Cloud-Computings auszuschöpfen und so Effizienz und Innovation
+            voranzutreiben.
           </motion.p>
         </Summary>
         <Technology
-          title="Technologies We Use"
+          title="Technologien, die wir einsetzen"
           tech={SERVICE_CLOUD_INFRASTRCUTRE}
         />
         <DetailsAccordion items={SERVICE_CLOUD_INFRASTRCUTRE_DETAILS} />
         <ServicesFeatures data={SERVICE_CLOUD_INFRASTRCUTRE_FEATURES} />
         <ServicesContact
-          title="Ready to Transform Your IT Infrastructure?"
-          description="Let's discuss how our cloud infrastructure management services can enhance your business operations. Our team of experts is ready to craft a strategy that drives efficiency, security, and growth."
+          title="Bereit, Ihre Cloud-Infrastruktur zu transformieren?"
+          description="Nutzen Sie die Expertise von BharathaTechno, um Ihre Cloud-Umgebung zu optimieren, die Effizienz
+zu steigern und Ihr Unternehmen auf das nächste Level zu bringen. Kontaktieren Sie uns noch heute,
+um Ihre maßgeschneiderte Cloud-Lösung zu starten."
         />
       </article>
     </>

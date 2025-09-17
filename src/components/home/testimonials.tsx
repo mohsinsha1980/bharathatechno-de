@@ -31,14 +31,14 @@ export default function Testimonials() {
             className="mb-4 md:mb-10 text-center"
             style={{ color: `var(--text-blue)` }}
           >
-            Testimonials
+            Kundenstimmen
           </h2>
           <p className="text-big text-center">
-            At BharathaTechno, our clients&apos; success stories are the true
-            testament to our commitment to excellence. We take pride in
-            delivering solutions that exceed expectations and create lasting
-            impacts. Here&apos;s what some of our valued clients have to say
-            about their experience working with us:
+            Bei Bharatha Techno sind die Erfolgsgeschichten unserer Kunden der
+            beste Beweis für unser Engagement für höchste Qualität. Wir liefern
+            Lösungen, die Erwartungen übertreffen und nachhaltige Wirkung
+            erzielen. Lesen Sie, was einige unserer geschätzten Kunden über die
+            Zusammenarbeit mit uns sagen:
           </p>
           <TestimonialSlider />
         </motion.div>

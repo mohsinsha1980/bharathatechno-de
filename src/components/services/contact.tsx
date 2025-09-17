@@ -62,7 +62,7 @@ export default function ServicesContact({
 
           <div className="text-center">
             <Link href="/contact" className="link-btn">
-              Contact Us
+              Jetzt kontaktieren
             </Link>
           </div>
         </motion.div>

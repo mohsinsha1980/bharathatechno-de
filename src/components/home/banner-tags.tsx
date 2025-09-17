@@ -29,10 +29,10 @@ export default function BannerTags() {
       initial="hidden"
       animate="show"
     >
-      <motion.span variants={listItem}>#Experience</motion.span>
+      <motion.span variants={listItem}>#Erfahrung</motion.span>
       <motion.span variants={listItem}>#Innovation</motion.span>
-      <motion.span variants={listItem}>#Creativity</motion.span>
-      <motion.span variants={listItem}>#Leadership</motion.span>
+      <motion.span variants={listItem}>#Kreativität</motion.span>
+      <motion.span variants={listItem}>#Führung</motion.span>
     </motion.div>
   );
 }

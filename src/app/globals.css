@@ -110,13 +110,13 @@ svg {
 
   .bl_home_banner p>span {
     display: block;
-    line-height: 70px;
+    line-height: 50px;
   }
 
   .bl_home_banner p>span.highlight {
     color: #f49e0a;
     font-size: 58px;
-    line-height: 50px;
+    line-height: 70px;
   }
 
   .bl_home_banner .content {
@@ -247,10 +247,18 @@ svg {
 
       h3 {
         font-size: 24px;
-        line-height: 30px;
+        line-height: 1.2;
         color: #fff;
         font-weight: 700;
         transition: all 0.5s ease;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+        max-width: 100%;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
       }
 
       p {
@@ -906,8 +914,8 @@ h2 {
 }
 
 .pg_about {
-  .bl_home_banner .container>div {
-    direction: rtl;
+  .bl_home_banner .container>div .content {
+    margin-top: 150px;
   }
 
   .bl_our_mission {
@@ -1022,7 +1030,7 @@ h2 {
     }
 
     .content {
-      margin-top: 200px;
+      margin-top: 150px;
 
       h1 {
         font-size: 24px;
@@ -1995,6 +2003,7 @@ h2 {
         transition: all 0.5s ease;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
 
         img {
           margin-bottom: 20px;
@@ -2003,8 +2012,16 @@ h2 {
         p {
           font-size: 16px;
           text-align: center;
-          line-height: 22px;
+          line-height: 1.3;
           color: #ababab;
+          word-wrap: break-word;
+          overflow-wrap: break-word;
+          hyphens: auto;
+          max-width: 100%;
+          display: -webkit-box;
+          -webkit-line-clamp: 4;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
         }
       }
     }
@@ -2368,7 +2385,7 @@ h2 {
     font-size: 38px;
   }
 
-  .pg_home .bl_home_choose p {
+  .pg_home .bl_home_choose h3 {
     font-size: 20px;
   }
 
@@ -2556,6 +2573,15 @@ h2 {
 
   .pg_home .bl_offerings .bl_offering_list>div>a h3 {
     font-size: 18px;
+    line-height: 1.2;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    max-width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   .pg_home .bl_offerings .bl_offering_list>div>a p {
@@ -2950,7 +2976,7 @@ h2 {
     margin-bottom: 20px;
   }
 
-  .pg_home .bl_home_choose p {
+  .pg_home .bl_home_choose h3 {
     font-size: 16px;
     margin-bottom: 20px;
   }
@@ -3609,7 +3635,7 @@ h2 {
     margin-bottom: 20px;
   }
 
-  .pg_home .bl_home_choose p {
+  .pg_home .bl_home_choose h3 {
     font-size: 16px;
     margin-bottom: 20px;
   }
@@ -3701,6 +3727,10 @@ h2 {
   p,
   .link {
     font-size: 17px;
+  }
+
+  .pg_service .bl_home_banner .banner_logo{
+    margin-top: 80px;
   }
 
   .pg_service .bl_service_details .accordion .accordion__panel ul li {
@@ -3796,7 +3826,7 @@ h2 {
   .pg_about .bl_home_banner .container>div {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
-    margin-top: 30px;
+    margin-top: 60px;
   }
 
   .pg_about .bl_home_banner .container>div .content {
@@ -4044,7 +4074,7 @@ h2 {
 
   .pg_home .bl_offerings .bl_offering_list>div>a h3 {
     font-size: 15px;
-    line-height: 26px;
+    margin-top: 10px;
   }
 
   .pg_home .bl_offerings .bl_offering_list>div>a p {
@@ -4312,6 +4342,14 @@ h2 {
 
   .pg_product .bl_product_features .bl_cards .bl_card p {
     font-size: 14px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    max-width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   .bl_footer.container {

@@ -44,7 +44,7 @@ export default function ProductFeatures() {
           initial="initial"
           animate={isInView2 ? "animate" : ""}
         >
-          Key Features
+          Zentrale Funktionen
         </motion.h3>
 
         <div>
@@ -54,7 +54,7 @@ export default function ProductFeatures() {
             initial="initial"
             animate={isInView3 ? "animate" : ""}
           >
-            For Admins
+            Für Administratoren
           </motion.h4>
           <motion.div
             className="bl_cards"
@@ -71,7 +71,7 @@ export default function ProductFeatures() {
                   height={100}
                   alt=""
                 />
-                <p>Central dashboard for orders, revenue, and reports.</p>
+                <p>Zentrales Dashboard für Bestellungen, Umsätze und Reports</p>
               </motion.div>
 
               <motion.div variants={items} className="bl_card" key={`feat-4`}>
@@ -81,7 +81,7 @@ export default function ProductFeatures() {
                   height={100}
                   alt=""
                 />
-                <p>Product & category management </p>
+                <p>Produkt- und Kategorienverwaltung</p>
               </motion.div>
 
               <motion.div variants={items} className="bl_card" key={`feat-7`}>
@@ -91,7 +91,7 @@ export default function ProductFeatures() {
                   height={100}
                   alt=""
                 />
-                <p>Homepage editor for banners, offers, and highlights</p>
+                <p>Homepage-Editor für Banner, Angebote und Highlights</p>
               </motion.div>
 
               <motion.div variants={items} className="bl_card" key={`feat-5`}>
@@ -102,7 +102,8 @@ export default function ProductFeatures() {
                   alt=""
                 />
                 <p>
-                  Inventory, coupon, review, gallery, enquiry & support tools.
+                  Alles in einem: Bestandsmanagement, Promotions, Reviews,
+                  Galerie- und Supportfunktionen
                 </p>
               </motion.div>
 
@@ -113,7 +114,10 @@ export default function ProductFeatures() {
                   height={100}
                   alt=""
                 />
-                <p>Custom settings: tax, sizes, colors, materials, & more</p>
+                <p>
+                  Flexible Konfiguration für Steuern, Varianten und
+                  Produkteigenschaften
+                </p>
               </motion.div>
 
               <motion.div variants={items} className="bl_card" key={`feat-6`}>
@@ -124,8 +128,8 @@ export default function ProductFeatures() {
                   alt=""
                 />
                 <p>
-                  Transaction tracking, email subscriptions, and admin-level
-                  addresses.
+                  Verwaltung von Zahlungen, Newsletter-Abonnements und
+                  Admin-Kontakten
                 </p>
               </motion.div>
             </AnimatePresence>
@@ -139,7 +143,7 @@ export default function ProductFeatures() {
             initial="initial"
             animate={isInView3 ? "animate" : ""}
           >
-            For Users
+            Für Nutzer
           </motion.h4>
           <motion.div
             className="bl_cards"
@@ -156,9 +160,7 @@ export default function ProductFeatures() {
                   height={100}
                   alt=""
                 />
-                <p>
-                  User-responsive browsing with filters, search, and wishlist
-                </p>
+                <p>Responsive Produktsuche mit Filter- und Wishlist-Funktion</p>
               </motion.div>
 
               <motion.div variants={items} className="bl_card" key={`feat-2`}>
@@ -168,7 +170,9 @@ export default function ProductFeatures() {
                   height={100}
                   alt=""
                 />
-                <p>Secure checkout (Razorpay, Stripe, or etc)</p>
+                <p>
+                  Geschützter Kaufabschluss mit verschiedenen Zahlungsanbietern
+                </p>
               </motion.div>
 
               <motion.div variants={items} className="bl_card" key={`feat-3`}>
@@ -179,7 +183,7 @@ export default function ProductFeatures() {
                   alt=""
                 />
                 <p>
-                  Account management, track orders, and initiate transactions
+                  Kontoverwaltung, Bestellverfolgung & Transaktionsinitiierung
                 </p>
               </motion.div>
 
@@ -190,7 +194,9 @@ export default function ProductFeatures() {
                   height={100}
                   alt=""
                 />
-                <p>Detailed product view with media and description</p>
+                <p>
+                  Produktdetailseite inkl. Bildern, Videos und Informationen
+                </p>
               </motion.div>
             </AnimatePresence>
           </motion.div>

@@ -13,7 +13,7 @@ export default function Train2GainImage() {
         />
       </Link>
 
-      <h3>Technologies Used</h3>
+      <h3>ENTWICKELT MIT</h3>
       <ul>
         <li>WordPress CMS</li>
       </ul>

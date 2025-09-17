@@ -20,60 +20,68 @@ import {
 export const SERVICES: ServiceType[] = [
   {
     id: 0,
-    title: "Full Stack Development",
-    description: "Web + Mobile App Development",
+    title: " Full Stack Entwicklung",
+    description: "Web + Mobile App Entwicklung",
     icon: <CodeXml className="service_icon" />,
     link: "/offerings/services/full-stack-development",
   },
   {
     id: 1,
-    title: "Custom ERP Solutions",
-    description: "Tailored Enterprise Resource Planning",
+    title: "Maßgeschneiderte ERP Lösungen",
+    description: "Individuelle ERP- und Ressourcenplanung",
     icon: <Database className="service_icon" />,
     link: "/offerings/services/custom-erp-solutions",
   },
   {
     id: 2,
-    title: "UI/UX & Brand Design",
-    description: "User Experience, Interaction & Design",
+    title: "UI/UX & Marken Design",
+    description: "UX-, Interaktions- und Designgestaltung",
     icon: <PencilRuler className="service_icon" />,
     link: "/offerings/services/ui-ux-brand-design",
   },
   {
     id: 3,
-    title: "Technical Documentation",
-    description: "Clear and Concise Documentation",
+    title: "Technische Dokumentation",
+    description:
+      " Dokumentation, die effizient, verständlich und praxisnah ist.",
     icon: <FileText className="service_icon" />,
     link: "/offerings/services/technical-documentation",
   },
   {
     id: 4,
     title: "Performance Marketing",
-    description: "Strategic Digital Campaigns",
+    description: "Strategisch geplante digitale Kampagnen",
     icon: <Megaphone className="service_icon" />,
     link: "/offerings/services/performance-marketing",
   },
   {
     id: 5,
-    title: "Cloud Infrastructure Management",
-    description: "Scalable Cloud Solutions",
+    title: "Cloud Infrastruktur Management",
+    description: "Skalierbare Cloud-Lösungen",
     icon: <Cloud className="service_icon" />,
     link: "/offerings/services/cloud-infrastructure-management",
   },
   {
     id: 6,
-    title: "Staff Augmentation",
-    description: "Expert IT Professionals",
+    title: "Personalldienstleistung",
+    description: "IT-Experten / Buchhaltung",
     icon: <UsersRound className="service_icon" />,
     link: "/offerings/services/staff-augmentation",
   },
   {
     id: 7,
-    title: "Corporate Training",
-    description: "Comprehensive IT Training Programs",
+    title: "Personalschulung",
+    description: "Umfassende IT-Schulungsprogramme",
     icon: <Monitor className="service_icon" />,
     link: "/offerings/services/corporate-training",
   },
+  // {
+  //   id: 8,
+  //   title: "Outsourcing",
+  //   description: " Routineaufgaben an externe Fachkräfte auslagern",
+  //   icon: <Monitor className="service_icon" />,
+  //   link: "/offerings/services/corporate-training",
+  // },
 ];
 
 export const PRODUCT: ServiceType[] = [
@@ -103,22 +111,22 @@ export const PRODUCT: ServiceType[] = [
 export const SERVICE_FULL_STACK: ServiceTechStackType[] = [
   {
     id: "fullstack-1",
-    title: "MERN Stack Development",
+    title: "Webentwicklung mit dem MERN-Stack",
     list: [
-      "MongoDB for flexible, JSON-like data storage",
-      "ExpressJs for robust backend framework",
-      "React for dynamic and responsive user interfaces",
-      "NodeJs for scalable server-side operations",
+      "Webentwicklung mit dem MERN-Stack",
+      "Express.js für robuste Backend-Lösungen",
+      "React für interaktive und flexible User Interfaces",
+      "Node.js für leistungsstarke und skalierbare Serverlösungen",
     ],
   },
   {
     id: "fullstack-2",
-    title: "MEAN Stack Development",
+    title: "Webentwicklung mit dem MEAN-Stack",
     list: [
-      "MongoDB for efficient database management",
-      "ExpressJs for streamlined backend development",
-      "Angular for powerful front-end applications",
-      "NodeJs for high-performance server environments",
+      "MongoDB für skalierbare und effektive Datenverwaltung",
+      "Express.js für optimiertes Backend-Framework",
+      "Angular für leistungsstarke Frontend-Anwendungen",
+      "Node.js für effiziente und skalierbare Serverarchitekturen",
     ],
   },
 ];
@@ -126,85 +134,85 @@ export const SERVICE_FULL_STACK: ServiceTechStackType[] = [
 export const SERVICE_FULL_STACK_DETAILS: ServiceTypeDetailsType[] = [
   {
     id: "full_stack_details_1",
-    heading: "Why choose MERN & MEAN Stack?",
-    content: `<p>Both MERN (MongoDB, Express.js, React, Node.js) and MEAN (MongoDB, Express.js, Angular, Node.js) are industry-leading stacks built for modern web application development:</p>
+    heading: "Warum MERN & MEAN? Entdecken Sie die Vorteile der Stacks",
+    content: `<p>Sowohl MERN (MongoDB, Express.js, React, Node.js) als auch MEAN (MongoDB, Express.js, Angular, Node.js) gehören zu den führenden Technologiestacks für die moderne Webentwicklung:</p>
       <ul>
-        <li>Full JavaScript Environment: Utilize a single language across the entire stack, streamlining development and reducing complexity.</li>
-        <li>Scalability: Built to handle growing and evolving applications with ease.</li>
-        <li>Cost-Effective: Open-source technologies reduce licensing costs and provide access to a vast ecosystem of tools and libraries.</li>
-        <li>Flexibility: Adaptable to various project requirements and easily customizable.</li>
-        <li>High Performance: Optimized for speed and efficiency in both front-end and back-end operations.</li>
+        <li><strong>Vollständige JavaScript-Umgebung:</strong> Eine einheitliche Sprache für den gesamten Stack, wodurch Entwicklung vereinfacht und Komplexität reduziert wird.</li>
+        <li><strong>Skalierbarkeit:</strong> Entwickelt, um wachsende und sich weiterentwickelnde Anwendungen mühelos zu unterstützen.</li>
+        <li><strong>Kosteneffizienz:</strong> Open-Source-Technologien reduzieren Lizenzkosten und bieten Zugang zu einem großen Ökosystem an Tools und Bibliotheken.</li>
+        <li><strong>Flexibilität:</strong> Anpassbar an unterschiedliche Projektanforderungen und leicht zu individualisieren.</li>
+        <li><strong>Hohe Performance:</strong> Optimiert für Geschwindigkeit und Effizienz – im Frontend wie im Backend.</li>
       <ul>
       `,
   },
   {
     id: "full_stack_details_2",
-    heading: "Why choose BharathaTechno for Web App Development?",
-    content: `<p>Expertise in Modern Technologies: Our team excels in MERN (MongoDB, ExpressJs, ReactJs, NodeJs) and MEAN (MongoDB, ExpressJs, Angular, NodeJs) stack development, ensuring your web application is built using the latest and most efficient technologies.</p>
+    heading: "Warum BharathaTechno für die Web-App-Entwicklung wählen?",
+    content: `<p><strong>Expertise in modernen Technologien:</strong> Unser Team ist spezialisiert auf MERN (MongoDB, Express.js, React.js, Node.js) und MEAN (MongoDB, Express.js, Angular, Node.js) und setzt Ihre Webanwendung mit den neuesten und effizientesten Technologien um.</p>
       <ul>
-        <li>Full-Stack JavaScript Environment: We utilize a single language across the entire stack, streamlining development and reducing complexity.</li>
-        <li>Customized Solutions: We understand that every project is unique. Our team works closely with you to grasp your vision and turn it into reality, delivering tailored solutions that align precisely with your business objectives.</li>
-        <li>Scalability Focus: We build applications that can grow with your business, handling increased traffic and data with ease.</li>
-        <li>Agile Development Process: Our iterative approach ensures transparency and allows for flexibility throughout the project, enabling you to provide feedback and stay involved in the development process.</li>
+        <li><strong>Full-Stack-JavaScript-Umgebung:</strong> Eine einheitliche Sprache über den gesamten Stack vereinfacht die Entwicklung und reduziert Komplexität.</li>
+        <li><strong>Individuelle Lösungen:</strong> Jedes Projekt ist einzigartig. Wir arbeiten eng mit Ihnen zusammen, um Ihre Vision zu verstehen und maßgeschneiderte Lösungen zu liefern, die exakt auf Ihre Geschäftsziele abgestimmt sind.</li>
+        <li><strong>Fokus auf Skalierbarkeit:</strong> Wir entwickeln Anwendungen, die mit Ihrem Unternehmen wachsen und steigenden Traffic sowie Datenmengen problemlos bewältigen.</li>
+        <li><strong>Agiler Entwicklungsprozess:</strong> Unser iterativer Ansatz sorgt für Transparenz und Flexibilität, ermöglicht regelmäßiges Feedback und bindet Sie aktiv in den Entwicklungsprozess ein.</li>
       <ul>
       `,
   },
   {
     id: "full_stack_details_3",
-    heading: "Why choose BharathaTechno for Mobile App Development?",
+    heading: "Warum BharathaTechno für die Mobile-App-Entwicklung wählen?",
     content: `<ul>
-        <li>Cross-Platform Expertise: We excel in developing apps for both iOS and Android platforms, ensuring your business reaches the widest possible audience.</li>
-        <li>React Native Proficiency: Our team leverages the power of React Native to build high-performance, native-like applications with a single codebase, reducing development time and costs.</li>
-        <li>Full-Stack Capabilities: With our MERN and MEAN stack expertise, we provide end-to-end solutions from backend development to front-end design.</li>
-        <li>User-Centric Design: Our UI/UX designers create intuitive and visually appealing interfaces that enhance user engagement and satisfaction.</li>
-        <li>Scalable Solutions: We build applications that can grow with your business, handling increased user loads and data with ease.</li>
-        <li>Agile Development Process: Our iterative approach ensures transparency and allows for flexibility throughout the project, enabling you to provide feedback and stay involved in the development process.</li>
+        <li><strong>Cross-Platform-Expertise:</strong> Wir entwickeln Apps sowohl für iOS als auch Android, sodass Ihr Unternehmen die größtmögliche Zielgruppe erreicht.</li>
+        <li><strong>React Native-Kompetenz:</strong> Unser Team nutzt die Vorteile von React Native, um leistungsstarke, native-ähnliche Anwendungen aus einer einzigen Codebasis zu erstellen - das spart Entwicklungszeit und Kosten.</li>
+        <li><strong>Full-Stack-Fähigkeiten:</strong> Mit unserer Expertise in MERN- und MEAN-Stacks bieten wir End-to-End-Lösungen - vom Backend bis zum Frontend-Design.</li>
+        <li><strong>Nutzerzentriertes Design:</strong> Unsere UI/UX-Designer entwickeln intuitive und ansprechende Benutzeroberflächen, die das Engagement und die Zufriedenheit der Nutzer steigern.</li>
+        <li><strong>Skalierbare Lösungen:</strong> Wir bauen Anwendungen, die mit Ihrem Unternehmen wachsen und problemlos steigende Nutzerzahlen und Datenmengen verarbeiten können.</li>
+        <li><strong>Agiler Entwicklungsprozess:</strong> Unser iterativer Ansatz sorgt für Transparenz und Flexibilität, ermöglicht regelmäßiges Feedback und bindet Sie aktiv in den Entwicklungsprozess ein.</li>
       <ul>
       `,
   },
   {
     id: "full_stack_details_4",
-    heading: "Our Full-stack development process",
+    heading: "Unser Full-Stack-Entwicklungsprozess",
     content: `<ul>
-        <li><strong>Discovery and Planning</strong>: We work closely with you to understand your project needs, target audience, and business goals.</li>
-        <li><strong>UI/UX Design</strong>: Our designers create wireframes and prototypes to visualize the product's flow and functionality.</li>
-        <li><strong>Development</strong>: We implement your solution using latest stack technologies such as React Native or native technologies, based on project requirements.</li>
-        <li><strong>Testing and Quality Assurance</strong>: Rigorous testing across multiple devices and operating systems ensures your product meets the highest quality standards.</li>
-        <li><strong>Deployment</strong>: We handle the submission process to your chosen platforms or app stores and ensure smooth deployment.</li>
-        <li><strong>Maintenance and Support</strong>: Ongoing support to keep your product up-to-date and performing optimally.</li>
+        <li><strong>Discovery und Planung</strong>: Wir arbeiten eng mit Ihnen zusammen, um die Anforderungen Ihres Projekts, die Zielgruppe und Ihre Geschäftsziele genau zu verstehen.</li>
+        <li><strong>UI/UX-Design</strong>: Unsere Designer erstellen Wireframes und Prototypen, um den Ablauf und die Funktionalität Ihres Produkts zu visualisieren.</li>
+        <li><strong>Entwicklung</strong>: Wir setzen Ihre Lösung mit den neuesten Technologien um, z. B. React Native oder nativen Technologien, je nach Projektanforderungen.</li>
+        <li><strong>Testing und Qualitätssicherung</strong>: Umfassende Tests auf verschiedenen Geräten und Betriebssystemen stellen sicher, dass Ihr Produkt den höchsten Qualitätsstandards entspricht.</li>
+        <li><strong>Deployment</strong>: Wir übernehmen den Einreichungsprozess für Ihre gewählte Plattform oder App-Stores und sorgen für einen reibungslosen Rollout.</li>
+        <li><strong>Wartung und Support</strong>: Kontinuierliche Unterstützung, damit Ihr Produkt stets aktuell bleibt und optimal funktioniert.</li>
       <ul>
       `,
   },
   {
     id: "full_stack_details_5",
-    heading: "Types of Web-application we excel in",
+    heading: "Webanwendungen, in denen wir Maßstäbe setzen",
     content: `<ul>
-        <li><strong>Single Page Applications (SPAs)</strong>: Leverage the power of React or Angular to create smooth, fast-loading single-page applications that enhance user experience.</li>
-        <li><strong>Progressive Web Apps (PWAs)</strong>: Develop web applications that offer a native app-like experience, complete with offline functionality and push notifications.</li>
-        <li><strong>E-commerce Platforms</strong>: Create feature-rich e-commerce solutions with robust backend management and intuitive user interfaces.</li>
-        <li><strong>Customer Relationship Management (CRM) Systems</strong>: Develop custom CRM platforms to streamline your business processes and enhance customer interactions.</li>
-        <li><strong>Enterprise Resource Planning (ERP) Systems</strong>: Build tailored ERP solutions that integrate various business processes and boost overall efficiency.</li>
-        <li><strong>Data Analytics Tools</strong>: Craft sophisticated data visualization and analysis tools to help you make informed business decisions.</li>
+        <li><strong>Single Page Applications (SPAs)</strong>: Nutzen Sie die Kraft von React oder Angular, um flüssige, schnell ladende Single-Page-Anwendungen zu erstellen, die das Nutzererlebnis verbessern.</li>
+        <li><strong>Progressive Web Apps (PWAs)</strong>: Entwickeln Sie Webanwendungen, die ein nativen App-ähnliches Erlebnis bieten, komplett mit Offline-Funktionalität und Push-Benachrichtigungen.</li>
+        <li><strong>E-Commerce-Plattformen</strong>: Erstellen Sie funktionsreiche E-Commerce-Lösungen mit robustem Backend-Management und intuitiven Benutzeroberflächen.</li>
+        <li><strong>Customer Relationship Management (CRM) Systeme</strong>: Entwickeln Sie maßgeschneiderte CRM-Plattformen zur Optimierung Ihrer Geschäftsprozesse und Verbesserung der Kundeninteraktionen.</li>
+        <li><strong>Enterprise Resource Planning (ERP) Systeme</strong>: Bauen Sie maßgeschneiderte ERP-Lösungen, die verschiedene Geschäftsprozesse integrieren und die Gesamteffizienz steigern.</li>
+        <li><strong>Datenanalyse-Tools</strong>: Erstellen Sie ausgeklügelte Datenvisualisierungs- und Analysetools, die Ihnen helfen, fundierte Geschäftsentscheidungen zu treffen.</li>
       <ul>
       `,
   },
   {
     id: "full_stack_details_6",
-    heading: "Types of  mobile application we excel in",
+    heading: "Mobile Anwendungen, in denen wir Maßstäbe setzen",
     content: `<ul>
-        <li><strong>E-commerce Apps</strong>: Create feature-rich shopping experiences for your customers.</li>
-        <li><strong>Social Networking Apps</strong>: Build engaging platforms for community interaction.</li>
-        <li><strong>Fitness and Health Apps</strong>: Develop apps that help users track their health and fitness goals.</li>
-        <li><strong>Enterprise Mobile Solutions</strong>: Create custom apps to streamline your business processes.</li>
-        <li><strong>Educational Apps</strong>: Develop interactive learning experiences for students of all ages.</li>
-        <li><strong>Entertainment and Gaming Apps</strong>: Create engaging and immersive mobile games and entertainment apps.</li>
+        <li><strong>E-Commerce-Apps</strong>: Schaffen Sie funktionsreiche Einkaufserlebnisse für Ihre Kunden.</li>
+        <li><strong>Soziale Netzwerk-Apps</strong>: Bauen Sie ansprechende Plattformen für die Interaktion in der Community.</li>
+        <li><strong>Fitness- und Gesundheits-Apps</strong>: Entwickeln Sie Apps, die Nutzern helfen, ihre Gesundheits- und Fitnessziele zu verfolgen.</li>
+        <li><strong>Unternehmenslösungen</strong>: Erstellen Sie maßgeschneiderte Apps zur Optimierung Ihrer Geschäftsprozesse.</li>
+        <li><strong>Bildungs-Apps</strong>: Entwickeln Sie interaktive Lernerfahrungen für Lernende jeden Alters.</li>
+        <li><strong>Unterhaltungs- und Gaming-Apps</strong>: Erstellen Sie fesselnde und immersive mobile Spiele und Unterhaltungs-Apps.</li>
       <ul>
       `,
   },
 ];
 
 export const SERVICE_FULL_STACK_FEATURES: ServiceFeaturesType = {
-  title: "Our sub-services",
+  title: "Unsere Zusatzservices",
   rows: [
     {
       id: "feature_row_1",
@@ -214,43 +222,43 @@ export const SERVICE_FULL_STACK_FEATURES: ServiceFeaturesType = {
           id: "feature_1",
           title: "Single Page Applications (SPAs)",
           description:
-            "Leverage the power of React or Angular to create smooth, fast-loading single-page applications that enhance user experience.",
+            "Nutzen Sie die Leistungsfähigkeit von React oder Angular, um flüssige, schnell ladende Single-Page-Anwendungen zu erstellen, die das Nutzererlebnis verbessern.",
         },
         {
           id: "feature_2",
           title: "RESTful API Development",
           description:
-            "Build secure and efficient APIs to connect your front-end with backend services seamlessly.",
+            "Erstellen Sie sichere und effiziente APIs, um Ihr Frontend nahtlos mit Backend-Diensten zu verbinden.",
         },
         {
           id: "feature_3",
           title: "Real-Time Application Development",
           description:
-            "Utilize the full potential of Node.js to create real-time applications like chat systems or live updates.",
+            "Nutzen Sie das volle Potenzial von Node.js, um Echtzeitanwendungen wie Chatsysteme oder Live-Updates zu erstellen.",
         },
         {
           id: "feature_4",
           title: "Custom Web App Development",
           description:
-            "We craft bespoke web applications tailored to your specific business requirements, ensuring scalability and performance.",
+            "Wir entwickeln maßgeschneiderte Webanwendungen, die genau auf Ihre spezifischen Geschäftsanforderungen zugeschnitten sind und Skalierbarkeit sowie Leistung gewährleisten.",
         },
         {
           id: "feature_5",
           title: "E-commerce Solutions",
           description:
-            "Develop feature-rich e-commerce platforms with robust backend management and intuitive user interfaces.",
+            "Entwickeln Sie funktionsreiche E-Commerce-Plattformen mit robuster Backend-Verwaltung und intuitiven Benutzeroberflächen.",
         },
         {
           id: "feature_6",
           title: "Enterprise Resource Planning (ERP) Systems",
           description:
-            "Create custom ERP solutions that streamline your business processes and boost productivity.",
+            "Erstellen Sie maßgeschneiderte ERP-Lösungen, die Ihre Geschäftsprozesse optimieren und die Produktivität steigern.",
         },
         {
           id: "feature_7",
           title: "Migration and Upgrade Services",
           description:
-            "Transition your existing applications to MERN or MEAN stack, unlocking improved performance and scalability.",
+            "Überführen Sie Ihre bestehenden Anwendungen auf den MERN- oder MEAN-Stack, um verbesserte Leistung und Skalierbarkeit zu erzielen.",
         },
       ],
     },
@@ -285,17 +293,17 @@ export const SERVICE_FULL_STACK_EXCEL: ServiceExcelType[] = [
   },
   {
     id: "excel_6",
-    title: "Database",
+    title: "Datenbanken",
     description: "MongoDB, MySQL, PostgreSQL, Firebase",
   },
   {
     id: "excel_7",
-    title: "Cloud Services",
+    title: "Cloud-Dienste",
     description: "AWS, Azure, Google, Cloud, DigitalOcen",
   },
   {
     id: "excel_8",
-    title: "Additional Tools",
+    title: "Weitere Tools",
     description: "Redux, GraphQL",
   },
 ];
@@ -305,12 +313,12 @@ export const SERVICE_CUSTOM_ERP: ServiceTechStackType[] = [
     id: "custom_erp_1",
     title: "",
     description:
-      "Our expert developers leverage a range of modern technologies to build robust and efficient ERP solutions:",
+      "Unsere erfahrenen Entwickler nutzen eine Reihe moderner Technologien, um robuste und effiziente ERP-Lösungen zu erstellen:",
     list: [
       "Frontend: React.js, Angular",
       "Backend: Node.js, Python",
-      "Databases: MongoDB, MySQL, PostgreSQL",
-      "Cloud Platforms: AWS, Azure, Google Cloud, DigitalOcean",
+      "Datenbanken: MongoDB, MySQL, PostgreSQL",
+      "Cloud-Plattformen: AWS, Azure, Google Cloud, DigitalOcean",
     ],
   },
 ];
@@ -318,47 +326,48 @@ export const SERVICE_CUSTOM_ERP: ServiceTechStackType[] = [
 export const SERVICE_CUSTOM_ERP_DETAILS: ServiceTypeDetailsType[] = [
   {
     id: "custom_erp_details_1",
-    heading: "Why Choose Custom ERP?",
+    heading: "Warum ein maßgeschneidertes ERP-System wählen?",
     content: `
       <ul>
-        <li>Tailored Functionality: Our custom ERP solutions are built to address your specific business requirements, ensuring you have exactly the features you need without unnecessary complexity.</li>
-        <li>Seamless Integration: We design your ERP system to integrate smoothly with your existing software ecosystem, enhancing data flow and operational coherence.</li>
-        <li>Scalability: As your business grows, your custom ERP grows with you. We build scalable solutions that can adapt to your evolving needs.</li>
-        <li>Enhanced Security: We implement robust security measures tailored to your industry standards and compliance requirements.</li>
-        <li>Cost-Effective in the Long Run: While initial investment may be higher, custom ERPs often prove more cost-effective over time due to their perfect fit with your operations.</li>
+        <li><strong>Individuelle Funktionalität:</strong> Unsere maßgeschneiderten ERP-Lösungen werden entwickelt, um Ihre spezifischen Geschäftsanforderungen zu erfüllen, sodass Sie genau die Funktionen erhalten, die Sie benötigen, ohne unnötige Komplexität.</li>
+        <li><strong>Nahtlose Integration:</strong> Wir gestalten Ihr ERP-System so, dass es sich reibungslos in Ihr bestehendes Software-Ökosystem integriert, um den Datenfluss und die betriebliche Kohärenz zu verbessern.</li>
+        <li><strong>Skalierbarkeit:</strong> Mit dem Wachstum Ihres Unternehmens wächst auch Ihr maßgeschneidertes ERP-System mit. Wir entwickeln skalierbare Lösungen, die sich an Ihre sich entwickelnden Bedürfnisse anpassen können.</li>
+        <li><strong>Erhöhte Sicherheit:</strong> Wir implementieren robuste Sicherheitsmaßnahmen, die auf Ihre branchenspezifischen Standards und Compliance-Anforderungen zugeschnitten sind.</li>
+        <li><strong>Langfristige Kosteneffizienz:</strong> Obwohl die anfängliche Investition höher sein kann, erweisen sich maßgeschneiderte ERP-Systeme aufgrund ihrer perfekten Anpassung an Ihre Betriebsabläufe langfristig oft als kosteneffizienter.</li>
       <ul>
       `,
   },
   {
     id: "custom_erp_details_2",
-    heading: "Why choose BharathaTechno for Your Custom ERP Solution?",
+    heading:
+      "Warum BharathaTechno für Ihre maßgeschneiderte ERP-Lösung wählen?",
     content: `
       <ul>
-        <li>Expertise: Our team has years of experience in developing custom ERP solutions across various industries.</li>
-        <li>Client-Centric Approach: We work closely with you at every stage to ensure the solution meets your exact needs.</li>
-        <li>Cutting-Edge Technology: We utilize the latest technologies to build future-proof ERP systems.</li>
-        <li>Ongoing Support: Our relationship doesn't end at deployment. We provide continuous support and updates.</li>
-        <li>Cost-Effective: We deliver high-quality solutions that provide excellent return on investment.</li>
+        <li><strong>Expertise:</strong> Unser Team verfügt über jahrelange Erfahrung in der Entwicklung maßgeschneiderter ERP-Lösungen in verschiedenen Branchen.</li>
+        <li><strong>Kundenorientierter Ansatz:</strong> Wir arbeiten eng mit Ihnen zusammen, um sicherzustellen, dass die Lösung Ihren genauen Bedürfnissen entspricht.</li>
+        <li><strong>Modernste Technologie:</strong> Wir nutzen die neuesten Technologien, um zukunftssichere ERP-Systeme zu entwickeln.</li>
+        <li><strong>Kontinuierliche Unterstützung:</strong> Unsere Partnerschaft endet nicht mit der Bereitstellung. Wir bieten kontinuierliche Unterstützung und Updates.</li>
+        <li><strong>Kosten-Effizienz:</strong> Wir liefern hochwertige Lösungen, die eine hervorragende Kapitalrendite bieten.</li>
       <ul>
       `,
   },
   {
     id: "custom_erp_details_3",
-    heading: "Our Custom ERP Development Process",
+    heading: "Unser Entwicklungsprozess für maßgeschneiderte ERP-Lösungen",
     content: `<ul>
-        <li>Business Analysis: We start by thoroughly understanding your business processes, challenges, and goals.</li>
-        <li>System Design: Our team creates a comprehensive system design that maps out all modules and functionalities.</li>
-        <li>Development: Using cutting-edge technologies, we build your custom ERP solution from the ground up.</li>
-        <li>Testing: Rigorous testing ensures your ERP system is bug-free and performs optimally.</li>
-        <li>Implementation: We carefully roll out your new ERP system, ensuring minimal disruption to your operations.</li>
-        <li>Training and Support: We provide comprehensive training to your team and offer ongoing support to ensure smooth adoption.</li>
+        <li><strong>Geschäftsanalyse:</strong> Wir beginnen mit einer gründlichen Analyse Ihrer Geschäftsprozesse, Herausforderungen und Ziele.</li>
+        <li><strong>Systemdesign:</strong> Unser Team erstellt ein umfassendes Systemdesign, das alle Module und Funktionen abbildet.</li>
+        <li><strong>Entwicklung:</strong> Mit modernsten Technologien entwickeln wir Ihre maßgeschneiderte ERP-Lösung von Grund auf.</li>
+        <li><strong>Testen:</strong> Umfassende Tests stellen sicher, dass Ihr ERP-System fehlerfrei ist und optimal funktioniert.</li>
+        <li><strong>Implementierung:</strong> Wir führen Ihr neues ERP-System sorgfältig ein, um minimale Störungen in Ihrem Betrieb zu gewährleisten.</li>
+        <li><strong>Schulung und Unterstützung:</strong> Wir bieten umfassende Schulungen für Ihr Team und kontinuierliche Unterstützung, um eine reibungslose Einführung sicherzustellen.</li>
       <ul>
       `,
   },
 ];
 
 export const SERVICE_CUSTOM_ERP_FEATURES: ServiceFeaturesType = {
-  title: "Key Features",
+  title: "Essenzielle Features",
   rows: [
     {
       id: "feature_row_1",
@@ -366,44 +375,45 @@ export const SERVICE_CUSTOM_ERP_FEATURES: ServiceFeaturesType = {
       list: [
         {
           id: "feature_1",
-          title: "Financial Management",
+          title: "Finanzmanagement",
           description:
-            "Streamline accounting processes, budgeting, and financial reporting.",
+            "Optimierung von Buchhaltungsprozessen, Budgetierung und Finanzberichterstattung.",
         },
         {
           id: "feature_2",
-          title: "Human Resources Management",
+          title: "Personalmanagement",
           description:
-            "Efficiently manage employee data, payroll, and performance evaluations.",
+            "Effiziente Verwaltung von Mitarbeiterdaten, Gehaltsabrechnung und Leistungsbeurteilungen.",
         },
         {
           id: "feature_3",
-          title: "Inventory Management",
+          title: "Bestandsverwaltung",
           description:
-            "Real-time tracking and optimization of inventory levels.",
+            "Echtzeitverfolgung und Optimierung der Bestandsniveaus.",
         },
         {
           id: "feature_4",
-          title: "Customer Relationship Management",
-          description: "Enhance customer interactions and sales processes.",
+          title: "Customer Relationship Management (CRM)",
+          description:
+            "Verbesserung der Kundeninteraktionen und Verkaufsprozesse.",
         },
         {
           id: "feature_5",
-          title: "Supply Chain Management",
+          title: "Lieferkettenmanagement",
           description:
-            "Optimize your supply chain for improved efficiency and cost savings.",
+            "Optimierung Ihrer Lieferkette für mehr Effizienz und Kosteneinsparungen.",
         },
         {
           id: "feature_6",
           title: "Business Intelligence",
           description:
-            "Gain actionable insights with advanced reporting and analytics tools.",
+            "Gewinnung umsetzbarer Einblicke durch fortschrittliche Reporting- und Analysetools.",
         },
         {
           id: "feature_7",
-          title: "Mobile Accessibility",
+          title: "Mobile Zugänglichkeit",
           description:
-            "Access your ERP system on-the-go with mobile-friendly interfaces.",
+            "Zugriff auf Ihr ERP-System unterwegs über mobile, benutzerfreundliche Schnittstellen.",
         },
       ],
     },
@@ -429,37 +439,37 @@ export const SERVICE_UI_UX_DESIGN: ServiceTechStackType[] = [
 export const SERVICE_UI_UX_DESIGN_DETAILS: ServiceTypeDetailsType[] = [
   {
     id: "ui_design_details_1",
-    heading: "Why choose BharathaTechno for UI/UX & Brand Design?",
+    heading: "Warum BharathaTechno für UI/UX- und Marken-Design wählen?",
     content: `
       <ul>
-        <li>People-First Design: We keep your users front and center. Every pixel, every interaction is designed to be intuitive, seamless, and satisfying.</li>
-        <li>Aligned with Your Brand: We don't just design screens, we shape brand experiences. Your visual identity, tone, and values are woven into every element to ensure consistency and emotional resonance.</li>
-        <li>Strategic and Research-Backed-From competitor research to user testing, our design choices are guided by insight, not guesswork — resulting in solutions that actually work for your users.</li>
-        <li>Cross-Platform Excellence-Whether on desktop, mobile, or tablet, your users get a consistent and delightful experience across all devices.</li>
-        <li>Design that Supports Development-With seamless collaboration between our design and development teams (especially on MERN and MEAN stack projects), we create scalable designs that translate into high-performance digital products.</li>
+        <li><strong>Nutzerzentriertes Design:</strong> Wir stellen Ihre Nutzer in den Mittelpunkt. Jeder Pixel, jede Interaktion ist darauf ausgelegt, intuitiv, nahtlos und zufriedenstellend zu sein.</li>
+        <li><strong>Markenkohärenz:</strong> Wir gestalten nicht nur Bildschirme, sondern prägen Markenerlebnisse. Ihre visuelle Identität, Tonalität und Werte fließen in jedes Element ein, um Konsistenz und emotionale Resonanz zu gewährleisten.</li>
+        <li><strong>Strategisch und forschungsbasiert:</strong> Von Wettbewerbsanalysen bis hin zu Nutzer-Tests – unsere Designentscheidungen basieren auf Erkenntnissen, nicht auf Vermutungen. Das Ergebnis sind Lösungen, die tatsächlich für Ihre Nutzer funktionieren.</li>
+        <li><strong>Plattformübergreifende Exzellenz:</strong> Ob auf Desktop, Mobilgerät oder Tablet – Ihre Nutzer erhalten ein konsistentes und erfreuliches Erlebnis auf allen Geräten.</li>
+        <li><strong>Design, das die Entwicklung unterstützt:</strong> Durch nahtlose Zusammenarbeit zwischen unseren Design- und Entwicklungsteams (insbesondere bei MERN- und MEAN-Stack-Projekten) schaffen wir skalierbare Designs, die in leistungsstarke digitale Produkte umgesetzt werden.</li>
       <ul>
       `,
   },
   {
     id: "ui_design_details_2",
-    heading: "Our Human-Centered Design Process",
+    heading: "Unser nutzerzentrierter Designprozess",
     content: `
       <ul>
-        <li>Discovery - We listen. To your goals, users, competitors, and vision.</li>
-        <li>User Research - Empathy meets data: understanding how real users think and behave.</li>
-        <li>Information Architecture - Structuring your product or site for clarity and ease of use.</li>
-        <li>Wireframes - Laying out the foundation with thoughtful, low-fidelity designs.</li>
-        <li>Prototypes - Testing ideas with interactive mockups before writing a line of code.</li>
-        <li>Visual Design - Bringing the brand and UI to life with attention to detail and emotional impact.</li>
-        <li>User Testing - Gathering feedback and making refinements based on real behavior.</li>
-        <li>Delivery & Handoff - Clean files, proper documentation, and support for developers</li>
+        <li><strong>Entdeckung</strong> - Wir hören zu – Ihren Zielen, Nutzern, Wettbewerbern und Ihrer Vision.</li>
+        <li><strong>Nutzerforschung</strong> - Empathie trifft auf Daten: Verständnis dafür, wie echte Nutzer denken und sich verhalten.</li>
+        <li><strong>Informationsarchitektur</strong> - Strukturierung Ihres Produkts oder Ihrer Website für Klarheit und Benutzerfreundlichkeit.</li>
+        <li><strong>Wireframes</strong> - Grundlagen mit durchdachten, niedrigauflösenden Designs legen.</li>
+        <li><strong>Prototypen</strong> - Ideen mit interaktiven Mockups testen, bevor ein Code geschrieben wird.</li>
+        <li><strong>Visuelles Design</strong> - Marke und UI mit Liebe zum Detail und emotionaler Wirkung zum Leben erwecken.</li>
+        <li><strong>Nutzertests</strong> - Feedback sammeln und Verfeinerungen basierend auf realem Verhalten vornehmen.</li>
+        <li><strong>Übergabe & Lieferung</strong> - Saubere Dateien, ordnungsgemäße Dokumentation und Unterstützung für Entwickler</li>
       <ul>
       `,
   },
 ];
 
 export const SERVICE_UI_UX_DESIGN_FEATURES: ServiceFeaturesType = {
-  title: "Our sub-services",
+  title: "Unsere Zusatzservices",
   rows: [
     {
       id: "feature_row_1",
@@ -467,45 +477,45 @@ export const SERVICE_UI_UX_DESIGN_FEATURES: ServiceFeaturesType = {
       list: [
         {
           id: "feature_1",
-          title: "UI/UX Design",
+          title: "UI/UX-Design",
           description:
-            "Designing digital products that are visually appealing, user-friendly & intuitive.",
+            "Gestaltung digitaler Produkte, die visuell ansprechend, benutzerfreundlich und intuitiv sind.",
         },
         {
           id: "feature_2",
-          title: "Web Design",
+          title: "Web-Design",
           description:
-            "Designing & building, functional, responsive, &  visually appealing website.",
+            "Gestaltung und Entwicklung funktionaler, responsiver und visuell ansprechender Websites.",
         },
         {
           id: "feature_3",
-          title: "Mobile App Design",
+          title: "Mobile App-Design",
           description:
-            "Sleek, functional interfaces that make your apps easy and enjoyable to use.",
+            "Elegante, funktionale Benutzeroberflächen, die Ihre Apps einfach und angenehm zu nutzen machen.",
         },
         {
           id: "feature_4",
           title: "Dashboard & SaaS",
           description:
-            "Complex data, made simple. We turn dashboards into decision-making tools.",
+            "Komplexe Daten, einfach gemacht. Wir verwandeln Dashboards in Entscheidungshilfen.",
         },
         {
           id: "feature_5",
-          title: "E-commerce UI/UX",
+          title: "E-Commerce UI/UX",
           description:
-            "Optimized for purchases, with clear navigation and a shopper-friendly experience.",
+            "Optimiert für Käufe, mit klarer Navigation und einem kaufreundlichen Erlebnis.",
         },
         {
           id: "feature_6",
           title: "Branding & Visuals",
           description:
-            "Strong visual identity for your brand like logos, brand book, stationeries, & recognizability.",
+            "Starke visuelle Identität für Ihre Marke wie Logos, Brand Book, Geschäftspapiere und Wiedererkennbarkeit.",
         },
         {
           id: "feature_7",
-          title: "Decks & Presentations",
+          title: "Decks & Präsentationen",
           description:
-            "Clean, branded designs that help you tell your business story with clarity and impact.",
+            "Saubere, gebrandete Designs, die Ihnen helfen, Ihre Geschäftsgeschichte klar und wirkungsvoll zu erzählen.",
         },
       ],
     },
@@ -592,7 +602,7 @@ export const SERVICE_DIGITAL_MARKETING_DETAILS: ServiceTypeDetailsType[] = [
 ];
 
 export const SERVICE_DIGITAL_MARKETING_FEATURES: ServiceFeaturesType = {
-  title: "Core Deliverables",
+  title: "Unsere Zusatzservices",
   rows: [
     {
       id: "feature_row_1",
@@ -600,33 +610,33 @@ export const SERVICE_DIGITAL_MARKETING_FEATURES: ServiceFeaturesType = {
       list: [
         {
           id: "feature_1",
-          title: " ICP Research & Data Enrichment",
+          title: "ICP-Forschung & Datenanreicherung",
           description:
-            "Enrich and verify high-intent leads by targeting your ideal customers with precision.",
+            "Bereichern und verifizieren Sie hochintensive Leads, indem Sie Ihre idealen Kunden mit Präzision ansprechen.",
         },
         {
           id: "feature_2",
-          title: "Multi-Touch Personalized Outreach",
+          title: "Mehrstufiger personalisierter Outreach",
           description:
-            "Run personalized, sequenced campaigns across email and LinkedIn to spark real, context-rich conversations—not spam.",
+            "Führen Sie personalisierte, sequenzierte Kampagnen über E-Mail und LinkedIn durch, um echte, kontextreiche Gespräche zu initiieren - keine Spam-Nachrichten.",
         },
         {
           id: "feature_3",
-          title: "Appointment Setting",
+          title: "Terminvereinbarung",
           description:
-            "Handle end-to-end outreach—from messaging and follow-ups to scheduling—so your team only joins pre-warmed, sales-ready meetings.",
+            "Wir übernehmen den gesamten Outreach-Prozess - von der Nachrichtenübermittlung und Nachverfolgung bis hin zur Terminplanung -, sodass Ihr Team nur an vorab erwärmten, verkaufsbereiten Meetings teilnimmt.",
         },
         {
           id: "feature_4",
-          title: "Performance Tracking & Optimization",
+          title: "Leistungsüberwachung & Optimierung",
           description:
-            "Track delivery, engagement, and conversions to continuously optimize outreach with a data-driven approach.",
+            "Verfolgen Sie Zustellung, Engagement und Konversionen, um den Outreach kontinuierlich mit einem datengestützten Ansatz zu optimieren.",
         },
         {
-          id: "feature_",
-          title: "Add-On: Social Media Support",
+          id: "feature_5",
+          title: "Zusatzoption: Social Media Support",
           description:
-            "Reinforce your brand with add-on social media management and ads—bundled with our outreach to support pipeline growth.",
+            "Stärken Sie Ihre Marke mit zusätzlichem Social Media Management und Werbung - gebündelt mit unserem Outreach zur Unterstützung des Pipeline-Wachstums.",
         },
       ],
     },
@@ -638,14 +648,14 @@ export const SERVICE_CLOUD_INFRASTRCUTRE: ServiceTechStackType[] = [
     id: "cloudinfrastructure-1",
     title: "",
     description:
-      "Our team utilizes a range of modern tools and technologies to deliver top-notch cloud infrastructure management services:",
+      "Unser Team nutzt eine Reihe moderner Tools und Technologien, um erstklassige CloudInfrastrukturmanagement-Dienste zu liefern:",
     list: [
       "AWS (Amazon Web Services)",
       "Microsoft Azure",
       "Google Cloud Platform",
-      "Kubernetes for container orchestration",
-      "Terraform for infrastructure as code",
-      "Ansible for configuration management",
+      "Kubernetes für Container-Orchestrierung",
+      "Terraform für Infrastructure als Code",
+      "Ansible für Konfigurationsmanagement",
     ],
   },
 ];
@@ -653,122 +663,122 @@ export const SERVICE_CLOUD_INFRASTRCUTRE: ServiceTechStackType[] = [
 export const SERVICE_CLOUD_INFRASTRCUTRE_DETAILS: ServiceTypeDetailsType[] = [
   {
     id: "cloud_infrastructure_details_1",
-    heading: "Why choose BharathaTechno for Cloud Infrastructure Management?",
+    heading: "Warum BharathaTechno für Cloud-Infrastrukturmanagement wählen?",
     content: `
       <ul>
-        <li>Expertise in Leading Cloud Platforms: We have extensive experience with major cloud service providers such as AWS, Azure, and Google Cloud, DigitalOcean ensuring that we can tailor solutions to meet your specific needs.</li>
-        <li>Scalability and Flexibility: Our cloud solutions are designed to scale seamlessly with your business, allowing you to adjust resources as needed without disruption.</li>
-        <li>Enhanced Security: We implement industry-leading security practices to protect your data and applications from threats, ensuring compliance with relevant regulations.</li>
-        <li>Cost Efficiency: By optimizing resource allocation and leveraging cloud-native tools, we help you reduce operational costs while maintaining high performance.</li>
-        <li>24/7 Support and Monitoring: Our team provides round-the-clock monitoring and support to ensure your cloud infrastructure always remains operational and efficient.</li>
+        <li>Expertise in führenden Cloud-Plattformen: Wir verfügen über umfangreiche Erfahrung mit großen Cloud-Service-Anbietern wie AWS, Azure und Google Cloud, um maßgeschneiderte Lösungen für Ihre spezifischen Bedürfnisse zu entwickeln.</li>
+        <li>Skalierbarkeit und Flexibilität: Unsere Cloud-Lösungen sind so konzipiert, dass sie nahtlos mit Ihrem Unternehmen skalieren, sodass Sie Ressourcen bei Bedarf ohne Unterbrechung anpassen können.</li>
+        <li>Erhöhte Sicherheit: Wir implementieren branchenführende Sicherheitspraktiken, um Ihre Daten und Anwendungen vor Bedrohungen zu schützen und die Einhaltung relevanter Vorschriften zu gewährleisten.</li>
+        <li>Kosteneffizienz: Durch die Optimierung der Ressourcenzuweisung und den Einsatz cloud-nativer Tools helfen wir Ihnen, Betriebskosten zu senken und gleichzeitig eine hohe Leistung aufrechtzuerhalten.</li>
+        <li>24/7 Support und Überwachung: Unser Team bietet rund um die Uhr Überwachung und Unterstützung, um sicherzustellen, dass Ihre Cloud-Infrastruktur stets betriebsbereit und effizient bleibt.</li>
       <ul>
       `,
   },
   {
     id: "cloud_infrastructure_details_2",
-    heading: "Why cloud Infrastructure Matters for Your Business",
+    heading: "Warum ist Cloud-Infrastruktur für Ihr Unternehmen wichtig?",
     content: `
       <ul>
-        <li>Increased Agility: Quickly adapt to changing business needs with scalable cloud resources.</li>
-        <li>Enhanced Collaboration: Enable remote workforces with secure access to applications and data from anywhere.</li>
-        <li>Cost Savings: Reduce capital expenditure by shifting to a pay-as-you-go model.</li>
-        <li>Business Continuity: Ensure uninterrupted operations with robust disaster recovery solutions.</li>
-        <li>Innovation Enablement: Leverage cutting-edge technologies like AI/ML services available on cloud platforms.</li>
+        <li>Erhöhte Agilität: Passen Sie sich schnell an sich ändernde Geschäftsanforderungen mit skalierbaren Cloud-Ressourcen an.</li>
+        <li>Verbesserte Zusammenarbeit: Ermöglichen Sie Remote-Arbeitskräften sicheren Zugriff auf Anwendungen und Daten von überall.</li>
+        <li>Kosteneinsparungen: Reduzieren Sie Investitionsausgaben, indem Sie zu einem Pay-as-you-go-Modell wechseln.</li>
+        <li>Geschäftskontinuität: Stellen Sie unterbrechungsfreie Betriebsabläufe mit robusten Disaster-Recovery-Lösungen sicher.</li>
+        <li>Förderung von Innovationen: Nutzen Sie fortschrittliche Technologien wie KI/ML-Dienste, die auf Cloud-Plattformen verfügbar sind.</li>
       <ul>
       `,
   },
 ];
 
 export const SERVICE_CLOUD_INFRASTRCUTRE_FEATURES: ServiceFeaturesType = {
-  title: "Our Cloud Infrastructure Management Services",
+  title: "Unsere Cloud-Infrastrukturmanagement-Dienste",
   rows: [
     {
       id: "feature_row_1",
-      title: "Cloud Strategy and Consulting",
+      title: "Cloud-Strategie und Beratung",
       list: [
         {
           id: "feature_1",
-          title: "Assessment and Planning",
+          title: "Bewertung und Planung",
           description:
-            "Evaluate your current IT infrastructure and develop a tailored cloud strategy that aligns with your business goals.",
+            "Bewerten Sie Ihre aktuelle ITInfrastruktur und entwickeln Sie eine maßgeschneiderte CloudStrategie, die mit Ihren Geschäftszielen übereinstimmt.",
         },
         {
           id: "feature_2",
-          title: "Migration Planning",
+          title: "Migrationsplanung",
           description:
-            "Design a seamless migration path to move your applications and data to the cloud with minimal downtime.",
+            "Sie einen nahtlosen Migrationspfad, um Ihre Anwendungen und Daten mit minimaler Ausfallzeit in die Cloud zu verlagern.",
         },
       ],
     },
     {
       id: "feature_row_2",
-      title: "Cloud Deployment and Migration",
+      title: "Cloud-Bereitstellung und Migration",
       list: [
         {
           id: "feature_1",
-          title: "Infrastructure Setup",
+          title: "Infrastrukturaufbau",
           description:
-            "Set up virtual networks, storage solutions, and compute resources tailored to your needs.",
+            "Richten Sie virtuelle Netzwerke, Speicherlösungen uup Rechenressourcen entsprechend Ihren Bedürfnissen ein.",
         },
         {
           id: "feature_2",
-          title: "Data Migration",
+          title: "Datenmigration",
           description:
-            "Safely transfer your data to the cloud while ensuring integrity and security.",
+            "Übertragen Sie Ihre Daten sicher in die Cloud und gewährleisten Sie Integrität und Sicherheit.",
         },
         {
           id: "feature_3",
-          title: "Application Migration",
+          title: "Anwendungs-Migration",
           description:
-            "Re-host or refactor applications for optimal performance in the cloud environment.",
+            "Setzen Sie Anwendungen neu auf oder passen Sie sie an, um optimale Leistung in der CloudUmgebung zu erzielen.",
         },
       ],
     },
     {
       id: "feature_row_3",
-      title: "Cloud Optimization",
+      title: "Cloud-Optimierung",
       list: [
         {
           id: "feature_1",
-          title: "Resource Management",
+          title: "Ressourcenmanagement",
           description:
-            "Optimize resource allocation to improve efficiency and reduce costs.",
+            "Optimieren Sie die Ressourcenzuweisung, um die Effizienz zu verbessern und Kosten zu senken.",
         },
         {
           id: "feature_2",
-          title: "Performance Tuning",
+          title: "Leistungsoptimierung",
           description:
-            "Continuously monitor & adjust configurations to enhance application performance.",
+            "Überwachen und passen Sie Konfigurationen kontinuierlich an, um die Anwendungsleistung zu steigern.",
         },
         {
           id: "feature_3",
-          title: "Cost Management",
+          title: "Kostenmanagement",
           description:
-            "Implement cost-control measures such as auto-scaling and reserved instances.",
+            "Implementieren Sie Kostenkontrollmaßnahmen wie Auto-Scaling und reservierte Instanzen.",
         },
       ],
     },
     {
       id: "feature_row_4",
-      title: "Security and Compliance",
+      title: "Sicherheit und Compliance",
       list: [
         {
           id: "feature_1",
-          title: "Security Architecture Design",
+          title: "Sicherheitsarchitektur-Design",
           description:
-            "Develop a robust security framework tailored to your industry requirements.",
+            "Entwickeln Sie ein robustes Sicherheitsframework, das auf Ihre branchenspezifischen Anforderungen zugeschnitten ist.",
         },
         {
           id: "feature_2",
-          title: "Compliance Management",
+          title: "Compliance-Management",
           description:
-            "Ensure adherence to industry standards such as GDPR, HIPAA, or PCI-DSS.",
+            "Stellen Sie die Einhaltung von Industriestandards wie GDPR, HIPAA oder PCI-DSS sicher.",
         },
         {
           id: "feature_3",
-          title: "Threat Detection and Response",
+          title: "Bedrohungserkennung und - reaktion:",
           description:
-            "Implement advanced monitoring tools for real-time threat detection and response.",
+            "Setzen Sie fortschrittliche Überwachungstools für die Echtzeit-Bedrohungserkennung und -reaktion ein.",
         },
       ],
     },
@@ -778,21 +788,21 @@ export const SERVICE_CLOUD_INFRASTRCUTRE_FEATURES: ServiceFeaturesType = {
       list: [
         {
           id: "feature_1",
-          title: "Monitoring and Reporting",
+          title: "Überwachung und Reporting",
           description:
-            "Provide continuous monitoring of cloud resources with detailed performance reports.",
+            "Wir bieten Sie kontinuierliche Überwachung von CloudRessourcen mit detaillierten Leistungsberichten.",
         },
         {
           id: "feature_2",
-          title: "Backup & Data Recovery",
+          title: "Backup und Datenwiederherstellung",
           description:
-            "Implement reliable backup solutions & disaster recovery plans to protect against data loss.",
+            "Implementieren Sie zuverlässige Backup-Lösungen und Disaster-Recovery-Pläne zum Schutz vor Datenverlust.",
         },
         {
           id: "feature_3",
-          title: "Technical Support",
+          title: "Technischer Support",
           description:
-            "Offer 24/7 support for troubleshooting issues and optimizing cloud operations.",
+            "Wir bieten 24/7 Unterstützung bei der Fehlerbehebung unp Optimierung von CloudOperationen.",
         },
       ],
     },
@@ -802,22 +812,22 @@ export const SERVICE_CLOUD_INFRASTRCUTRE_FEATURES: ServiceFeaturesType = {
 export const SERVICE_STAFF_AGUMENTATION: ServiceTechStackType[] = [
   {
     id: "staffaugmentation-1",
-    title: "MERN Stack Development",
+    title: "MERN Stack Entwicklung",
     list: [
-      "MongoDB for flexible data storage",
-      "Express.js for efficient backend development",
-      "React.js for dynamic user interfaces",
-      "Node.js for scalable server-side applications",
+      "MongoDB für flexible Datenspeicherung",
+      "Express.js für effiziente Backend-Entwicklung",
+      "React.js für dynamische Benutzeroberflächen",
+      "Node.js für skalierbare serverseitige Anwendungen",
     ],
   },
   {
     id: "fullstack-2",
-    title: "MEAN Stack Development",
+    title: "MEAN Stack Entwicklung",
     list: [
-      "MongoDB for efficient database management",
-      "Express.js for streamlined server-side logic",
-      "Angular.js for powerful front-end applications",
-      "Node.js for high-performance backend processes",
+      "MongoDB für effizientes Datenbankmanagement",
+      "Express.js für optimierte serverseitige Logik",
+      "Angular.js für leistungsstarke Front-End-Anwendungen",
+      "Node.js für leistungsstarke Backend-Prozesse",
     ],
   },
 ];
@@ -825,34 +835,34 @@ export const SERVICE_STAFF_AGUMENTATION: ServiceTechStackType[] = [
 export const SERVICE_STAFF_AGUMENTATION_DETAILS: ServiceTypeDetailsType[] = [
   {
     id: "staff_augmentation_details_1",
-    heading: "Why choose BharathaTechno for Staff Augmentation?",
+    heading: "Warum BharathaTechno für Personalaufstockung wählen?",
     content: `
       <ul>
-        <li>Access to Top Talent: We provide access to a pool of highly skilled developers proficient in MERN (MongoDB, Express.js, React.js, Node.js) and MEAN (MongoDB, Express.js, Angular.js, Node.js) stacks.</li>
-        <li>Flexibility and Scalability: Our staff augmentation services allow you to quickly scale your team up or down based on project demands without the long-term commitment of hiring full-time employees.</li>
-        <li>Cost-Effective Solutions: Reduce overhead costs associated with recruitment, training, and benefits while gaining immediate access to experienced professionals.</li>
-        <li>Seamless Integration: Our developers integrate smoothly with your existing team, working collaboratively to ensure project success.</li>
-        <li>Focus on Core Business: By augmenting your staff with our experts, you can focus on strategic business initiatives while we handle technical execution.</li>
+        <li>Zugang zu Top-Talenten: Wir bieten Zugang zu einem Pool hochqualifizierter Entwickler, die in MERN (MongoDB, Express.js, React.js, Node.js) und MEAN (MongoDB, Express.js, Angular.js, Node.js) Stacks versiert sind.</li>
+        <li>Flexibilität und Skalierbarkeit: Unsere Personalaufstockungsdienste ermöglichen es Ihnen, Ihr Team basierend auf Projektanforderungen schnell zu vergrößern oder zu verkleinern, ohne die langfristige Verpflichtung, Vollzeitmitarbeiter einzustellen.</li>
+        <li>Kosteneffektive Lösungen: Reduzieren Sie die mit Rekrutierung, Schulung und Leistungen verbundenen Gemeinkosten und erhalten Sie sofortigen Zugang zu erfahrenen Fachkräften.</li>
+        <li>Nahtlose Integration: Unsere Entwickler integrieren sich reibungslos in Ihr bestehendes Team und arbeiten kollaborativ, um Projekterfolg sicherzustellen.</li>
+        <li>Fokus auf das Kerngeschäft: Durch die Aufstockung Ihres Personals mit unseren Experten können Sie sich auf strategische Geschäftsinitiativen konzentrieren, während wir die technische Umsetzung übernehmen.</li>
       <ul>
       `,
   },
   {
     id: "staff_augmentation_details_2",
-    heading: "Our Staff Augmentation Process",
+    heading: "Unser Personalaufstockungs-Prozess",
     content: `
       <ul>
-        <li>Needs Assessment: We work closely with you to understand your specific project requirements and team dynamics.</li>
-        <li>Talent Matching: We identify and provide developers whose skills and experience align perfectly with your needs.</li>
-        <li>Onboarding: Our developers quickly integrated into your team, familiarizing themselves with your processes and tools.</li>
-        <li>Ongoing Support: We provide continuous support to ensure seamless collaboration and address any challenges that arise.</li>
-        <li>Performance Monitoring: Regular check-ins and performance reviews ensure that our developers meet your expectations and contribute effectively to your projects.</li>
+        <li>Bedarfsanalyse: Wir arbeiten eng mit Ihnen zusammen, um Ihre spezifischen Projektanforderungen und Teamdynamiken zu verstehen.</li>
+        <li>Talentabgleich: Wir identifizieren und stellen Entwickler bereit, deren Fähigkeiten und Erfahrungen perfekt mit Ihren Bedürfnissen übereinstimmen.</li>
+        <li>Onboarding: Unsere Entwickler integrieren sich schnell in Ihr Team und machen sich mit Ihren Prozessen und Tools vertraut.</li>
+        <li>Laufende Unterstützung: Wir bieten kontinuierliche Unterstützung, um eine nahtlose Zusammenarbeit sicherzustellen und auftretende Herausforderungen zu adressieren.</li>
+        <li>Leistungsüberwachung: Regelmäßige Überprüfungen und Leistungsbewertungen gewährleisten, dass unsere Entwickler Ihre Erwartungen erfüllen und effektiv zu Ihren Projekten beitragen.</li>
       <ul>
       `,
   },
 ];
 
 export const SERVICE_STAFF_AGUMENTATION_FEATURES: ServiceFeaturesType = {
-  title: "Why Staff Augmentation Matters for Your Business",
+  title: "Warum Personalaufstockung für Ihr Unternehmen wichtig ist",
   rows: [
     {
       id: "feature_row_1",
@@ -860,33 +870,33 @@ export const SERVICE_STAFF_AGUMENTATION_FEATURES: ServiceFeaturesType = {
       list: [
         {
           id: "feature_1",
-          title: "Accelerated Project Timelines",
+          title: "Beschleunigte Projektzeitpläne",
           description:
-            "Quickly bring additional expertise to meet tight deadlines.",
+            "Bringen Sie schnell zusätzliche Expertise ein, um enge Fristen einzuhalten.",
         },
         {
           id: "feature_2",
-          title: "Enhanced Flexibility",
+          title: "Erhöhte Flexibilität",
           description:
-            "Adapt easily to changing project scopes or business needs.",
+            "Passen Sie sich leicht an sich ändernde Projektumfänge oder Geschäftsbedürfnisse an.",
         },
         {
           id: "feature_3",
-          title: "Risk Mitigation",
+          title: "Risikominderung",
           description:
-            "Reduce the risks associated with hiring full-time employees during uncertain times.",
+            "Reduzieren Sie die Risiken im Zusammenhang mit der Einstellung von Vollzeitmitarbeitern in unsicheren Zeiten.",
         },
         {
           id: "feature_4",
-          title: "Access to Specialized Skills",
+          title: "Zugang zu spezialisierten Fähigkeiten",
           description:
-            "Gain expertise in specific technologies without the need for extensive training.",
+            "Erhalten Sie Fachwissen in spezifischen Technologien, ohne umfangreiche Schulungen durchführen zu müssen.",
         },
         {
           id: "feature_5",
-          title: "Increased Productivity",
+          title: "Steigerung der Produktivität",
           description:
-            "Boost your team's productivity by adding experienced professionals who can hit the ground running.",
+            "Erhöhen Sie die Produktivität Ihres Teams, indem Sie erfahrene Fachleute hinzufügen, die sofort einsatzbereit sind.",
         },
       ],
     },
@@ -943,7 +953,7 @@ export const SERVICE_CORPORATE_TRAINING_DETAILS: ServiceTypeDetailsType[] = [
 ];
 
 export const SERVICE_CORPORATE_TRAINING_FEATURES: ServiceFeaturesType = {
-  title: "Benefits of Corporate Training",
+  title: "Vorteile von Unternehmensschulungen",
   rows: [
     {
       id: "feature_row_1",
@@ -951,33 +961,33 @@ export const SERVICE_CORPORATE_TRAINING_FEATURES: ServiceFeaturesType = {
       list: [
         {
           id: "feature_1",
-          title: "Enhanced Team Productivity",
+          title: "Steigerung der Teamproduktivität",
           description:
-            "Equip your team with the latest skills to improve efficiency and output.",
+            "Statten Sie Ihr Team mit den neuesten Fähigkeiten aus, um Effizienz und Output zu verbessern.",
         },
         {
           id: "feature_2",
-          title: "Increased Employee Satisfaction",
+          title: "Erhöhte Mitarbeiterzufriedenheit",
           description:
-            "Investing in employee development leads to higher job satisfaction and retention rates.",
+            "Investitionen in die Mitarbeiterentwicklung führen zu höherer Arbeitszufriedenheit und Bindungsraten.",
         },
         {
           id: "feature_3",
-          title: "Competitive Advantage",
+          title: "Wettbewerbsvorteil",
           description:
-            "Stay ahead of industry trends by empowering your team with cutting-edge technology skills.",
+            "Bleiben Sie durch die Befähigung Ihres Teams mit modernen Technologiefähigkeiten der Branche einen Schritt voraus.",
         },
         {
           id: "feature_4",
-          title: "Improved Project Outcomes",
+          title: "Verbesserte Projektergebnisse",
           description:
-            "Better-trained teams deliver higher quality projects on time and within budget.",
+            "Besser ausgebildete Teams liefern qualitativ hochwertigere Projekte pünktlich und im Budgetrahmen.",
         },
         {
           id: "feature_5",
-          title: "Fostering Innovation",
+          title: "Förderung von Innovation",
           description:
-            "Encourage a culture of continuous learning and innovation within your organization.",
+            "Ermutigen Sie eine Kultur des kontinuierlichen Lernens und der Innovation innerhalb Ihrer Organisation.",
         },
       ],
     },
@@ -1185,7 +1195,7 @@ export const PRODUCT_BFIT: ServiceFeaturesType = {
       id: "feature_row_1",
       title: "",
       description:
-        "This stack allows the platform to load fast, scale with demand, and handle secure user data across devices.",
+        "Dieser Technologie-Stack ermöglicht es der Plattform, schnell zu laden, flexibel mit steigender Nachfrage zu skalieren und sichere Benutzerdaten geräteübergreifend zu verwalten.",
       list: [
         {
           id: "fullstack-1",
@@ -1220,32 +1230,32 @@ export const PRODUCT_BFIT: ServiceFeaturesType = {
 export const PRODUCT_BFIT_EXCEL: ServiceExcelType[] = [
   {
     id: "excel_1",
-    title: "Increased Client Sign-ups",
+    title: "Mehr Registrierungen von Kund:innen",
     description: "",
   },
   {
     id: "excel_2",
-    title: "Improved Revenue",
+    title: "Gesteigerter Umsatz",
     description: "",
   },
   {
     id: "excel_3",
-    title: "Time Optimization",
+    title: "Zeiteinsparung",
     description: "",
   },
   {
     id: "excel_4",
-    title: "Enhanced User Experience",
+    title: "Optimierte User Experience",
     description: "",
   },
   {
     id: "excel_5",
-    title: "Scalable Business",
+    title: "Skalierbares Geschäftsmodell",
     description: "",
   },
   {
     id: "excel_6",
-    title: "Happy Clients",
+    title: "Gesteigerte Kundenzufriedenheit",
     description: "",
   },
 ];
@@ -1254,11 +1264,11 @@ export const BFIT_CASE_STUDY: ProductCaseStudy = {
   title: "Shred-n-Shape",
   client: "Shred-n-Shape",
   industry: "Fitness & Wellness",
-  use: "Selling workout programs and diet plans through a branded online platform using fitness software tailored to their needs.",
+  use: " Verkauf von Trainings- und Ernährungsprogrammen über eine gebrandete Online-Plattform, unterstützt durch eine auf die Bedürfnisse der Trainer:innen zugeschnittene Fitness-Software.",
   before:
-    "Shred-n-Shape's team used spreadsheets to manage client data, which led to disorganization and inefficiency. Personalizing plans and tracking progress was time-consuming and inconsistent. Communication lacked structure, and report generation was entirely manual. As client numbers increased, Excel's limitations became a barrier to scaling Shred n Shape and offering remote personal trainer services efficiently.",
+    "Das Team von Shred-n-Shape verwaltete Kundendaten zunächst mit Spreadsheets, was zu Unübersichtlichkeit und Ineffizienz führte. Die Personalisierung von Trainingsplänen und die Fortschrittsverfolgung waren zeitaufwendig und inkonsistent. Kommunikation und Berichtserstellung erfolgten vollständig manuell. Mit steigender Kundenzahl stieß Excel an seine Kapazitätsgrenzen, wodurch das Skalieren von Shred-n-Shape und die effiziente Bereitstellung von Remote-Personal-Training stark eingeschränkt wurden.",
   after:
-    "With the launch of platform, all client data is now centralized and easy to manage. Progress tracking and report generation are automated, allowing for more efficient workflows. Personalized plans can be created and updated seamlessly, and communication is streamlined. The platform supports business scalability, improves operational efficiency, and enhances the client experience with clearer goal tracking, timely updates, and better engagement using integrated fitness personal trainer software.",
+    "Mit B-Fit läuft alles zentral und effizient. Kundendaten sind gebündelt und leicht zu verwalten, Fortschritte und Reports werden automatisch erstellt. Trainingspläne lassen sich einfach personalisieren und aktualisieren, während die Kommunikation reibungslos funktioniert. Die Plattform ermöglicht Wachstum, optimiert Abläufe und sorgt für einbesseres Kundenerlebnis - mit klaren Zielen, schnellen Updates undsmarter Einbindung über unsere integrierte Personal-Training-Software.",
 };
 
 export const PRODUCT_BCHEF: ServiceFeaturesType = {
@@ -1268,7 +1278,7 @@ export const PRODUCT_BCHEF: ServiceFeaturesType = {
       id: "feature_row_1",
       title: "",
       description:
-        "This stack allows the platform to load quickly, scale with order volume, and provide a smooth experience for both admin and end customers.",
+        "Dieser Tech-Stack ermöglicht es der Plattform, schnell zu laden, sich flexibel an steigende Bestellvolumen anzupassen und sowohl Administratoren als auch Kund:innen ein reibungsloses Nutzungserlebnis zu bieten.",
       list: [
         {
           id: "fullstack-1",
@@ -1304,11 +1314,11 @@ export const BCHEF_CASE_STUDY: ProductCaseStudy = {
   title: "Nikita's Curry Corner",
   client: "Nikita's Curry Corner",
   industry: "Food & Beverage",
-  use: "Tiffin service and home-chef meal delivery system.",
+  use: " Home-Chef-Liefersystem für Mahlzeiten",
   before:
-    "Nikita's Curry Corner was all about serving up delicious, home-cooked Sindhi meals to its loyal customers. However, the food business found itself heavily dependent on third-party apps like cookin.com, which not only charged steep commissions but also limited their control over branding and the overall customer experience. They faced challenges in customizing menus, connecting directly with customers, and managing their content due to the platform's restrictions. Plus, juggling external listings took their attention away from what they loved most—cooking. These hurdles made it tough to grow effectively and added financial strain as they tried to expand within the competitive cloud kitchen startup scene.",
+    "Nikita's Curry Corner stand für köstliche, hausgemachte Sindhi-Gerichte, die von treuen Kunden geschätzt wurden. Das Food-Business war jedoch stark von Drittanbieter-Apps wie cookie.com abhängig - Plattformen, die nicht nur hohe Provisionen verlangten, sondern auch die Kontrolle über Branding und das Kundenerlebnis einschränkten. Die Betreiber hatten Schwierigkeiten, ihre Menüs individuell anzupassen, direkt mit Kunden in Kontakt zu treten und Inhalte nach eigenen Vorstellungen zu verwalten. Außerdem nahm die Verwaltung externer Listings viel Zeit in Anspruch, die sie lieber in die Zubereitung ihrer Speisen investiert hätten. Diese Einschränkungen erschwerten ein effektives Wachstum und führten zu zusätzlichem finanziellen Druck, besonders in der stark umkämpften Cloud-Kitchen-Start-up-Szene.",
   after:
-    "We launched a fully branded food ordering website with our custom food delivery software. Each day, the menu was updated in the admin panel. Customers could visit the site to check availability, place their orders, and choose their delivery times. The admin dashboard tracked all the essentials: orders, payments, and customer data. Their team either delivers to local addresses or sets up a pick-up option. Promo codes were a fantastic way to encourage repeat business and reward our loyal customers.",
+    "Wir haben eine vollständig gebrandete FoodOrdering-Website mit unserer maßgeschneiderten Food-Delivery-Software implementiert. Täglich konnte das Menü im Admin-Panel aktualisiert werden. Kunden hatten die Möglichkeit, die Verfügbarkeit zu prüfen, Bestellungen aufzugeben und eine Lieferzeit auszuwählen. Das Admin-Dashboard erfasste alle wichtigen Daten: Bestellungen, Zahlungen und Kundendaten. Das Team konnte entweder lokale Lieferungen durchführen oder eine Abholoption anbieten. Promo-Codes erwiesen sich als hervorragendes Mittel, um Wiederholungsgeschäfte zu fördern und treue Kunden zu belohnen.",
 };
 
 export const PRODUCT_BCHEF_EXCEL: ServiceExcelType[] = [
@@ -1316,31 +1326,25 @@ export const PRODUCT_BCHEF_EXCEL: ServiceExcelType[] = [
     id: "excel_1",
     title: "",
     description:
-      "Increased direct food orders with targeted digital marketing driving traffic to their website.",
+      "ezieltes Online-Marketing steigerte die direkten Food-Bestellungen und lenkte gezielt Besucher auf die Website",
   },
   {
     id: "excel_2",
     title: "",
     description:
-      "Removed commission fees, ensuring full profit retention and pricing control.",
+      "Provisionen entfallen - maximale Profitabilität bei voller Kontrolle über die Preise",
   },
   {
     id: "excel_3",
     title: "",
     description:
-      "Eliminate commission cuts, maximizing profits with complete pricing control.",
+      "Erhöhte Kundenzufriedenheit durch einfache Navigation, flexible Lieferoptionen und sicheren Checkout",
   },
   {
     id: "excel_4",
     title: "",
     description:
-      "Enhanced customer satisfaction with easy browsing, flexible delivery, and secure checkout.",
-  },
-  {
-    id: "excel_5",
-    title: "",
-    description:
-      "Built customer loyalty by streamlining operations and offering personalized service.",
+      "Langfristige Kundentreue durch reibungslose Abläufe und persönliche Betreuung gefördert",
   },
 ];
 
@@ -1348,11 +1352,11 @@ export const BSTORE_CASE_STUDY: ProductCaseStudy = {
   title: "Trendy Threads By Riya",
   client: "Trendy Threads By Riya",
   industry: "Fashion & Lifestyle",
-  use: "Branded eCommerce platform offering a wide range of clothing and accessories for women, including ethnic, fusion, and contemporary styles.",
+  use: "Eine gebrandete E-Commerce-Plattform, die ein breites Sortiment an Damenbekleidung und Accessoires bietet, darunter Ethno-, Fusion- und moderne Styles.",
   before:
-    "Before launching an independent platform, the business faced growing challenges on third-party marketplaces. Losses from damaged or used returns, manual order handling, and untrackable shipments led to operational inefficiencies. Without a dedicated website for selling products, there was no consistent brand identity or direct customer connection. Selling through platforms also limited trust and control, making it difficult to build a reliable, long-term presence in the fashion ecommerce market.",
+    "Vor dem Launch einer unabhängigen Plattform sah sich das Unternehmen wachsenden Herausforderungen auf Drittanbieter-Marktplätzen gegenüber. Verluste durch beschädigte oder retournierte Ware, manuelle Bestellabwicklung und nicht nachverfolgbare Lieferungen führten zu erheblichen Ineffizienzen. Ohne eigene Website fehlten eine konsistente Markenidentität und der direkte Draht zu den Kund:innen. Der Verkauf über fremde Plattformen schränkte zudem Vertrauen und Kontrolle ein - und erschwerte den Aufbau einer zuverlässigen, langfristigen Präsenz im Fashion-E-Commerce-Markt.",
   after:
-    "After launching, the business gained full control over its operations, brand, and customer experience. Orders are now trackable, returns are manageable, and manual processes have been replaced with a streamlined system. A dedicated fashion ecommerce webapp builds trust, showcases the brand consistently, and allows direct engagement with customers. With complete ownership over products, pricing, and promotions, the business is now positioned for sustainable growth and independence through effective e-commerce webapp platform.",
+    "Nach dem Launch gewann das Unternehmen die volle Kontrolle über Abläufe, Marke und Kundenerlebnis. Bestellungen sind nun vollständig nachverfolgbar, Retouren effizient verwaltbarund manuelle Prozesse wurden durch ein effizientes System ersetzt. Eine dedizierte Fashion-E-Commerce-Web-App schafft Vertrauen, präsentiert die Marke konsistent und ermöglicht den direkten Dialog mit Kund:innen. Mit vollständiger Kontrolle über Produkte, Preise und Promotions ist das Unternehmen optimal für nachhaltiges Wachstum und Unabhängigkeit durch eine leistungsstarke E-Commerce-Plattform aufgestellt.",
 };
 
 export const PRODUCT_BSTORE: ServiceFeaturesType = {
@@ -1362,7 +1366,7 @@ export const PRODUCT_BSTORE: ServiceFeaturesType = {
       id: "feature_row_1",
       title: "",
       description:
-        "This stack allows the platform to load quickly, scale with order volume, and provide a smooth experience for both admin and end customers.",
+        "Dieser Tech-Stack ermöglicht es der Plattform, schnell zu laden, sich flexibel an steigendes Bestellvolumen anzupassen und sowohl für Administratoren als auch für Endkunden ein reibungsloses Nutzungserlebnis zu bieten.",
       list: [
         {
           id: "fullstack-1",
@@ -1398,28 +1402,23 @@ export const PRODUCT_BSTORE_EXCEL: ServiceExcelType[] = [
   {
     id: "excel_1",
     title: "",
-    description: "Reduced return losses and manual inefficiencies.",
+    description: "Weniger Verluste durch Retouren & optimierte Prozesse",
   },
   {
     id: "excel_2",
     title: "",
-    description: "Boost in customer satisfaction and retention.",
+    description: "Steigerung von Kundenzufriedenheit und -bindung",
   },
   {
     id: "excel_3",
     title: "",
-    description: "Strong, independent brand identity.",
+    description: "Gefestigte Markenidentität mit voller Kontrolle",
   },
   {
     id: "excel_4",
     title: "",
-    description: "Strong, independent brand identity.",
-  },
-  {
-    id: "excel_5",
-    title: "",
     description:
-      "Scalable digital operations now run entirely through the platform.",
+      "Effiziente, wachstumsfähige Abläufe laufen nun komplett über die Plattforml",
   },
 ];
 
@@ -1427,29 +1426,33 @@ export const SERVICE_TECHNICAL_DOCUMENTATION_DETAILS: ServiceTypeDetailsType[] =
   [
     {
       id: "ui_design_details_1",
-      heading: "Why Choose BharathaTechno for Technical Documentation",
-      content: `<p>We don't just write — we understand what's being built.</p>
-    <p>Our team works closely with developers, project leads, and stakeholders to ensure documentation reflects real use cases and actual technical depth. We've worked with companies offering software services and solutions, full stack development services, and ERP software solutions, so we know how to translate complexity into clarity — without oversimplifying.</p>
-    <p><strong>Here's what you can expect:</strong></p>  
+      heading: "Warum BharathaTechno für technische Dokumentation wählen?",
+      content: `<p>Wir dokumentieren nicht nur - wir verstehen, was gebaut wird.</p>
+    <p>Unser Team arbeitet eng mit Entwicklern, Projektleitern und Stakeholdern zusammen, um sicherzustellen, dass dieDokumentation reale Anwendungsfälle und tatsächliche technische Tiefe widerspiegelt. Wir haben mit
+Unternehmen zusammengearbeitet, die Softwaredienstleistungen und Lösungen, Full-Stack-Entwicklungsdienste
+und ERP-Softwarelösungen anbieten, sodass wir wissen, wie man Komplexität in Klarheit übersetzt - ohne zu
+vereinfachen.
+</p>
+    <p><strong>Was Sie erwarten können:</strong></p>  
     <ul>
-        <li>Clear, well-organized documents with zero unnecessary fluff.</li>
-        <li>Consistent tone, aligned with your product and brand.</li>
-        <li>Fast, dependable delivery with minimal back-and-forth.</li>
-        <li>Ability to handle docs for everything from code-heavy platforms to client-facing tools.</li>
+        <li>Klare, gut organisierte Dokumente ohne unnötigen Ballast.</li>
+        <li>Konsistenter Ton, abgestimmt auf Ihr Produkt und Ihre Marke.</li>
+        <li>Schnelle, zuverlässige Lieferung mit minimalem Hin und Her.</li>
+        <li>Fähigkeit, Dokumente für alles zu erstellen – von codeintensiven Plattformen bis hin zu benutzerorientierten Tools.</li>
       <ul>
       `,
     },
     {
       id: "ui_design_details_2",
-      heading: "What We Offer",
+      heading: "Unsere Leistungen",
       content: `
       <ul>
-        <li>Technical Writing — From user manuals to API references</li>
-        <li>Information Architecture — Clean layouts that make sense to real users</li>
-        <li>SEO-Friendly Documentation — For online help centers and web guides</li>
-        <li>Cross-Platform Support — Covering frontend and backend development, mobile apps, and more</li>
+        <li>Technisches Schreiben - Von Benutzerhandbüchern bis zu API-Referenzen</li>
+        <li>Informationsarchitektur - Saubere Layouts, die für echte Nutzer Sinn machen</li>
+        <li>SEO-freundliche Dokumentation - Für Online-Hilfecenter und Webanleitungen</li>
+        <li>Plattformübergreifende Unterstützung - Abdeckung von Frontend- und Backend-Entwicklung, mobilen Apps und mehr</li>
       <ul>
-      <p>We're also equipped to support stack-specific teams — including MERN stack development companies or mobile-first product teams delivering mobile app development services.</p>
+      <p>Wir sind auch in der Lage, stack-spezifische Teams zu unterstützen - einschließlich MERN-StackEntwicklungsunternehmen oder mobilen Produktteams, die mobile App-Entwicklungsdienste anbieten</p>
       `,
     },
   ];
@@ -1457,27 +1460,28 @@ export const SERVICE_TECHNICAL_DOCUMENTATION_DETAILS: ServiceTypeDetailsType[] =
 export const SERVICE_TECHNICAL_DOCUMENTATION_FEATURES: ServiceExcelType[] = [
   {
     id: "feature_1",
-    title: "Product briefs and feature overviews",
+    title: "Produktbeschreibungen und Funktionsübersichten",
     description: "",
   },
   {
     id: "feature_2",
-    title: "End-user guides and admin manuals",
+    title: "Benutzerhandbücher und Administratorhandbücher",
     description: "",
   },
   {
     id: "feature_3",
-    title: "Business and Product requirement documents (BRDs & PRDs)",
+    title: "Business- und Produktanforderungsdokumente (BRDs & PRDs)",
     description: "",
   },
   {
     id: "feature_4",
-    title: "SOPs and internal workflow docs",
+    title: "SOPs und interne Arbeitsabläufe",
     description: "",
   },
   {
     id: "feature_5",
-    title: "Technical overviews for clients, vendors, or internal training",
+    title:
+      "Technische Übersichten für Kunden, Anbieter oder interne Schulungen",
     description: "",
   },
 ];

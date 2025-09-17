@@ -44,7 +44,7 @@ export default function OurOffering() {
             className="mb-10 text-center"
             style={{ color: `var(--text-blue)` }}
           >
-            Our Offerings
+            Unsere Angebote
           </h2>
         </motion.div>
 

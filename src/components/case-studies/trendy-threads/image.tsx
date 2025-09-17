@@ -13,7 +13,7 @@ export default function TrendyThreadsImage() {
         />
       </Link>
 
-      <h3>Technologies Used</h3>
+      <h3>ENTWICKELT MIT</h3>
       <ul>
         <li>Next.js + TypeScript</li>
         <li>NodeJs</li>

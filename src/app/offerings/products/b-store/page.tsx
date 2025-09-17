@@ -48,7 +48,7 @@ export default function ProductBFit() {
 
   return (
     <article className="pg_product">
-      <ProductBanner data="B-STORE - A Versatile E-Commerce Platform to Manage and Grow Your Online Business"/>
+      <ProductBanner data="B-STORE – Eine vielseitige E-Commerce-Plattform zur Verwaltung und zum Ausbau Ihres Online-Geschäfts" />
       <Summary>
         <motion.h2
           ref={ref2}
@@ -66,7 +66,7 @@ export default function ProductBFit() {
           animate={isInView3 ? "animate" : ""}
           className="text-center"
         >
-          <p>Full Stack E-Commerce Platform for Fashion - Beauty Brands</p>
+          <p>#Ganzheitliche E-Commerce-Lösung für den Onlinehandel</p>
         </motion.div>
       </Summary>
       <motion.div
@@ -76,16 +76,23 @@ export default function ProductBFit() {
         animate={isInView4 ? "animate" : ""}
         className="container container-small"
       >
-        <h4>Product Overview </h4>
+        <h4>Produktübersicht</h4>
         <p>
-          B-STORE is a scalable e-commerce platform for fashion, beauty, and
-          home décor. It empowers brands with full control to design, manage,
-          and grow their online stores. As a modern fashion e-commerce website
-          solution, it drives customer loyalty and sustainable growth.
+          B-Store ist eine skalierbare Plattform für Onlinehändler aller
+          Branchen. Sie gibt Marken die volle Kontrolle, um ihre Onlineshops zu
+          gestalten, zu verwalten und nachhaltig auszubauen. Als moderne
+          E-Commerce-Lösung stärkt sie die Kundenbindung und fördert
+          langfristiges Wachstum.
         </p>
       </motion.div>
       <Features data={PRODUCT_BSTORE} />
-      <ProductUSP description="B-STORE allows boutique fashion and beauty related sellers to operate an independent online store with complete admin control, without platform commissions, and with all the tools needed for managing inventory, payments, returns, and customer satisfaction. It serves as a comprehensive website for selling products, tailored especially for fashion ecommerce websites." />
+      <ProductUSP
+        description={`B-Store ermöglicht Onlinehändlern den Betrieb eines unabhängigen Shops - mit voller
+Administrationskontrolle, ohne Plattformgebühren und ausgestattet mit allen Tools für
+Lagerverwaltung, Zahlungen, Retouren und Kundenzufriedenheit. <br/>
+Die Plattform dient als umfassende Lösung zum Verkauf von Produkten und ist besonders auf
+typische E-Commerce-Bereiche wie Mode, Beauty, Lifestyle und Alltagswaren zugeschnitten.`}
+      />
 
       <ProductFeatures />
       <CaseStudy data={BSTORE_CASE_STUDY} />

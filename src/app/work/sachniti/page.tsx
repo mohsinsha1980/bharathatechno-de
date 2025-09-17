@@ -7,7 +7,7 @@ import ProjectGallery from "@/components/case-studies/sachniti/project-gallery";
 export default async function SachnitiPage() {
   return (
     <article className="pg_work">
-      <CaseStudiesBanner data="Sachniti - A User-Friendly WordPress Website with Seamless Content Management and Service Information"/>
+      <CaseStudiesBanner data="Sachniti – Eine benutzerfreundliche WordPress-Website mit nahtlosem Content-Management und Serviceinformationen"/>
       <div className="bl_case_studies">
         <div className="container container-medium">
           <CaseStudyTemplate>

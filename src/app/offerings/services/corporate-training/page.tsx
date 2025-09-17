@@ -61,62 +61,66 @@ export default function ServicesCorporateTraining() {
   const isInView3 = useInView(ref3, { once: true });
 
   useEffect(() => {
-      const scroll = document.getElementById("services-list");
-      if (scroll) {
-        setTimeout(() => {
-          scroll.scrollIntoView({ behavior: "smooth", block: "start" });
-        }, 400);
-      }
-    }, []);
+    const scroll = document.getElementById("services-list");
+    if (scroll) {
+      setTimeout(() => {
+        scroll.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 400);
+    }
+  }, []);
   return (
     <>
-     <Script
+      <Script
         id="schema-webpage-corporate-training"
         type="application/ld+json"
         strategy="beforeInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
-    <article className="pg_service">
-      <ServicesBanner data="Corporate Training in NIBM Rd, Pune to Equip Your Team with Cutting-Edge Tech Skills"/>
-      <ServicesList />
-      <Summary>
-        <motion.h2
-          ref={ref2}
-          variants={pullupVariant}
-          initial="initial"
-          animate="animate"
-          className="inline-block"
-        >
-          Corporate Training Services
-        </motion.h2>
+      <article className="pg_service">
+        <ServicesBanner data="Unternehmensschulung in NIBM Rd, Pune, um Ihr Team mit modernsten technischen Fähigkeiten auszustatten" />
+        <ServicesList />
+        <Summary>
+          <motion.h2
+            ref={ref2}
+            variants={pullupVariant}
+            initial="initial"
+            animate="animate"
+            className="inline-block"
+          >
+            Unternehmensschulungen
+          </motion.h2>
 
-        <motion.p
-          ref={ref3}
-          variants={fadeVariant}
-          initial="initial"
-          animate={isInView3 ? "animate" : ""}
-          className="text-center md:text-justify"
-        >
-          At BharathaTechno, we offer comprehensive corporate training programs
-          designed to equip your team with the skills needed to excel in
-          today&apos;s competitive tech landscape. Our training focuses on
-          cutting-edge technologies like MERN (MongoDB, Express.js, React.js,
-          Node.js), MEAN (MongoDB, Express.js, Angular.js, Node.js), and
-          JavaScript, ensuring your team is prepared to tackle complex projects
-          and drive innovation.
-        </motion.p>
-      </Summary>
-      <Technology
-        title="Training Programs Offered"
-        tech={SERVICE_CORPORATE_TRAINING}
-      />
-      <DetailsAccordion items={SERVICE_CORPORATE_TRAINING_DETAILS} />
-      <ServicesFeatures data={SERVICE_CORPORATE_TRAINING_FEATURES} />
-      <ServicesContact
-        title="Ready to Enhance Your Team?"
-        description="Let’s discuss how our corporate training programs can help elevate your team's capabilities. Our expert trainers are ready to design a program tailored specifically for your business needs."
-      />
-    </article>
+          <motion.p
+            ref={ref3}
+            variants={fadeVariant}
+            initial="initial"
+            animate={isInView3 ? "animate" : ""}
+            className="text-center md:text-justify"
+          >
+            Bei BharathaTechno bieten wir umfassende Schulungsprogramme an, die
+            darauf abzielen, Ihr Team mit den notwendigen Fähigkeiten
+            auszustatten, um in der heutigen wettbewerbsintensiven
+            Technologielandschaft erfolgreich zu sein. Unsere Schulungen
+            konzentrieren sich auf moderne Technologien wie MERN (MongoDB,
+            Express.js, React.js, Node.js), MEAN (MongoDB, Express.js,
+            Angular.js, Node.js) und JavaScript, um sicherzustellen, dass Ihr
+            Team in der Lage ist, komplexe Projekte zu bewältigen und
+            Innovationen voranzutreiben.
+          </motion.p>
+        </Summary>
+        <Technology
+          title="Angebotene Schulungsprogramme"
+          tech={SERVICE_CORPORATE_TRAINING}
+        />
+        <DetailsAccordion items={SERVICE_CORPORATE_TRAINING_DETAILS} />
+        <ServicesFeatures data={SERVICE_CORPORATE_TRAINING_FEATURES} />
+        <ServicesContact
+          title="Bereit, Ihr Team zu stärken?"
+          description="Lassen Sie uns besprechen, wie unsere Unternehmensschulungsprogramme dazu beitragen können,
+die Fähigkeiten Ihres Teams zu steigern. Unsere Experten-Trainer sind bereit, ein speziell auf Ihre
+Geschäftsbedürfnisse zugeschnittenes Programm zu entwerfen."
+        />
+      </article>
     </>
   );
 }

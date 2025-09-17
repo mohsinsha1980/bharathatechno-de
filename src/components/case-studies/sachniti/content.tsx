@@ -9,19 +9,20 @@ export default function SachnitiContent() {
       </Link>
 
       <p>
-        For Sachniti.com, we developed a WordPress-based website that offers
-        engaging user experience with easy content management capabilities. The
-        site includes service descriptions, and contact forms.
+        Für Sachniti haben wir eine WordPress-basierte Website entwickelt, die
+        ein ansprechendes Nutzererlebnis mit einfacher ContentVerwaltung
+        kombiniert. Die Seite umfasst detaillierte Servicebeschreibungen sowie
+        benutzerfreundliche Kontaktformulare.
       </p>
-      <h3>Key Features</h3>
+      <h3>Zentrale Funktionen</h3>
       <ul>
-        <li>Easy content management with WordPress</li>
-        <li>SEO-friendly Structure</li>
-        <li>Customizable contact forms</li>
+        <li>Einfache Inhaltsverwaltung mit WordPress</li>
+        <li>SEO-freundliche Struktur</li>
+        <li>Anpassbare Kontaktformulare</li>
       </ul>
       <div className="link">
         <Link href="https://www.sachniti.com/" target="_blank">
-          <span>Visit Sachniti</span> <ArrowRight size={20} />
+          <span>Jetzt Sachniti besuchen</span> <ArrowRight size={20} />
         </Link>
       </div>
     </>

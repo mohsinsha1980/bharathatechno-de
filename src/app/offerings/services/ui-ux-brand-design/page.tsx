@@ -77,7 +77,7 @@ export default function ServicesUXBrandDesign() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
       <article className="pg_service">
-        <ServicesBanner data="Pixel-Perfect UI/UX & Brand Design Services in Pune for Flawless Digital Experiences"/>
+        <ServicesBanner data="Pixelgenaue UI/UX- und Markendesign-Services in Pune für makellose digitale Erlebnisse" />
         <ServicesList />
         <Summary>
           <motion.h2
@@ -87,7 +87,7 @@ export default function ServicesUXBrandDesign() {
             animate="animate"
             className="inline-block"
           >
-            UI/UX & Brand Design
+            UI/UX- und Marken-Design
           </motion.h2>
 
           <motion.p
@@ -97,24 +97,28 @@ export default function ServicesUXBrandDesign() {
             animate={isInView3 ? "animate" : ""}
             className="text-center md:text-justify"
           >
-            At BharathaTechno, we believe that design is more than just how
-            something looks it&apos;s how it feels, how it functions, and how
-            well it connects with people. That&apos;s why we&apos;ve evolved our
-            design offering into a more holistic solution: UI/UX & Brand Design.
-            This combines beautiful, intuitive digital interfaces with
-            thoughtful brand storytelling so that every interaction with your
-            product leaves a lasting impression.
+            Bei BharathaTechno verstehen wir Design als mehr als nur Ästhetik -
+            es geht darum, wie sich etwas anfühlt, funktioniert und wie gut es
+            mit den Nutzern kommuniziert. Deshalb haben wir unser Designangebot
+            zu einer ganzheitlichen Lösung weiterentwickelt: UI/UX- und
+            Marken-Design. Diese Kombination aus schönen, intuitiven digitalen
+            Oberflächen uup durchdachtem Markenerzählen sorgt dafür, dass jede
+            Interaktion mit Ihrem Produkt einen bleibenden Eindruck hinterlässt.
           </motion.p>
         </Summary>
         <Technology
-          title="Tools we have mastered in"
+          title="Unsere Design-Tools
+Wir beherrschen eine Vielzahl moderner Design-Tools, darunter:"
           tech={SERVICE_UI_UX_DESIGN}
         />
         <DetailsAccordion items={SERVICE_UI_UX_DESIGN_DETAILS} />
         <ServicesFeatures data={SERVICE_UI_UX_DESIGN_FEATURES} />
         <ServicesContact
-          title="Design with Purpose, Passion & Precision"
-          description="At BharathaTechno, it's about making your brand unforgettable & solving real problems for your users. Whether you're looking to launch a new product, revamp your website, or define your brand's visual identity  we're here to help you do it with impact."
+          title="Design mit Ziel, Leidenschaft & Präzision"
+          description="Bei BharathaTechno geht es darum, Ihre Marke unvergesslich zu machen und echte Probleme für Ihre
+Nutzer zu lösen. Egal, ob Sie ein neues Produkt auf den Markt bringen, Ihre Website neu gestalten
+oder die visuelle Identität Ihrer Marke definieren möchten - wir helfen Ihnen, dies mit Wirkung zu
+tun"
         />
       </article>
     </>

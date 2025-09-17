@@ -47,7 +47,7 @@ export default function ContactUs() {
           animate={isInView1 ? "animate" : ""}
           className="text-center mb-4"
         >
-          Contact Us
+          Kontaktieren Sie uns
         </motion.h3>
         <motion.p
           ref={ref2}
@@ -56,9 +56,9 @@ export default function ContactUs() {
           animate={isInView2 ? "animate" : ""}
           className="text-center mb-10"
         >
-          Need assistance? Send us a message on given contacts or form, and
-          we&apos;ll
-          <br /> get back to you promptly!
+          Benötigen Sie Unterstützung? Senden Sie uns eine Nachricht über die
+          angegebenen Kontaktdaten oder das Formular, <br /> und wir werden uns
+          umgehend bei Ihnen melden!
         </motion.p>
 
         <motion.div
@@ -69,11 +69,11 @@ export default function ContactUs() {
         >
           <div className="flex gap-[20px] text-center contact_methods mb-10">
             <div className="flex-1">
-              <Link href="mailto:info@bharathatechno.com">
+              <Link href="mailto:tbd@bharathatechno.de">
                 <span>
                   <Mail />
                 </span>
-                info@bharathatechno.com
+                tbd@bharathatechno.de
               </Link>
             </div>
             <div className="flex-1">
@@ -85,11 +85,14 @@ export default function ContactUs() {
               </Link>
             </div>
             <div className="flex-1">
-              <Link href="https://www.bharathatechno.com" target="_blank">
+              <Link
+                href="https://https://www.bharathatechno.de/"
+                target="_blank"
+              >
                 <span>
                   <Globe />
                 </span>
-                www.bharathatechno.com
+                https://www.bharathatechno.de/
               </Link>
             </div>
           </div>
