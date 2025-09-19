@@ -11,14 +11,14 @@ export default function About() {
     "@context": "https://schema.org",
     "@type": "AboutPage",
     name: "About BharathaTechnoIT Private Limited - Our Mission & Journey",
-    url: "https://bharathatechno.com/about",
+    url: "https://bharathatechno.de/about",
     headline:
       "About BharathaTechnoIT - Empowering Businesses Through Technology",
     description:
       "Learn about BharathaTechnoIT Private Limited's mission to empower businesses through cutting-edge IT solutions. Discover our journey from Pune’s thriving startup scene to recognized leader in web and mobile app development, product innovation, and SEO. Meet our visionary leadership and explore how we’re building digital futures.",
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://bharathatechno.com/search?q={search_term_string}",
+      target: "https://bharathatechno.de/search?q={search_term_string}",
       "query-input": "required name=search_term_string",
     },
   };

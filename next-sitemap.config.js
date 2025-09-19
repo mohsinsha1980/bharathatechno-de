@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-    siteUrl: "https://www.bharathatechno.com", //
+    siteUrl: "https://www.bharathatechno.de", //
     generateRobotsTxt: true,
     changefreq: "weekly",
     priority: 0.7,

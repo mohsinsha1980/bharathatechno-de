@@ -37,21 +37,21 @@ const PRODUCT: BlogType[] = [
     excerpt:
       "B-Store ist eine skalierbare, unabhängige E-Commerce-Plattform, die alle Branchen unterstützt—von Mode und Beauty bis hin zu Elektronik und Dienstleistungen. Sie bietet die vollständige Kontrolle über Ihre Marke, Produkte und Kundendaten, was ein nachhaltiges Wachstum unabhängig von großen Marktplätzen ermöglicht.",
     author: "",
-  author_picture: "/images/blogs/rajesh.webp",
-  date: new Date().toDateString(),
-  link: "/offerings/products/b-store",
+    author_picture: "/images/blogs/rajesh.webp",
+    date: new Date().toDateString(),
+    link: "/offerings/products/b-store",
   },
-{
-  id: "2",
+  {
+    id: "2",
     picture: "/images/blogs/b-chef.webp",
-      label: "",
-        title: "B-Chef",
-          excerpt:
-  "B-Chef ist eine webbasierte Lösung für Köche und FoodBrands, die ihre Produkte online verkaufen, ihre Markenidentität stärken und unabhängig wachsen möchten. Die Plattform bietet leistungsstarke Tools für Bestellungen und Lieferungen, um das Geschäft effizient zu skalieren.",
+    label: "",
+    title: "B-Chef",
+    excerpt:
+      "B-Chef ist eine webbasierte Lösung für Köche und FoodBrands, die ihre Produkte online verkaufen, ihre Markenidentität stärken und unabhängig wachsen möchten. Die Plattform bietet leistungsstarke Tools für Bestellungen und Lieferungen, um das Geschäft effizient zu skalieren.",
     author: "",
-      author_picture: "/images/blogs/rajesh.webp",
-        date: new Date().toDateString(),
-          link: "/offerings/products/b-chef",
+    author_picture: "/images/blogs/rajesh.webp",
+    date: new Date().toDateString(),
+    link: "/offerings/products/b-chef",
   },
 ];
 
@@ -70,13 +70,13 @@ const schemaData = {
   "@context": "https://schema.org",
   "@type": "WebPage",
   name: "Ready-to-Grow Digital Products - B-Fit, B-Store, B-Chef | BharathaTechnoIT",
-  url: "https://bharathatechno.com/offerings/products",
+  url: "https://bharathatechno.de/offerings/products",
   headline: "Our Products - B-Fit, B-Store, B-Chef for Business Growth",
   description:
     "Explore BharathaTechnoIT's ready-to-grow products: B-Fit for fitness business management, B-Store for e-commerce brands, and B-Chef for online food delivery. Our scalable, user-friendly platforms empower gyms, retailers, and food brands to grow their business, reach more customers, and build a modern online presence.",
   potentialAction: {
     "@type": "SearchAction",
-    target: "https://bharathatechno.com/search?q={search_term_string}",
+    target: "https://bharathatechno.de/search?q={search_term_string}",
     "query-input": "required name=search_term_string",
   },
 };

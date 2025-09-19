@@ -61,8 +61,8 @@ export default function TermsContent() {
           </li>
           <li>
             Email:{" "}
-            <Link href="mailto:tbd@bharathatechno.de">
-              tbd@bharathatechno.de
+            <Link href="mailto:kourosh.bagherian@bharathatechno.de">
+              kourosh.bagherian@bharathatechno.de
             </Link>
           </li>
           <li>

@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Software Development and Consulting | BharathaTechno IT Pvt. Ltd.",
+  title: "Softwareentwicklung und Beratung | BharathaTechno IT EU",
   description:
-    "Connect with BharathaTechno for expert software development and consulting services — let's shape and launch your next digital solution with clarity and speed.",
+    "Kontaktieren Sie BharathaTechno für kompetente Softwareentwicklung und Beratung – wir entwickeln und implementieren Ihre nächste digitale Lösung schnell und klar.",
   alternates: {
-    canonical: "https://bharathatechno.com/contact",
+    canonical: "https://bharathatechno.de/contact",
   },
 };
 

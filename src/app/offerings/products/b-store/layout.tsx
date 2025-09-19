@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "B-Store: Custom E-commerce Web App for Fashion Business",
+  title: "B-Store: Benutzerdefinierte E-Commerce-Web-App für das Modegeschäft",
   description:
-    "B-Store is a custom fashion e-commerce web app by BharathaTechno IT. Manage operations, brand, orders, and customer experience for sustainable business growth.",
+    "B-Store ist eine maßgeschneiderte E-Commerce-Web-App für Mode von BharathaTechno IT. Verwalten Sie Abläufe, Marke, Bestellungen und Kundenerfahrung für nachhaltiges Geschäftswachstum.",
   alternates: {
-    canonical: "https://bharathatechno.com/offerings/products/b-store",
+    canonical: "https://bharathatechno.de/offerings/products/b-store",
   },
 };
 

@@ -5,6 +5,8 @@ import { emailRegEx, phoneRegex } from "@/lib/helper";
 import { useReCaptcha } from "next-recaptcha-v3";
 import LoadingSpinner from "../common/loading-spinner";
 import { useInView, motion } from "framer-motion";
+import CustomSelect from "../common/custom-select";
+import { CONTACT_SERVICES } from "@/lib/services";
 
 const initialValue: contactFormType = {
   name: "",
@@ -12,6 +14,8 @@ const initialValue: contactFormType = {
   phone: "",
   subject: "",
   message: "",
+  picture: "",
+  file: undefined,
 };
 
 const initialErrorState: formErrorType = {
@@ -31,6 +35,14 @@ const initialErrorState: formErrorType = {
     invalid: false,
     message: "",
   },
+  picture: {
+    invalid: false,
+    message: "",
+  },
+  file: {
+    invalid: false,
+    message: "",
+  },
 };
 
 export default function ContactForm() {
@@ -43,13 +55,23 @@ export default function ContactForm() {
   const [hasErrors, setHasErrors] = useState<boolean>(false);
 
   const inputChangeHandler = (e: React.FormEvent<HTMLInputElement>): void => {
-    const { name, value } = e.currentTarget;
-    setContact((currState) => {
-      return {
-        ...currState,
-        [name]: value,
-      };
-    });
+    const { name, value, files } = e.currentTarget;
+
+    if (name === "picture" && files && files.length > 0) {
+      setContact((prev) => ({ ...prev, picture: files[0] }));
+    } else if (name === "file" && files && files.length > 0) {
+      setContact((prev) => ({ ...prev, file: files[0] }));
+    } else {
+      setContact((prev) => ({ ...prev, [name]: value }));
+    }
+  };
+
+  const selectChangeHandler = (value: string): void => {
+    const selectedOption = CONTACT_SERVICES.find(
+      (option) => option.value === value
+    );
+    const displayValue = selectedOption ? selectedOption.label : value;
+    setContact((prev) => ({ ...prev, subject: displayValue }));
   };
 
   const textareaChangeHandler = (
@@ -107,6 +129,32 @@ export default function ContactForm() {
       errors.subject = { invalid: true, message: "Subject is required" };
     }
 
+    if (formData.picture instanceof File) {
+      if (!formData.picture.type.startsWith("image/")) {
+        errors.picture = {
+          invalid: true,
+          message: "Only image files are allowed",
+        };
+      } else if (formData.picture.size > 5 * 1024 * 1024) {
+        errors.picture = {
+          invalid: true,
+          message: "Picture must be under 5MB",
+        };
+      }
+    }
+
+    // --- Document (only PDFs) ---
+    if (formData.file instanceof File) {
+      if (formData.file.type !== "application/pdf") {
+        errors.file = {
+          invalid: true,
+          message: "Only PDF files are allowed",
+        };
+      } else if (formData.file.size > 10 * 1024 * 1024) {
+        errors.file = { invalid: true, message: "PDF must be under 10MB" };
+      }
+    }
+
     let validationErrors = false;
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     Object.entries(errors).forEach(([key, value]) => {
@@ -133,26 +181,57 @@ export default function ContactForm() {
             setIsSubmitted(false);
           } else {
             const token = await executeRecaptcha("form_submit");
-            const updatedContact = {
-              ...contact,
-              token,
-            };
+
+            // Create FormData for file uploads
+            const formData = new FormData();
+            formData.append("name", contact.name);
+            formData.append("email", contact.email);
+            formData.append("phone", contact.phone);
+            formData.append("subject", contact.subject);
+            formData.append("message", contact.message || "");
+            formData.append("token", token);
+
+            // Add files if they exist
+            if (contact.picture instanceof File) {
+              formData.append("picture", contact.picture);
+            }
+            if (contact.file instanceof File) {
+              formData.append("file", contact.file);
+            }
+
             const res = await fetch("/api/send-enquiry", {
               method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify(updatedContact),
+              body: formData, // Don't set Content-Type header, let browser set it with boundary
             });
 
             const response = await res.json();
-            if (response.response && response.responseCode) {
-              setHttpError(response.message);
-            } else if (response && response.message) {
-              setHttpError(response.message);
-            } else {
-              setHttpError("");
+
+            // Check if the request was successful
+            if (res.ok && response.status === 200) {
+              // Success - reset form and show success message
+              setHttpError(
+                "Form submitted successfully! We'll get back to you soon."
+              );
               setContact(initialValue);
+              setFormErrors(initialErrorState);
+
+              // Reset file inputs
+              if (pictureInputRef.current) {
+                pictureInputRef.current.value = "";
+              }
+              if (fileInputRef.current) {
+                fileInputRef.current.value = "";
+              }
+
+              // Clear success message after 5 seconds
+              setTimeout(() => {
+                setHttpError("");
+              }, 5000);
+            } else {
+              // Error - show error message
+              setHttpError(
+                response.message || "Something went wrong. Please try again."
+              );
             }
             setIsSubmitted(false);
           }
@@ -198,6 +277,8 @@ export default function ContactForm() {
 
   const ref2 = useRef(null);
   const ref3 = useRef(null);
+  const pictureInputRef = useRef<HTMLInputElement>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
   const isInView2 = useInView(ref2, { once: true });
   const isInView3 = useInView(ref3, { once: true });
 
@@ -213,7 +294,8 @@ export default function ContactForm() {
             animate={isInView2 ? "animate" : ""}
             className="mb-[80px]"
           >
-            &ldquo;Jede großartige Lösung beginnt mit einem simplen Gespräch&rdquo;
+            &ldquo;Jede großartige Lösung beginnt mit einem simplen
+            Gespräch&rdquo;
           </motion.h2>
 
           <motion.div
@@ -228,8 +310,9 @@ export default function ContactForm() {
                   <p
                     className="mb-4"
                     style={{
-                      fontSize: 14,
-                      color: "green",
+                      fontSize: 16,
+                      fontWeight: 700,
+                      color: "blue",
                       textAlign: "center",
                     }}
                   >
@@ -287,19 +370,103 @@ export default function ContactForm() {
                     )}
                   </div>
                   <div className="item">
-                    <input
-                      type="text"
+                    <CustomSelect
                       name="subject"
-                      placeholder="What is in your mind?"
+                      placeholder="Select a service or choose 'Other'"
                       value={contact.subject}
-                      onChange={inputChangeHandler}
-                      className={formErrors.subject.invalid ? "inputError" : ""}
-                      autoComplete="off"
+                      onChange={selectChangeHandler}
+                      options={CONTACT_SERVICES}
+                      allowCustomValue={true}
+                      otherOptionLabel="Other (Please specify)"
+                      className={formErrors.subject.invalid ? "error" : ""}
+                      error={formErrors.subject.invalid}
                     />
                     {formErrors.subject.invalid && (
                       <div className="formError">
                         {formErrors.subject.message}
                       </div>
+                    )}
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="item">
+                    <label
+                      htmlFor="picture"
+                      style={{
+                        display: "block",
+                        marginBottom: "8px",
+                        fontWeight: "500",
+                        fontSize: 14,
+                        color: "#666",
+                      }}
+                    >
+                      Upload Image (Optional)
+                    </label>
+                    <input
+                      type="file"
+                      id="picture"
+                      name="picture"
+                      accept="image/*"
+                      ref={pictureInputRef}
+                      onChange={inputChangeHandler}
+                      className={
+                        formErrors.picture?.invalid ? "inputError" : ""
+                      }
+                    />
+                    {contact.picture instanceof File && (
+                      <div
+                        style={{
+                          marginTop: "8px",
+                          fontSize: "12px",
+                          color: "#666",
+                        }}
+                      >
+                        Selected: {contact.picture.name} (
+                        {(contact.picture.size / 1024 / 1024).toFixed(2)} MB)
+                      </div>
+                    )}
+                    {formErrors.picture?.invalid && (
+                      <div className="formError">
+                        {formErrors.picture.message}
+                      </div>
+                    )}
+                  </div>
+                  <div className="item">
+                    <label
+                      htmlFor="file"
+                      style={{
+                        display: "block",
+                        marginBottom: "8px",
+                        fontWeight: "500",
+                        fontSize: 14,
+                        color: "#666",
+                      }}
+                    >
+                      Upload PDF Document (Optional)
+                    </label>
+                    <input
+                      type="file"
+                      id="file"
+                      name="file"
+                      accept="application/pdf"
+                      ref={fileInputRef}
+                      onChange={inputChangeHandler}
+                      className={formErrors.file?.invalid ? "inputError" : ""}
+                    />
+                    {contact.file instanceof File && (
+                      <div
+                        style={{
+                          marginTop: "8px",
+                          fontSize: "14px",
+                          color: "#666",
+                        }}
+                      >
+                        Selected: {contact.file.name} (
+                        {(contact.file.size / 1024 / 1024).toFixed(2)} MB)
+                      </div>
+                    )}
+                    {formErrors.file?.invalid && (
+                      <div className="formError">{formErrors.file.message}</div>
                     )}
                   </div>
                 </div>
@@ -316,10 +483,15 @@ export default function ContactForm() {
                     ></textarea>
                   </div>
                 </div>
-                <div className="row">
-                  <div className="item">&nbsp;</div>
-                  <div className="item text-left">
-                    <button type="submit">Submit</button>
+                <div className="">
+                  <div className="item ">&nbsp;</div>
+                  <div className="item text-center">
+                    <button
+                      type="submit"
+                      className="border rounded-3xl px-8 py-2"
+                    >
+                      Submit
+                    </button>
                   </div>
                 </div>
               </div>

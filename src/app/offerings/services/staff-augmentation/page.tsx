@@ -20,13 +20,13 @@ export default function ServicesStaffAugmentation() {
     "@context": "https://schema.org",
     "@type": "WebPage",
     name: "Staff Augmentation Services - BharathaTechnoIT",
-    url: "https://bharathatechno.com/offerings/services/staff-augmentation",
+    url: "https://bharathatechno.de/offerings/services/staff-augmentation",
     headline: "Staff Augmentation - MERN & MEAN Stack Developers On-Demand",
     description:
       "Scale your technology team quickly with BharathaTechnoIT's Staff Augmentation services. Access skilled MERN and MEAN stack developers, flexible team scaling, seamless integration, and cost-effective staffing solutions. Accelerate digital transformation and deliver projects faster with expert IT professionals for your unique project needs.",
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://bharathatechno.com/search?q={search_term_string}",
+      target: "https://bharathatechno.de/search?q={search_term_string}",
       "query-input": "required name=search_term_string",
     },
   };

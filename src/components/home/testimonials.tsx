@@ -34,7 +34,7 @@ export default function Testimonials() {
             Kundenstimmen
           </h2>
           <p className="text-big text-center">
-            Bei Bharatha Techno sind die Erfolgsgeschichten unserer Kunden der
+            Bei BharathaTechno sind die Erfolgsgeschichten unserer Kunden der
             beste Beweis für unser Engagement für höchste Qualität. Wir liefern
             Lösungen, die Erwartungen übertreffen und nachhaltige Wirkung
             erzielen. Lesen Sie, was einige unserer geschätzten Kunden über die

@@ -20,14 +20,14 @@ export default function ServicesCloudInfrastructure() {
     "@context": "https://schema.org",
     "@type": "WebPage",
     name: "Cloud Infrastructure Management Services - BharathaTechnoIT",
-    url: "https://bharathatechno.com/offerings/services/cloud-infrastructure-management",
+    url: "https://bharathatechno.de/offerings/services/cloud-infrastructure-management",
     headline:
       "Cloud Infrastructure Management - Scalable, Secure, and Cost-Efficient Cloud Solutions",
     description:
       "BharathaTechnoIT delivers end-to-end cloud infrastructure management, including cloud strategy, deployment, migration, optimization, security, and managed services. Our experts work with AWS, Azure, Google Cloud, Kubernetes, and more to help businesses scale, reduce costs, boost security, and enable innovation through cloud computing.",
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://bharathatechno.com/search?q={search_term_string}",
+      target: "https://bharathatechno.de/search?q={search_term_string}",
       "query-input": "required name=search_term_string",
     },
   };

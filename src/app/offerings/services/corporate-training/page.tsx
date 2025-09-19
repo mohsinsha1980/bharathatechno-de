@@ -20,14 +20,14 @@ export default function ServicesCorporateTraining() {
     "@context": "https://schema.org",
     "@type": "WebPage",
     name: "Corporate Training Services - BharathaTechnoIT",
-    url: "https://bharathatechno.com/offerings/services/corporate-training",
+    url: "https://bharathatechno.de/offerings/services/corporate-training",
     headline:
       "Corporate IT Training - MERN/MEAN Stack, JavaScript & Digital Skills",
     description:
       "Empower your team with BharathaTechnoIT's comprehensive corporate IT training programs in MERN, MEAN, and JavaScript. Industry expert trainers deliver tailored, hands-on learning in full-stack development, modern JS, and IT best practices. Flexible on-site & virtual sessions help boost productivity, drive innovation, and upskill your business.",
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://bharathatechno.com/search?q={search_term_string}",
+      target: "https://bharathatechno.de/search?q={search_term_string}",
       "query-input": "required name=search_term_string",
     },
   };

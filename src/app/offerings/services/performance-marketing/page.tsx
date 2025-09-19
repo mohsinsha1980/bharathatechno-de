@@ -14,14 +14,14 @@ export default function ServicesDigitalMarketing() {
     "@context": "https://schema.org",
     "@type": "WebPage",
     name: "Performance Marketing Services - BharathaTechnoIT",
-    url: "https://bharathatechno.com/offerings/services/performance-marketing",
+    url: "https://bharathatechno.de/offerings/services/performance-marketing",
     headline:
       "Performance Marketing - Strategic Campaigns & B2B Lead Generation",
     description:
       "BharathaTechnoIT's Performance Marketing services deliver predictable B2B lead generation with human-led, channel-optimized outreach. Services include ICP research, multi-touch personalized campaigns, appointment setting, and data-driven optimization. Add-on options include social media management and ads, all focused on maximizing conversions and supporting your sales pipeline.",
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://bharathatechno.com/search?q={search_term_string}",
+      target: "https://bharathatechno.de/search?q={search_term_string}",
       "query-input": "required name=search_term_string",
     },
   };

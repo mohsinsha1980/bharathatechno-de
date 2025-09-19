@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Full Stack Solutions for Web & Mobile | BharathaTechno IT",
-  description: "BharathaTechno IT specializes in Full Stack Development for web and mobile apps, delivering secure, scalable, and robust applications that meet global business needs.",
+  title: "Full-Stack-Lösungen für Web und Mobilgeräte | BharathaTechno IT EU",
+  description:
+    "BharathaTechno IT ist auf die Full-Stack-Entwicklung für Web- und mobile Apps spezialisiert und liefert sichere, skalierbare und robuste Anwendungen, die den globalen Geschäftsanforderungen gerecht werden.",
   alternates: {
-    canonical: "https://bharathatechno.com/work",
+    canonical: "https://bharathatechno.de/work",
   },
 };
 

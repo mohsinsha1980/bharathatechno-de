@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "B-Chef: Food Ordering & Delivery Software | BharathaTechno IT",
-  description: "B-Chef by BharathaTechno IT offers a custom food ordering and delivery solution, with an intuitive admin dashboard for managing orders, payments, and more.",
+  title: "B-Chef: Software zur Essensbestellung und -lieferung | BharathaTechno IT",
+  description:
+    "B-Chef von BharathaTechno IT bietet eine individuelle Lösung zur Essensbestellung und -lieferung mit einem intuitiven Admin-Dashboard zur Verwaltung von Bestellungen, Zahlungen und mehr.",
   alternates: {
-    canonical: "https://bharathatechno.com/offerings/products/b-chef",
+    canonical: "https://bharathatechno.de/offerings/products/b-chef",
   },
 };
 

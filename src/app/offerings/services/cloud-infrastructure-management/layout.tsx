@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cloud Infrastructure Management Services | BharathaTechno IT",
+  title: "Cloud-Infrastruktur-Management-Dienste | BharathaTechno IT",
   description:
     "BharathaTechno IT offers cloud infrastructure management, optimizing IT resources, ensuring scalability, and delivering robust security to drive business efficiency.",
   alternates: {
     canonical:
-      "https://bharathatechno.com/offerings/services/cloud-infrastructure-management",
+      "https://bharathatechno.de/offerings/services/cloud-infrastructure-management",
   },
 };
 

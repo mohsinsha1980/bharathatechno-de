@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Shred n Shape Fitness Program Web App based in UK",
-  description: "BharathaTechno IT developed the Shred n Shape fitness web app in the UK, offering a scalable solution to track progress, deliver workouts, and engage users.",
+  title: "Shred n Shape Fitnessprogramm-Web-App mit Sitz in Großbritannien",
+  description:
+    "BharathaTechno IT hat in Großbritannien die Fitness-Web-App Shred n Shape entwickelt, die eine skalierbare Lösung zur Fortschrittsverfolgung, Bereitstellung von Trainingseinheiten und Einbindung der Benutzer bietet.",
   alternates: {
-    canonical: "https://bharathatechno.com/work/shred-n-shape",
+    canonical: "https://bharathatechno.de/work/shred-n-shape",
   },
 };
 

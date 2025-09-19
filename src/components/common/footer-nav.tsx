@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function FooterNav() {
   return (
     <nav>
-      <ul className="flex flex-col gap-8 lg:flex-row md:flex-row">
+      <ul className="flex flex-col flex-wrap gap-8 lg:flex-row md:flex-row">
         <li>
           <Link href="/contact">Kontaktieren Sie uns</Link>
         </li>
@@ -17,6 +17,9 @@ export default function FooterNav() {
         </li>
         <li>
           <Link href="/refund-policy">Rückerstattungsrichtlinie</Link>
+        </li>
+        <li>
+          <Link href="/blog">Blog</Link>
         </li>
       </ul>
     </nav>

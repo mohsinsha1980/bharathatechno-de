@@ -3,7 +3,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 export default function BannerContent() {
-  const text1 = "Our Blogs";
+  const text1 = "Unser Blogs";
 
   const variants = {
     hidden: { opacity: 0 },
@@ -19,7 +19,7 @@ export default function BannerContent() {
 
   return (
     <div className="content">
-      <h1 className="mt-8 lg:mt-0 lg:mb-16 text-center lg:text-left">
+      <p className="mt-8 lg:mt-0 lg:mb-16 text-center lg:text-left">
         <motion.span
           className="lg:mb-4"
           ref={ref1}
@@ -33,7 +33,7 @@ export default function BannerContent() {
             </motion.span>
           ))}
         </motion.span>
-      </h1>
+      </p>
     </div>
   );
 }

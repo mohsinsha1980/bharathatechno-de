@@ -146,7 +146,7 @@ export default function Content() {
             We offer full-cycle MERN stack development services tailored to your
             business needs.
             <br />
-            BharathaTechno IT Pvt. Ltd. guarantees clean code, modern design,
+            BharathaTechno IT EU guarantees clean code, modern design,
             <br />
             and scalable architecture.
           </p>

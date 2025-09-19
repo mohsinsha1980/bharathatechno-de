@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "BharathaTechno IT | Custom Web Apps & IT Solutions in Pune",
-  description: "BharathaTechno IT, one of the top IT companies in Pune, specializes in custom web app development, providing scalable and innovative solutions globally.",
+  title: "BharathaTechno IT EU | Benutzerdefinierte Web-Apps und IT-Lösungen in Germany",
+  description:
+    "BharathaTechno IT, eines der führenden IT-Unternehmen in Germany, ist auf die Entwicklung kundenspezifischer Web-Apps spezialisiert und bietet weltweit skalierbare und innovative Lösungen.",
   alternates: {
-    canonical: "https://bharathatechno.com/about",
+    canonical: "https://bharathatechno.de/about",
   },
 };
 

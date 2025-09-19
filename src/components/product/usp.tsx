@@ -51,7 +51,7 @@ export default function ProductUSP({ description }: { description: string }) {
           animate={isInView3 ? "animate" : ""}
           className="text-center md:text-left"
         >
-          <div dangerouslySetInnerHTML={{ __html: description }}></div>
+          <p dangerouslySetInnerHTML={{ __html: description }}></p>
         </motion.div>
       </div>
     </section>

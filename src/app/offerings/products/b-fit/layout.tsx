@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "B-Fit: Personal Trainer Software by BharathaTechno IT",
+  title: "B-Fit: Personal Trainer Software von BharathaTechno IT",
   description:
-    "B-Fit by BharathaTechno IT streamlines fitness management. From progress tracking to personalized plans, our software boosts efficiency and client experience.",
+    "B-Fit von BharathaTechno IT optimiert das Fitnessmanagement. Von der Fortschrittsverfolgung bis hin zu personalisierten Plänen steigert unsere Software die Effizienz und das Kundenerlebnis.",
   alternates: {
-    canonical: "https://bharathatechno.com/offerings/products/b-fit",
+    canonical: "https://bharathatechno.de/offerings/products/b-fit",
   },
 };
 

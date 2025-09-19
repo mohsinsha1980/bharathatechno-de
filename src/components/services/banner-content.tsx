@@ -47,7 +47,7 @@ export default function ServicesBannerContent(data: { data: string }) {
 
   return (
     <div className="content">
-      <p className="mb-4 lg:mb-6 text-center lg:text-left">
+      <p className="mb-4 lg:mb-10 text-center lg:text-left">
         <motion.span
           className="mb-4"
           ref={ref1}

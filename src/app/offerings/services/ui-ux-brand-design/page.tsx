@@ -20,14 +20,14 @@ export default function ServicesUXBrandDesign() {
     "@context": "https://schema.org",
     "@type": "WebPage",
     name: "UI/UX & Brand Design Services - BharathaTechnoIT",
-    url: "https://bharathatechno.com/offerings/services/ui-ux-brand-design",
+    url: "https://bharathatechno.de/offerings/services/ui-ux-brand-design",
     headline:
       "UI/UX & Brand Design - Intuitive Digital Experiences & Brand Identity",
     description:
       "Transform your business with BharathaTechnoIT's UI/UX & Brand Design services. We craft people-first digital products with expert user research, wireframes, prototypes, and visual design using Figma, XD, and more. Elevate your brand’s impact across web, mobile, and e-commerce through seamless, research-backed, and cross-platform experiences.",
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://bharathatechno.com/search?q={search_term_string}",
+      target: "https://bharathatechno.de/search?q={search_term_string}",
       "query-input": "required name=search_term_string",
     },
   };

@@ -49,7 +49,7 @@ export default function AboutBannerContent() {
 
   return (
     <div className="content col-span-1 lg:col-span-2 heading">
-      <p className="mb-4 lg:mb-16 text-center lg:text-left">
+      <p className="mb-4 lg:mb-10 text-center lg:text-left">
         <motion.span
           className="mb-4"
           ref={ref1}
@@ -84,7 +84,7 @@ export default function AboutBannerContent() {
         animate={isInView3 ? "animate" : ""}
         className="text-center lg:text-left md:text-justify"
       >
-        Bharatha Techno, gegründet im November 2023 von Mohsin Shaikh und Rajesh
+        BharathaTechno, gegründet im November 2023 von Mohsin Shaikh und Rajesh
         Sivapalan, ist ein aufstrebendes IT-Unternehmen, das sich auf sichere
         und skalierbare Weblösungen sowie flexible Outsourcing-Lösungen
         spezialisiert hat. <br />

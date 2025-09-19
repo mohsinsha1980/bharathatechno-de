@@ -20,14 +20,14 @@ export default function ServicesCustomErpSolutions() {
     "@context": "https://schema.org",
     "@type": "WebPage",
     name: "Custom ERP Solutions | Tailored Enterprise Software by BharathaTechnoIT",
-    url: "https://bharathatechno.com/offerings/services/custom-erp-solutions",
+    url: "https://bharathatechno.de/offerings/services/custom-erp-solutions",
     headline:
       "Custom ERP Solutions - Streamline, Automate, and Scale Your Business",
     description:
       "BharathaTechnoIT specializes in custom ERP solutions for end-to-end business process management. Our tailored ERP software integrates finance, HR, inventory, CRM, and analytics, built with React.js, Angular, Node.js, Python, and major cloud platforms. Unlock operational efficiency, seamless integration, mobile access, and ongoing support with a solution engineered for your unique business needs.",
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://bharathatechno.com/search?q={search_term_string}",
+      target: "https://bharathatechno.de/search?q={search_term_string}",
       "query-input": "required name=search_term_string",
     },
   };

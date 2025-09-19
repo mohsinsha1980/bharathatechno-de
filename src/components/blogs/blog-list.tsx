@@ -11,7 +11,7 @@ export default function BlogList({ posts }: { posts: PostDataType[] }) {
         <div className="container grid grid-cols-1 gap-[60px] lg:grid-cols-3 md:grid-cols-2 ">
           {posts && posts.length
             ? posts.map((post, index) => (
-                <div className="bl_blog" key={`${post.slug}-${index}`}>
+                <Link href={`/blog/${post.slug}`} className="bl_blog" key={`${post.slug}-${index}`}>
                   <Image
                     src={`/images/blogs/${post.image}`}
                     alt={`${post.title}`}
@@ -20,16 +20,15 @@ export default function BlogList({ posts }: { posts: PostDataType[] }) {
                     className="rounded-[16px] mb-[24px] ml-auto mr-auto"
                   />
                   <label className="mb-[12px] text-[14px] text-(--text-orange) block">
-                    <Link href={`/blog/${post.slug}`}>{post.label}</Link>
+                    {/* <Link href={`/blog/${post.slug}`}>{post.label}</Link> */}
                   </label>
-                  <h3 className="mb-[12px] text-[20px] leading-[26px] font-bold">
-                    <Link
-                      href={`/blog/${post.slug}`}
+                  <h3 className="mb-[12px]  leading-[26px] font-bold">
+                    <div
                       className="flex space-between items-center gap-4"
                     >
-                      <span className="flex-1">{post.title}</span>
+                      <span className="flex-1 text-[20px]">{post.title.slice(0, 40) + "…"}</span>
                       <ArrowRight className="go-link" size={70} />
-                    </Link>
+                    </div>
                   </h3>
                   <p className="mb-[16px]">{post.excerpt}</p>
                   <div className="flex gap-4 items-center mb-[24px]">
@@ -50,7 +49,7 @@ export default function BlogList({ posts }: { posts: PostDataType[] }) {
                       </>
                     ) : null}
                   </div>
-                </div>
+                </Link>
               ))
             : null}
         </div>

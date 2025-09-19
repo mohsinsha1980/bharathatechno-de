@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Custom ERP Solutions | BharathaTechno IT",
+  title: "Kundenspezifische ERP-Lösungen | BharathaTechno IT",
   description:
-    "BharathaTechno IT provides custom ERP solutions tailored to your business needs. Our scalable software enhances operational efficiency and streamlines workflows.",
+    "BharathaTechno IT bietet maßgeschneiderte ERP-Lösungen, die auf Ihre Geschäftsanforderungen zugeschnitten sind. Unsere skalierbare Software steigert die betriebliche Effizienz und optimiert Arbeitsabläufe.",
   alternates: {
     canonical:
-      "https://bharathatechno.com/offerings/services/custom-erp-solutions",
+      "https://bharathatechno.de/offerings/services/custom-erp-solutions",
   },
 };
 

@@ -19,9 +19,9 @@ export default function RefundContent() {
 
         <h2>Rückerstattungsprozess</h2>
         <p>
-          Kontaktieren Sie uns unter
-          <Link href="mailto:tbd@bharathatechno.de">
-            tbd@bharathatechno.de
+          Kontaktieren Sie uns unter{" "}
+          <Link href="mailto:kourosh.bagherian@bharathatechno.de">
+             kourosh.bagherian@bharathatechno.de
           </Link>{" "}
           oder rufen Sie uns unter
           <Link href="tel:+919325636885">+91 932 563 6885</Link> an, um eine
@@ -39,10 +39,10 @@ export default function RefundContent() {
             BharathaTechno IT Private Limited Cell:{" "}
             <Link href="tel:+919325636885">+91 932 563 6885</Link>
           </li>
-          <li>
+          <li className="hyphen-auto break-words">
             Email:{" "}
-            <Link href="mailto:tbd@bharathatechno.de">
-              tbd@bharathatechno.de
+            <Link href="mailto:kourosh.bagherian@bharathatechno.de">
+              kourosh.bagherian@bharathatechno.de
             </Link>
           </li>
           <li>

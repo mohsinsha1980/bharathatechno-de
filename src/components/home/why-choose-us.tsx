@@ -56,7 +56,7 @@ export default function WhyChooseUs() {
               animate={isInView3 ? "animate" : ""}
             >
               <h3>
-                Bharatha Techno wurde aus der gemeinsamen Vision gegründet,
+                BharathaTechno wurde aus der gemeinsamen Vision gegründet,
                 Technologie gezielt für den Unternehmenserfolg unserer Klienten
                 einzusetzen. Als international tätiger Anbieter
                 maßgeschneiderter Webanwendungen und Unternehmenssoftware sowie

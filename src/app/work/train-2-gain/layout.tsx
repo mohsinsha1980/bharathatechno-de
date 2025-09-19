@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Train 2 Gain: Custom WordPress Website Development",
-  description: "Explore Train 2 Gain's custom WordPress website, developed by BharathaTechno IT. Designed for performance, security, and seamless user experience.",
+  title: "Train 2 Gain: Benutzerdefinierte WordPress-Website-Entwicklung",
+  description:
+    "Entdecken Sie die benutzerdefinierte WordPress-Website von Train 2 Gain, entwickelt von BharathaTechno IT. Entwickelt für Leistung, Sicherheit und nahtloses Benutzererlebnis.",
   alternates: {
-    canonical: "https://bharathatechno.com/work/train-2-gain",
+    canonical: "https://bharathatechno.de/work/train-2-gain",
   },
 };
 

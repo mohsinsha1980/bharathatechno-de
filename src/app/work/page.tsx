@@ -8,14 +8,14 @@ export default function Work() {
     "@context": "https://schema.org",
     "@type": "WebPage",
     name: "Our Projects & Case Studies - BharathaTechnoIT",
-    url: "https://bharathatechno.com/work",
+    url: "https://bharathatechno.de/work",
     headline:
       "BharathaTechnoIT Portfolio: Custom Software, App & ERP Solutions",
     description:
       "Explore BharathaTechnoIT's project portfolio and case studies, highlighting successful digital solutions for diverse clients. Discover how our expertise in web and mobile app development, ERP, and digital transformation drives measurable business growth and exceptional outcomes.",
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://bharathatechno.com/search?q={search_term_string}",
+      target: "https://bharathatechno.de/search?q={search_term_string}",
       "query-input": "required name=search_term_string",
     },
   };

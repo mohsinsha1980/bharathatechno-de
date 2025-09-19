@@ -22,14 +22,14 @@ export default function ServicesFullStackDevelopment() {
     "@context": "https://schema.org",
     "@type": "WebPage",
     name: "Full Stack Development - MERN & MEAN Experts | BharathaTechnoIT",
-    url: "https://bharathatechno.com/offerings/services/full-stack-development",
+    url: "https://bharathatechno.de/offerings/services/full-stack-development",
     headline:
       "Full Stack Web & Mobile App Development Using MERN & MEAN | Custom ERP Solutions",
     description:
       "BharathaTechnoIT delivers robust, scalable full stack development using MERN & MEAN. We build custom web apps, mobile apps, SPAs, PWAs, e-commerce platforms, and enterprise ERP systems. Expertise in React, Angular, NodeJs, Express, MongoDB, cloud infrastructure, and user-focused UI/UX. Partner with us to turn your vision into reality.",
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://bharathatechno.com/search?q={search_term_string}",
+      target: "https://bharathatechno.de/search?q={search_term_string}",
       "query-input": "required name=search_term_string",
     },
   };

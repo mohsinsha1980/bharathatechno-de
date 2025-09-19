@@ -8,14 +8,14 @@ export default function BlogPage() {
     "@context": "https://schema.org",
     "@type": "BlogPage",
     name: "BharathaTechnoIT Blogs - Technology, App Development & Business Growth",
-    url: "https://bharathatechno.com/blogs",
+    url: "https://bharathatechno.de/blogs",
     headline:
       "BharathaTechnoIT Blogs: Latest Insights in Tech, Web & Mobile Development",
     description:
       "Explore BharathaTechnoIT's blog page for expert articles on software engineering, web and mobile app development, business automation, digital transformation, and industry best practices. Stay ahead with our technical insights, case studies, and IT innovation strategies.",
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://bharathatechno.com/search?q={search_term_string}",
+      target: "https://bharathatechno.de/search?q={search_term_string}",
       "query-input": "required name=search_term_string",
     },
   };

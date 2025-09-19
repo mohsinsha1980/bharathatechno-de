@@ -18,14 +18,14 @@ export default function ServicesTechnicalDocumentation() {
     "@context": "https://schema.org",
     "@type": "WebPage",
     name: "Technical Documentation Services - BharathaTechnoIT",
-    url: "https://bharathatechno.com/offerings/services/technical-documentation",
+    url: "https://bharathatechno.de/offerings/services/technical-documentation",
     headline:
       "Technical Documentation - Clear, Structured Docs for Software & Systems",
     description:
       "BharathaTechnoIT offers expert technical documentation services for businesses and software teams. From user guides and API docs to process manuals, we deliver clear, organized documentation that accelerates development, ensures accuracy, and supports scalable software and IT operations.",
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://bharathatechno.com/search?q={search_term_string}",
+      target: "https://bharathatechno.de/search?q={search_term_string}",
       "query-input": "required name=search_term_string",
     },
   };

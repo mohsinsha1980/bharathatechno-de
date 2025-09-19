@@ -18,7 +18,7 @@ export default function BlogItem({ blog }: { blog: PostDataType }) {
           <div
             className="flex space-between items-center gap-4"
           >
-            <span className="flex-1">{blog.title}</span>
+            <span className="flex-1">{blog.title.slice(0, 40) + "…"}</span>
             <ArrowRight className="go-link" size={70} />
           </div>
         </h3>

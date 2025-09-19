@@ -9,6 +9,7 @@ import {
   UsersRound,
 } from "lucide-react";
 import {
+  OfficeLocationType,
   ProductCaseStudy,
   ServiceExcelType,
   ServiceFeaturesType,
@@ -1483,5 +1484,31 @@ export const SERVICE_TECHNICAL_DOCUMENTATION_FEATURES: ServiceExcelType[] = [
     title:
       "Technische Übersichten für Kunden, Anbieter oder interne Schulungen",
     description: "",
+  },
+];
+
+export const OFFICE_LOCATION: OfficeLocationType[] = [
+  {
+    country: "India",
+    flag: "🇮🇳",
+    address:
+      "Sunshree Woods, Office number, F28 to 32, NIBM Rd, Kondhwa, Pune, Maharashtra 411048",
+    email: "info@bharathatechno.com",
+    phone: "+91-932-563-6885",
+    mapPosition: "left",
+    city: "Pune",
+    embedMapUrl:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.6486359819146!2d73.91437727592636!3d18.454255771195115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eba952eb29fd%3A0x1fd1cfdcdf9f0974!2sBharathaTechno%20IT%20Private%20Limited!5e0!3m2!1sen!2sin!4v1740480008318!5m2!1sen!2sin",
+  },
+  {
+    country: "Germany",
+    flag: "🇩🇪",
+    address: "Bruckwiesenweg 2, 70734 Fellbach, Germany",
+    email: "kourosh.bagherian@bharathatechno.de",
+    phone: "+91-932-563-6885",
+    mapPosition: "right",
+    city: "Germany",
+    embedMapUrl:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2627.3681314023916!2d9.276763576753924!3d48.81303710389667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799c5e941bef899%3A0xf3c8bbb2ac3c21b8!2sBruckwiesenweg%202%2C%2070734%20Fellbach%2C%20Germany!5e0!3m2!1sen!2sin!4v1758112154768!5m2!1sen!2sin",
   },
 ];
