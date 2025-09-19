@@ -8,7 +8,7 @@ export default async function TrendyThreadsPage() {
   return (
     <article className="pg_work">
       <CaseStudiesBanner
-        data="Trendy Threads - A Full-Featured Fashion E-Commerce Platform for Seamless Online Retail"
+        data="Trendy Threads - Eine voll ausgestattete E-Commerce-Plattform für Mode für reibungslosen Online-Einzelhandel"
       />
       <div className="bl_case_studies">
         <div className="container container-medium">

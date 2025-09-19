@@ -23,7 +23,7 @@ const PRODUCT: BlogType[] = [
     label: "",
     title: "B-Fit",
     excerpt:
-      "B-Fit helps gyms, yoga instructors, and fitness coaches manage clients, schedules, and payments, making it easier to run their services and grow their brand online.",
+      "B-Fit unterstützt Fitnessstudios, Yoga-Lehrer:innen und FitnessCoaches dabei, Kunden, Termine und Zahlungen effizient zu verwalten. So wird die Organisation der Dienstleistungen erleichtert und die Online-Präsenz gestärkt, um das Markenwachstum zu fördern.",
     author: "",
     author_picture: "/images/blogs/rajesh.webp",
     date: new Date().toDateString(),
@@ -35,7 +35,7 @@ const PRODUCT: BlogType[] = [
     label: "",
     title: "B-store",
     excerpt:
-      "B-STORE is a scalable e-commerce platform for fashion, beauty & more—offering full control, brand focus, and growth beyond marketplaces.",
+      "B-Store ist eine skalierbare, unabhängige E-Commerce-Plattform, die alle Branchen unterstützt—von Mode und Beauty bis hin zu Elektronik und Dienstleistungen. Sie bietet die vollständige Kontrolle über Ihre Marke, Produkte und Kundendaten, was ein nachhaltiges Wachstum unabhängig von großen Marktplätzen ermöglicht.",
     author: "",
     author_picture: "/images/blogs/rajesh.webp",
     date: new Date().toDateString(),
@@ -47,7 +47,7 @@ const PRODUCT: BlogType[] = [
     label: "",
     title: "B-Chef",
     excerpt:
-      "B-CHEF is a web solution for chefs and food brands to sell online, build their identity, and grow independently with powerful food delivery tools.",
+      "B-Chef ist eine webbasierte Lösung für Köche und FoodBrands, die ihre Produkte online verkaufen, ihre Markenidentität stärken und unabhängig wachsen möchten. Die Plattform bietet leistungsstarke Tools für Bestellungen und Lieferungen, um das Geschäft effizient zu skalieren.",
     author: "",
     author_picture: "/images/blogs/rajesh.webp",
     date: new Date().toDateString(),
@@ -70,13 +70,13 @@ const schemaData = {
   "@context": "https://schema.org",
   "@type": "WebPage",
   name: "Ready-to-Grow Digital Products - B-Fit, B-Store, B-Chef | BharathaTechnoIT",
-  url: "https://bharathatechno.com/offerings/products",
+  url: "https://bharathatechno.de/offerings/products",
   headline: "Our Products - B-Fit, B-Store, B-Chef for Business Growth",
   description:
     "Explore BharathaTechnoIT's ready-to-grow products: B-Fit for fitness business management, B-Store for e-commerce brands, and B-Chef for online food delivery. Our scalable, user-friendly platforms empower gyms, retailers, and food brands to grow their business, reach more customers, and build a modern online presence.",
   potentialAction: {
     "@type": "SearchAction",
-    target: "https://bharathatechno.com/search?q={search_term_string}",
+    target: "https://bharathatechno.de/search?q={search_term_string}",
     "query-input": "required name=search_term_string",
   },
 };
@@ -92,10 +92,9 @@ export default function Product() {
       />
       <section className="pg_product">
         <Banner
-          data="Our products are purpose-built platforms for growth, efficiency, and
-        customer engagement. Developed using leading-edge full-stack technology,
-        each solution is tailored to your specific needs, allowing to operate
-        freely and scale with conviction."
+          data={`Unsere Produkte sind speziell entwickelte Plattformen für Wachstum, Effizienz und Kundenbindung.
+Mit modernster Full-Stack-Technologie realisiert, werden alle Lösungen individuell auf Ihre Anforderungen zugeschnitten,
+sodass Sie flexibel arbeiten und mit voller Überzeugung skalieren können.`}
         />
         <div className="container mt-8">
           <h2

@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Staff Augmentation Services | MERN & MEAN Stack Experts",
-  description: "BharathaTechno IT offers specialized staff augmentation services to scale your team with top-tier MERN and MEAN stack experts, enhancing technical capabilities.",
+  title: "Personalaufstockungsdienste | MERN & MEAN Stack-Experten",
+  description:
+    "BharathaTechno IT bietet spezialisierte Personalaufstockungsdienste an, um Ihr Team mit erstklassigen MERN- und MEAN-Stack-Experten zu erweitern und so die technischen Fähigkeiten zu verbessern.",
   alternates: {
-    canonical: "https://bharathatechno.com/offerings/services/staff-augmentation",
+    canonical:
+      "https://bharathatechno.de/offerings/services/staff-augmentation",
   },
 };
 

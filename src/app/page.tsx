@@ -15,14 +15,14 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "WebPage",
     name: "BharathaTechnoIT Private Limited - Web & Mobile App Development",
-    url: "https://bharathatechno.com/",
+    url: "https://bharathatechno.de/",
     headline:
       "BharathaTechnoIT - Custom Software, ERP & App Development Company",
     description:
       "BharathaTechnoIT Private Limited is a leading IT company specializing in custom software development, web and mobile application solutions, and end-to-end ERP systems. Empower your business with innovative digital products, reliable support, and expert consulting for growth in a digital world.",
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://bharathatechno.com/search?q={search_term_string}",
+      target: "https://bharathatechno.de/search?q={search_term_string}",
       "query-input": "required name=search_term_string",
     },
   };

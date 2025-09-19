@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Custom Software Products for Business | BharathaTechno IT",
-  description: "Discover custom software products by BharathaTechno IT, offering scalable and tailored solutions that drive growth using innovative and cutting-edge technology.",
+  title: "Maßgeschneiderte Softwareprodukte für Unternehmen | BharathaTechno IT",
+  description:
+    "Entdecken Sie kundenspezifische Softwareprodukte von BharathaTechno IT, die skalierbare und maßgeschneiderte Lösungen bieten, die mithilfe innovativer und hochmoderner Technologie das Wachstum vorantreiben.",
   alternates: {
-    canonical: "https://bharathatechno.com/offerings/products",
+    canonical: "https://bharathatechno.de/offerings/products",
   },
 };
 

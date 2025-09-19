@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Performance Marketing for B2B | BharathaTechno IT",
-  description: "BharathaTechno IT helps B2B companies land meetings with decision-makers using human-led, channel-optimized outbound systems designed for high-ticket services.",
+  title: "Performance-Marketing für B2B | BharathaTechno IT",
+  description:
+    "BharathaTechno IT hilft B2B-Unternehmen dabei, Meetings mit Entscheidungsträgern zu vereinbaren, indem es von Menschen geführte, kanaloptimierte Outbound-Systeme verwendet, die für hochpreisige Dienstleistungen konzipiert sind.",
   alternates: {
     canonical:
-      "https://bharathatechno.com/offerings/services/performance-marketing",
+      "https://bharathatechno.de/offerings/services/performance-marketing",
   },
 };
 

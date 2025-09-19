@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Snumero: Next.js Website with Local SEO for Business Growth",
-  description: "Explore Snumero's Next.js website, optimized with local SEO for business growth. We deliver scalable, high-performance solutions to enhance local market visibility.",
+  title: "Snumero: Next.js-Website mit lokaler SEO für Unternehmenswachstum",
+  description:
+    "Entdecken Sie die Next.js-Website von Snumero, optimiert mit lokaler SEO für Ihr Unternehmenswachstum. Wir liefern skalierbare, leistungsstarke Lösungen zur Verbesserung der lokalen Marktpräsenz.",
   alternates: {
-    canonical: "https://bharathatechno.com/work/snumero",
+    canonical: "https://bharathatechno.de/work/snumero",
   },
 };
 

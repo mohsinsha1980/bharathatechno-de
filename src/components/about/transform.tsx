@@ -37,7 +37,7 @@ export default function Transform() {
             className="text-center mb-4 small"
             style={{ color: `var(--text-orange)` }}
           >
-            Ready to transform your digital presence
+            Ihr nächster Schritt zur digitalen Transformation
           </h2>
         </motion.div>
 
@@ -49,9 +49,9 @@ export default function Transform() {
           animate={isInView2 ? "animate" : ""}
         >
           <p className="text-center mb-6">
-            Connect with our management team to discuss
+            Kontaktieren Sie unser Management-Team -
             <br />
-            how we can bring your vision to life.
+            gemeinsam verwirklichen wir Ihre Vision
           </p>
         </motion.div>
 
@@ -64,7 +64,7 @@ export default function Transform() {
         >
           <div className="text-center">
             <Link href="/contact" className="link-btn">
-              Get In Touch
+              Jetzt kontaktieren
             </Link>
           </div>
         </motion.div>

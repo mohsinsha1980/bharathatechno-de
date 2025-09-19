@@ -47,7 +47,7 @@ export default function OurJourney() {
             className="mb-10 text-center"
             style={{ color: `var(--text-orange)` }}
           >
-            Our Journey
+            Unsere Erfolgsgeschichte
           </h2>
         </motion.div>
 
@@ -75,9 +75,10 @@ export default function OurJourney() {
                 <div className="bl_journey_step blue">
                   <label>November 2023</label>
                   <p>
-                    BharathaTechno IT Private Limited was founded as one of the
-                    emerging IT companies in Pune, marking the beginning of our
-                    exciting and thriving journey in the tech industry.
+                    BharathaTechno IT Private Limited wurde als eines der
+                    aufstrebenden IT-Unternehmen in Pune gegründet und markiert
+                    den Beginn unserer spannenden und erfolgreichen Reise in der
+                    Technologiebranche.
                   </p>
                 </div>
               </motion.span>
@@ -85,10 +86,11 @@ export default function OurJourney() {
                 <div className="bl_journey_step blue">
                   <label>December 2023</label>
                   <p>
-                    We proudly launched Shred-n-Shape, our first major project,
-                    a fitness-focused responsive web app. This milestone
-                    solidified our place among promising digital web solutions
-                    providers.
+                    Mit Stolz präsentieren wir ,Shred-n-Shape - unser erstes
+                    größeres Projekt, eine responsive Web-App rund um Fitness.
+                    Dieser Meilenstein unterstreicht unsere Expertise und
+                    festigt unsere Position als aufstrebender Anbieter
+                    innovativer digitaler Weblösungen.
                   </p>
                 </div>
               </motion.span>
@@ -96,9 +98,10 @@ export default function OurJourney() {
                 <div className="bl_journey_step blue">
                   <label>January 2024</label>
                   <p>
-                    Achieved recognition under the Startup India initiative
-                    (DIPP154250), validating our innovative approach and growth
-                    mindset within Pune&apos;s emerging IT startup ecosystem.
+                    Wir erhielten Anerkennung im Rahmen der Start-up India
+                    Initiative (DIPP154250), was unseren innovativen Ansatz und
+                    unsere Wachstumsorientierung im aufstrebenden
+                    ITStartup-Ökosystem von Pune bestätigt
                   </p>
                 </div>
               </motion.span>
@@ -106,10 +109,10 @@ export default function OurJourney() {
                 <div className="bl_journey_step blue">
                   <label>August 2024</label>
                   <p>
-                    Successfully launched the Nikita&apos;s Curry Corner web
-                    app, marking our strategic entry into the food-tech domain
-                    and reinforcing our expertise in delivering niche,
-                    industry-specific web IT solutions.
+                    Wir erhielten Anerkennung im Rahmen der Start-up India
+                    Initiative (DIPP154250), was unseren innovativen Ansatz und
+                    unsere Wachstumsorientierung im aufstrebenden
+                    ITStartup-Ökosystem von Pune bestätigt
                   </p>
                 </div>
               </motion.span>
@@ -117,10 +120,10 @@ export default function OurJourney() {
                 <div className="bl_journey_step blue">
                   <label>September 2024</label>
                   <p>
-                    Since then, we marked a significant milestone, built a
-                    strong, talented team, and expanded our services by
-                    integrating advanced SEO strategies to boost digital
-                    visibility for clients across domains.
+                    Wir haben bedeutende Meilensteine erreicht, ein starkes Team
+                    aufgebaut und unser Leistungsspektrum erweitert, indem wir
+                    fortschrittliche SEO-Strategien zur Steigerung der digitalen
+                    Sichtbarkeit unserer Kunden integrieren.
                   </p>
                 </div>
               </motion.span>
@@ -136,19 +139,20 @@ export default function OurJourney() {
         >
           <div className="container container-small text-center">
             <p>
-              September 2024 marked a significant milestone in
-              BharathaTechno&apos;s journey as we expanded our portfolio with a
-              diverse range of projects. Our team delved into advanced Search
-              Engine Optimization (SEO) strategies, enhancing online visibility
-              for multiple clients across various industries. We also launched
-              several cutting-edge websites and web applications, each tailored
-              to meet unique business needs and user expectations. Additionally,
-              our product development initiatives gained momentum, with
-              innovative solutions in the pipeline set to revolutionize market
-              segments. These projects not only showcased our technical prowess
-              in MERN and MEAN stack development but also highlighted our
-              ability to deliver comprehensive digital solutions that drive
-              business growth and user engagement
+              Im September 2024 erreichte BharathaTechno einen wichtigen
+              Meilenstein: Wir erweiterten unser Portfolio um zahlreiche
+              spannende Projekte. Unser Team setzte fortschrittliche
+              SEO-Strategien ein, um die digitale Sichtbarkeit unserer Kunden
+              aus unterschiedlichsten Branchen zu maximieren. Gleichzeitig
+              lancierten wir mehrere hochmoderne Websites und Webanwendungen,
+              die passgenau auf die individuellen Geschäftsanforderungen und
+              Nutzererwartungen zugeschnitten sind. Unsere Produktentwicklungen
+              gewannen an Fahrt: Mit innovativen Lösungen in der Pipeline setzen
+              wir neue Impulse für verschiedene Marktsegmente. Diese Projekte
+              zeigen nicht nur unsere technische Expertise in MERN- und
+              MEAN-Stack-Entwicklung, sondern auch unsere Fähigkeit, umfassende
+              digitale Lösungen zu liefern, die Geschäftswachstum fördern und
+              Nutzer nachhaltig begeistern.
             </p>
           </div>
         </motion.div>

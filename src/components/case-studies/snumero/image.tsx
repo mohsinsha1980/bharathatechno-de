@@ -13,7 +13,7 @@ export default function SnumeroImage() {
         />
       </Link>
 
-      <h3>Technologies Used</h3>
+      <h3>ENTWICKELT MIT</h3>
       <ul>
         <li>Next.Js + Typescript</li>
         <li>MySQL</li>

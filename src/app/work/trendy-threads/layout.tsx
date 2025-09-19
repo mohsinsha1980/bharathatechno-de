@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Trendy Threads: E-commerce Web App | BharathaTechno IT",
-  description: "BharathaTechno IT built the Trendy Threads e-commerce web app, offering custom features and scalable solutions for smooth online shopping experiences.",
+  title: "Trendy Threads: E-Commerce-Web-App | BharathaTechno IT",
+  description:
+    "BharathaTechno IT hat die E-Commerce-Web-App „Trendy Threads“ entwickelt, die benutzerdefinierte Funktionen und skalierbare Lösungen für ein reibungsloses Online-Einkaufserlebnis bietet.",
   alternates: {
-    canonical: "https://bharathatechno.com/work/trendy-threads",
+    canonical: "https://bharathatechno.de/work/trendy-threads",
   },
 };
 

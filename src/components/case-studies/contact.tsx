@@ -32,13 +32,14 @@ export default function CaseStudiesContact() {
           animate={isInView1 ? "animate" : ""}
         >
           <p className="mb-[20px]">
-            These projects show our commitment to tailored digital solutions. At
-            BharathaTechno, we push technology&apos;s limits to deliver impactful
-            client experiences.
+            Diese Projekte spiegeln unser Engagement für maßgeschneiderte
+            digitale Lösungen wider. Bei BharathaTechno erweitern wir konsequent
+            die Grenzen der Technologie, für unsere Kunden überzeugende und
+            nachhaltige digitale Erlebnisse zu schaffen.
           </p>
           <div className="mb-[60px]">
             <Link href="/contact" className="link-btn">
-              Contact Us
+              Jetzt kontaktieren
             </Link>
           </div>
         </motion.div>
@@ -49,8 +50,9 @@ export default function CaseStudiesContact() {
           animate={isInView2 ? "animate" : ""}
         >
           <q>
-            Explore how our expertise can transform your business. Reach out
-            today to discuss your project ideas with us!
+            Entdecken Sie, wie unsere Expertise Ihr Unternehmen transformieren
+            kann. Kontaktieren Sie uns noch heute, um Ihr Projekt mit uns zu
+            besprechen!
           </q>
         </motion.div>
       </div>

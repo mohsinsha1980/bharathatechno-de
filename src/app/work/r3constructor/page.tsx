@@ -7,7 +7,7 @@ import ProjectGallery from "@/components/case-studies/r3constructor/project-gall
 export default async function R3ConstructorPage() {
   return (
     <article className="pg_work">
-      <CaseStudiesBanner data="Comprehensive Digital Presence for R3 Constructor with Ongoing and Completed Projects in PCMC"/>
+      <CaseStudiesBanner data="Umfassende digitale Präsenz für R3 Constructor mit laufenden und abgeschlossenen Projekten in PCMC"/>
       <div className="bl_case_studies">
         <div className="container container-medium">
           <CaseStudyTemplate>

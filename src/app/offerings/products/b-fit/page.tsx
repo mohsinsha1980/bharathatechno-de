@@ -44,7 +44,7 @@ export default function ProductBFit() {
 
   return (
     <article className="pg_product">
-      <ProductBanner data="Complete Fitness Personal Trainer Software for Coaches to Sell Programs, Workouts, and Nutrition Plans Online"/>
+      <ProductBanner data="Komplette Fitness-Personal-Trainer-Software für Trainer zum Online-Verkauf von Programmen, Trainingseinheiten und Ernährungsplänen" />
       <Summary>
         <motion.h2
           ref={ref2}
@@ -62,7 +62,10 @@ export default function ProductBFit() {
           animate={isInView3 ? "animate" : ""}
           className="text-center"
         >
-          <p>#Web Platform for Selling Fitness Transformation Plans.</p>
+          <p>
+            #Online-Plattform für den Verkauf von Trainings- und
+            Transformationsplänen
+          </p>
         </motion.div>
       </Summary>
       <motion.div
@@ -72,17 +75,20 @@ export default function ProductBFit() {
         animate={isInView4 ? "animate" : ""}
         className="container container-small"
       >
-        <h4>Product Overview </h4>
+        <h4> Produktübersicht</h4>
         <p>
-          B-FIT is a complete fitness personal trainer software that helps
-          coaches and trainers sell programs, workout guides, and nutrition
-          plans online. It automates the client journey with secure access,
-          e-commerce, and content delivery, enabling fitness professionals to
-          grow their business independently.
+          B-Fit ist eine umfassende Software für Personal Trainer und
+          Fitness-Coaches, die den Verkauf von Trainingsprogrammen,
+          WorkoutGuides und Ernährungsplänen online unterstützt. <br />
+          Die Plattform automatisiert den Kundenprozess mit sicherem Zugriff,
+          E-Commerce-Funktionalität und Content-Bereitstellung, sodass
+          Fitness-Profis ihr Business unabhängig und effizient ausbauen können.
         </p>
       </motion.div>
       <Features data={PRODUCT_BFIT} />
-      <ProductUSP description="B-FIT gives fitness and wellness entrepreneurs a system to sell digital plans and manage customers through one central platform, branded to their business, commission-free, and independent from external marketplaces." />
+      <ProductUSP description="B-Fit bietet Fitness- und Wellness-Unternehmer:innen eine zentrale Plattform, um digitale Trainings- und Ernährungspläne zu
+verkaufen und Kund:innen effizient zu verwalten.
+Die Plattform ist individuell auf das eigene Branding abgestimmt, provisionsfrei und unabhängig von externen Marktplätzen." />
 
       <ProductFeatures />
       <CaseStudy data={BFIT_CASE_STUDY} />

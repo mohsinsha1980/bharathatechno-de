@@ -51,6 +51,8 @@ export type contactFormType = {
   phone: string;
   subject: string;
   message?: string;
+  picture?: File | string;
+  file?: File;
 };
 
 export type formErrorObjType = {
@@ -63,6 +65,8 @@ export type formErrorType = {
   email: formErrorObjType;
   phone: formErrorObjType;
   subject: formErrorObjType;
+  picture: formErrorObjType;
+  file: formErrorObjType;
 };
 
 export interface ProductFeaturesType {
@@ -112,4 +116,15 @@ export interface PostDataType {
   slug: string;
   content: string;
   faqs: FAQMdFileType[];
+}
+
+export interface OfficeLocationType {
+  country: string;
+  flag: string;
+  address: string;
+  email: string;
+  phone: string;
+  mapPosition: string;
+  city: string;
+  embedMapUrl: string;
 }

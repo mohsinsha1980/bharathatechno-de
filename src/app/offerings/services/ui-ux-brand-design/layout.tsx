@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Custom UI/UX & Brand Design | BharathaTechno IT",
+  title: "Benutzerdefiniertes UI/UX- und Markendesign | BharathaTechno IT",
   description:
-    "BharathaTechno IT offers expert UI/UX and brand design services to create engaging user experiences and strong brand identities for businesses.",
+    "BharathaTechno IT bietet fachkundige UI/UX- und Markendesigndienste an, um ansprechende Benutzererlebnisse und starke Markenidentitäten für Unternehmen zu schaffen.",
   alternates: {
     canonical:
-      "https://bharathatechno.com/offerings/services/ui-ux-brand-design",
+      "https://bharathatechno.de/offerings/services/ui-ux-brand-design",
   },
 };
 

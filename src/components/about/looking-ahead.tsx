@@ -43,7 +43,7 @@ export default function LookingAhead() {
     amount: inViewAmount,
   });
 
-  const isInView3 = useInView(ref3, { once: true , amount: inViewAmount});
+  const isInView3 = useInView(ref3, { once: true, amount: inViewAmount });
 
   const imageVariant = {
     hidden: { opacity: 0, x: screen.width > 1024 ? -100 : -1 },
@@ -78,45 +78,44 @@ export default function LookingAhead() {
             className="text-center mb-4"
             style={{ color: `var(--text-blue)` }}
           >
-            Looking Ahead
+            Mit Blick nach vorn
           </h2>
         </motion.div>
 
         <div className="flex gap-[60px] flex-col lg:flex-row">
           <motion.div
-          className="flex-1"
+            className="flex-1"
             ref={ref1}
             initial="hidden"
             animate={isInView1 ? "show" : ""}
             variants={imageVariant}
           >
-              <p className="mb-6">
-                As we continue to grow, our commitment to innovation and client
-                success remains unwavering. We&apos;re excited about the future
-                and the opportunities to create transformative digital solutions
-                for businesses across various sectors.
-              </p>
-              <p>
-                Join us on this exciting journey as we continue to push the
-                boundaries of what&apos;s possible in the world of technology.
-                At BharathaTechno, we&apos;re not just building software,
-                we&apos;re crafting the digital future.
-              </p>
+            <p className="mb-6">
+              Während wir weiter wachsen, bleibt unser Fokus auf Innovation und
+              Kundenerfolg unverändert. Wir gestalten transformative digitale
+              Lösungen für Unternehmen in unterschiedlichsten Branchen und
+              erweitern kontinuierlich die Grenzen des Möglichen in der
+              Technologie.
+            </p>
+            <p>
+              Bei BharathaTechno entwickeln wir nicht nur Software - wir formen
+              die digitale Zukunft.
+            </p>
           </motion.div>
 
           <motion.div
-          className="flex-1 flex justify-center items-center"
+            className="flex-1 flex justify-center items-center"
             ref={ref2}
             initial="hidden"
             animate={isInView2 ? "show" : ""}
             variants={contentVariant}
           >
-              <Image
-                src="/images/about/team.webp"
-                alt="BharathaTechno Team"
-                width={600}
-                height={264}
-              />
+            <Image
+              src="/images/about/team.webp"
+              alt="BharathaTechno Team"
+              width={600}
+              height={264}
+            />
           </motion.div>
         </div>
       </div>

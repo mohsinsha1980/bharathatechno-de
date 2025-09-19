@@ -14,14 +14,14 @@ export default function ServicesDigitalMarketing() {
     "@context": "https://schema.org",
     "@type": "WebPage",
     name: "Performance Marketing Services - BharathaTechnoIT",
-    url: "https://bharathatechno.com/offerings/services/performance-marketing",
+    url: "https://bharathatechno.de/offerings/services/performance-marketing",
     headline:
       "Performance Marketing - Strategic Campaigns & B2B Lead Generation",
     description:
       "BharathaTechnoIT's Performance Marketing services deliver predictable B2B lead generation with human-led, channel-optimized outreach. Services include ICP research, multi-touch personalized campaigns, appointment setting, and data-driven optimization. Add-on options include social media management and ads, all focused on maximizing conversions and supporting your sales pipeline.",
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://bharathatechno.com/search?q={search_term_string}",
+      target: "https://bharathatechno.de/search?q={search_term_string}",
       "query-input": "required name=search_term_string",
     },
   };
@@ -71,7 +71,7 @@ export default function ServicesDigitalMarketing() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
       <article className="pg_service">
-        <ServicesBanner data="Performance Marketing Services in NIBM Road, Pune to Drive Targeted B2B Lead Generation and Conversions"/>
+        <ServicesBanner data="Performance-Marketing-Services in NIBM Road, Pune, zur gezielten Generierung und Konvertierung von B2B-Leads" />
         <ServicesList />
         <Summary>
           <motion.h2
@@ -91,16 +91,19 @@ export default function ServicesDigitalMarketing() {
             animate={isInView3 ? "animate" : ""}
             className="text-center md:text-justify"
           >
-            At BharathaTechno, we help you consistently land meetings with
-            decision-makers using human-led, channel-optimized outbound systems.
-            Designed for B2B companies with high-ticket services, our outreach
-            is fully personalized and built for conversion.
+            Bei BharathaTechno helfen wir Ihnen dabei, konsequent Meetings mit
+            Entscheidungsträgern zu vereinbaren - durch menschenzentrierte,
+            kanaloptimierte Outbound-Systeme. Unsere Strategie ist speziell für
+            B2B-Unternehmen mit hochpreisigen Dienstleistungen konzipiert und
+            basiert auf vollständig personalisierten, konversionsorientierten
+            Ansätzen.
           </motion.p>
         </Summary>
         <ServicesFeatures data={SERVICE_DIGITAL_MARKETING_FEATURES} />
         <ServicesContact
-          title=""
-          description="A Predictable Lead Engine for B2B Brands"
+          title="Eine vorhersehbare Lead-Engine für B2B-Marken"
+          description="Unser Performance Marketing-Ansatz bietet Ihnen eine skalierbare und messbare Methode zur Generierung
+hochwertiger Leads und zur Steigerung Ihrer Verkaufszahlen."
         />
       </article>
     </>

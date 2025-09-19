@@ -39,18 +39,19 @@ export default function OurMission() {
           </motion.div>
 
           <motion.div
-            className="my-10"
+            className="my-5 lg:my-10"
             ref={ref2}
             variants={fadeInVariant}
             initial="initial"
             animate={isInView2 ? "animate" : ""}
           >
-            <h3 className="text-[24px]">
-              At BharathaTechno, we are on a mission to empower businesses
-              through cutting-edge technology. Whether you&apos;re a startup or an
-              established brand, we deliver end-to-end IT solutions that align
-              with your vision. From UI/UX design to deployment, our team
-              ensures every project is built to scale, perform, and inspire.
+            <h3 className="text-[16px] lg:text-[24px]">
+              Bei BharathaTechno treiben wir Unternehmen mit modernster
+              Technologie voran. Ob Start-up oder etabliertes Unternehmen - wir
+              liefern maßgeschneiderte End-to-End-IT-Lösungen, die Ihre Vision
+              Wirklichkeit werden lassen. Von UI/UX-Design bis zur Umsetzung
+              sorgt unser Team dafür, dass jedes Projekt zukunftssicher,
+              leistungsstark und überzeugend ist.
             </h3>
           </motion.div>
         </div>

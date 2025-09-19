@@ -3,7 +3,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 export default function BannerContent() {
-  const text1 = "Next.js Website Development by BharathaTechno Pvt. Ltd.";
+  const text1 = "Next.js Website Development by BharathaTechno EU";
 
   const variants = {
     hidden: { opacity: 0 },

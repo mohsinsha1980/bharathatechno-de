@@ -2,8 +2,8 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
-export default function ServicesBannerContent({data}: {data: string}) {
-  const text1 = "Our Projects &";
+export default function ServicesBannerContent({ data }: { data: string }) {
+  const text1 = "Unsere Projekte &";
 
   const variants = {
     hidden: { opacity: 0 },
@@ -47,7 +47,7 @@ export default function ServicesBannerContent({data}: {data: string}) {
 
   return (
     <div className="content col-span-1 lg:col-span-2">
-      <p className="mt-8 lg:mt-0 lg:mb-16 text-center lg:text-left">
+      <p className="mt-8 lg:mt-0 lg:mb-10 text-center lg:text-left">
         <motion.span
           className="lg:mb-4"
           ref={ref1}
@@ -70,7 +70,7 @@ export default function ServicesBannerContent({data}: {data: string}) {
             animate={isInView2 ? "animate" : ""}
             className="inline-block"
           >
-            Case Studies
+            Referenzen
           </motion.span>
         </span>
       </p>
@@ -81,8 +81,7 @@ export default function ServicesBannerContent({data}: {data: string}) {
         animate={isInView3 ? "animate" : ""}
         className="text-center lg:text-left"
       >
-        {data}
-       
+        <div dangerouslySetInnerHTML={{ __html: data }}></div>
       </motion.h1>
     </div>
   );

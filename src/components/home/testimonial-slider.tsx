@@ -18,7 +18,7 @@ const DATA = [
     id: 0,
     logo: "/images/home/logos/nikitas-curry-corner.svg",
     content:
-      "“Working with Bharatha Techno has been a game-changer for our business. Their expertise in both design and development exceeded our expectations, delivering a product that truly stands out. The web and mobile application they created for our cloud kitchen has streamlined our operations and significantly improved our customer engagement. Their attention to detail and understanding of our unique needs in the food industry was impressive.”",
+      "“Working with BharathaTechno has been a game-changer for our business. Their expertise in both design and development exceeded our expectations, delivering a product that truly stands out. The web and mobile application they created for our cloud kitchen has streamlined our operations and significantly improved our customer engagement. Their attention to detail and understanding of our unique needs in the food industry was impressive.”",
     client: "Nikita's Curry Corner",
     name: "Mr. Raj Bulland",
     title: "Cloud Kitchen Chef",
@@ -48,7 +48,7 @@ const DATA = [
   //   id: 3,
   //   logo: "/images/home/logos/nikitas-curry-corner.svg",
   //   content:
-  //     "“Working with Bharatha Techno has been a game-changer for our business. Their expertise in both design and development exceeded our expectations, delivering a product that truly stands out. The web and mobile application they created for our cloud kitchen has streamlined our operations and significantly improved our customer engagement. Their attention to detail and understanding of our unique needs in the food industry was impressive.”",
+  //     "“Working with BharathaTechno has been a game-changer for our business. Their expertise in both design and development exceeded our expectations, delivering a product that truly stands out. The web and mobile application they created for our cloud kitchen has streamlined our operations and significantly improved our customer engagement. Their attention to detail and understanding of our unique needs in the food industry was impressive.”",
   //   client: "Nikita's Curry Corner",
   //   name: "Mr. Raj Bulland",
   //   title: "Cloud Kitchen Chef",

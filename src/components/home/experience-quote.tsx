@@ -11,7 +11,7 @@ export default function ExperienceQuote() {
         className="bg"
       />
       <div className="container text-center">
-        <h2>Where Experience meets innovation</h2>
+        <h2>Wo Expertise Innovation gestaltet</h2>
       </div>
     </section>
   );

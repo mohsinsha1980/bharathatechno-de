@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "UrbanAxis: Next.js Website with SEO for Business Growth",
-  description: "BharathaTechno IT built the UrbanAxis website in Goa using Next.js, integrating best SEO practices to enhance business growth and improve online visibility.",
+  title: "UrbanAxis: Next.js-Website mit SEO für Unternehmenswachstum",
+  description: "BharathaTechno IT hat die UrbanAxis-Website in Goa mit Next.js erstellt und dabei bewährte SEO-Praktiken integriert, um das Geschäftswachstum zu fördern und die Online-Sichtbarkeit zu verbessern.",
   alternates: {
-    canonical: "https://bharathatechno.com/work/urban-axis",
+    canonical: "https://bharathatechno.de/work/urban-axis",
   },
 };
 

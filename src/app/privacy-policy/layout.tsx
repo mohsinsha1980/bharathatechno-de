@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | BharathaTechno IT Pvt. Ltd.",
-  description: "Privacy Policy of BharathaTechno IT Pvt. Ltd.",
+  title: "Datenschutzrichtlinie | BharathaTechno IT EU",
+  description: "Datenschutzrichtlinie von BharathaTechno IT EU",
   alternates: {
-    canonical: "https://bharathatechno.com/privacy-policy",
+    canonical: "https://bharathatechno.de/privacy-policy",
   },
 };
 

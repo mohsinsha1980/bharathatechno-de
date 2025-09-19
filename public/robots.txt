@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.bharathatechno.com
+Host: https://www.bharathatechno.de
 
 # Sitemaps
-Sitemap: https://www.bharathatechno.com/sitemap.xml
+Sitemap: https://www.bharathatechno.de/sitemap.xml

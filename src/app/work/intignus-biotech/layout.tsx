@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Custom WordPress Website for Intignus Biotech | Pune",
-  description: "Explore the custom WordPress website by BharathaTechno IT for Intignus Biotech in Pune. Our solution offers a secure, scalable platform tailored to biotech needs.",
+  title: "Benutzerdefinierte WordPress-Website für Intignus Biotech | Pune",
+  description:
+    "Entdecken Sie die benutzerdefinierte WordPress-Website von BharathaTechno IT für Intignus Biotech in Pune. Unsere Lösung bietet eine sichere, skalierbare Plattform, die auf die Anforderungen der Biotechnologie zugeschnitten ist.",
   alternates: {
-    canonical: "https://bharathatechno.com/work/intignus-biotech",
+    canonical: "https://bharathatechno.de/work/intignus-biotech",
   },
 };
 

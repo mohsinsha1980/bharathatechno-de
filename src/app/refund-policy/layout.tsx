@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Refund Policy | BharathaTechno IT Pvt. Ltd.",
-  description: "Refund Policy of BharathaTechno IT Pvt. Ltd.",
+  title: "Rückerstattungsrichtlinie | BharathaTechno IT EU",
+  description: "Rückerstattungsrichtlinie von BharathaTechno IT EU",
   alternates: {
-    canonical: "https://bharathatechno.com/refund-policy",
+    canonical: "https://bharathatechno.de/refund-policy",
   },
 };
 

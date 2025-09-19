@@ -44,7 +44,7 @@ export default function ProductFeatures() {
           initial="initial"
           animate={isInView2 ? "animate" : ""}
         >
-          Key Features
+          Zentrale Funktionen
         </motion.h3>
 
         <div>
@@ -54,7 +54,7 @@ export default function ProductFeatures() {
             initial="initial"
             animate={isInView3 ? "animate" : ""}
           >
-            For Admins
+            Für Administratoren
           </motion.h4>
           <motion.div
             className="bl_cards"
@@ -71,7 +71,7 @@ export default function ProductFeatures() {
                   height={100}
                   alt=""
                 />
-                <p>Real-time dashboard for orders & revenue</p>
+                <p>Echtzeit-Dashboard für Bestellungen und Umsätze</p>
               </motion.div>
 
               <motion.div variants={items} className="bl_card" key={`feat-2`}>
@@ -81,7 +81,7 @@ export default function ProductFeatures() {
                   height={100}
                   alt=""
                 />
-                <p>Dish, beverage, & category management</p>
+                <p>Zentrales Management von Speisen, Getränken & Kategorien</p>
               </motion.div>
 
               <motion.div variants={items} className="bl_card" key={`feat-3`}>
@@ -91,7 +91,9 @@ export default function ProductFeatures() {
                   height={100}
                   alt=""
                 />
-                <p>Coupons, promotions, and blog control</p>
+                <p>
+                  Steuerung von Rabattaktionen, Promotions und Blogbeiträgen
+                </p>
               </motion.div>
 
               <motion.div variants={items} className="bl_card" key={`feat-4`}>
@@ -101,7 +103,9 @@ export default function ProductFeatures() {
                   height={100}
                   alt=""
                 />
-                <p>Inventory tracking & availability toggles</p>
+                <p>
+                  Tracking von Inventar und Steuerung der Produktverfügbarkeit
+                </p>
               </motion.div>
 
               <motion.div variants={items} className="bl_card" key={`feat-5`}>
@@ -111,7 +115,7 @@ export default function ProductFeatures() {
                   height={100}
                   alt=""
                 />
-                <p>Transactions, tax, & delivery settings</p>
+                <p>Verwaltung von Zahlungen, Steuerregeln und Lieferoptionen</p>
               </motion.div>
 
               <motion.div variants={items} className="bl_card" key={`feat-6`}>
@@ -121,7 +125,7 @@ export default function ProductFeatures() {
                   height={100}
                   alt=""
                 />
-                <p>User management & enquiry handling</p>
+                <p>User Management & effizientes Handling von Anfragen</p>
               </motion.div>
 
               <motion.div variants={items} className="bl_card" key={`feat-7`}>
@@ -131,7 +135,7 @@ export default function ProductFeatures() {
                   height={100}
                   alt=""
                 />
-                <p>Homepage banner & content editor</p>
+                <p>Editor für Startseiten-Banner und Inhalte</p>
               </motion.div>
             </AnimatePresence>
           </motion.div>
@@ -144,7 +148,7 @@ export default function ProductFeatures() {
             initial="initial"
             animate={isInView3 ? "animate" : ""}
           >
-            For Users
+            Für Nutzer
           </motion.h4>
           <motion.div
             className="bl_cards"
@@ -161,7 +165,10 @@ export default function ProductFeatures() {
                   height={100}
                   alt=""
                 />
-                <p>Homepage with program/product previews & CTA banners</p>
+                <p>
+                  Startseite mit Programm- bzw. Produktvorschauen und
+                  CTA-Bannern
+                </p>
               </motion.div>
 
               <motion.div variants={items} className="bl_card" key={`feat-2`}>
@@ -171,7 +178,10 @@ export default function ProductFeatures() {
                   height={100}
                   alt=""
                 />
-                <p>Menu browsing with filters, tags, slots & category</p>
+                <p>
+                  Intuitive Menüführung mit Filtern, Schlagworten, Slots und
+                  Kategorien
+                </p>
               </motion.div>
 
               <motion.div variants={items} className="bl_card" key={`feat-3`}>
@@ -181,7 +191,7 @@ export default function ProductFeatures() {
                   height={100}
                   alt=""
                 />
-                <p>Product page with  details, description, and media</p>
+                <p>Produktseite mit detaillierten Beschreibungen und Medien</p>
               </motion.div>
 
               <motion.div variants={items} className="bl_card" key={`feat-4`}>
@@ -191,7 +201,10 @@ export default function ProductFeatures() {
                   height={100}
                   alt=""
                 />
-                <p>Add to cart with pickup/delivery time selection</p>
+                <p>
+                  Checkout – mit individueller Auswahl von Abhol- oder
+                  Lieferzeit
+                </p>
               </motion.div>
 
               <motion.div variants={items} className="bl_card" key={`feat-5`}>
@@ -201,7 +214,10 @@ export default function ProductFeatures() {
                   height={100}
                   alt=""
                 />
-                <p>Cart with address, cost breakdown, and edit options</p>
+                <p>
+                  Übersichtlicher Warenkorb inklusive Adresse, Preisaufteilung
+                  und einfacher Anpassungsoptionen
+                </p>
               </motion.div>
 
               <motion.div variants={items} className="bl_card" key={`feat-6`}>
@@ -211,7 +227,10 @@ export default function ProductFeatures() {
                   height={100}
                   alt=""
                 />
-                <p>Secure checkout with payment (Stripe, Razorpay)</p>
+                <p>
+                  Sicherer Checkout mit flexiblen Zahlungsoptionen wie Stripe
+                  oder Razorpay
+                </p>
               </motion.div>
 
               <motion.div variants={items} className="bl_card" key={`feat-7`}>
@@ -221,7 +240,10 @@ export default function ProductFeatures() {
                   height={100}
                   alt=""
                 />
-                <p>Wishlist, saved addresses, and responsive design</p>
+                <p>
+                  Wunschliste, gespeicherte Adressen und ein vollständig
+                  responsives Design für alle Geräte
+                </p>
               </motion.div>
             </AnimatePresence>
           </motion.div>

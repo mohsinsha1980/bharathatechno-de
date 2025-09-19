@@ -4,7 +4,16 @@ import handlebars from "handlebars";
 
 export async function POST(req: NextRequest) {
   try {
-    const { name, phone, email, subject, message, token } = await req.json();
+    const formData = await req.formData();
+
+    const name = formData.get("name") as string;
+    const phone = formData.get("phone") as string;
+    const email = formData.get("email") as string;
+    const subject = formData.get("subject") as string;
+    const message = formData.get("message") as string;
+    const token = formData.get("token") as string;
+    const file = formData.get("file") as File | null;
+    const picture = formData.get("picture") as File | null;
     const year = new Date().getFullYear();
 
     if (!name || !email || !phone || !message || !subject || !token) {
@@ -14,6 +23,47 @@ export async function POST(req: NextRequest) {
         },
         { status: 400 }
       );
+    }
+
+    // Validate file types and sizes
+    if (file && file.size > 0) {
+      if (file.type !== "application/pdf") {
+        return NextResponse.json(
+          {
+            message: "Only PDF files are allowed for documents",
+          },
+          { status: 400 }
+        );
+      }
+      if (file.size > 10 * 1024 * 1024) {
+        // 10MB limit
+        return NextResponse.json(
+          {
+            message: "PDF file must be under 10MB",
+          },
+          { status: 400 }
+        );
+      }
+    }
+
+    if (picture && picture.size > 0) {
+      if (!picture.type.startsWith("image/")) {
+        return NextResponse.json(
+          {
+            message: "Only image files are allowed for pictures",
+          },
+          { status: 400 }
+        );
+      }
+      if (picture.size > 5 * 1024 * 1024) {
+        // 5MB limit
+        return NextResponse.json(
+          {
+            message: "Image file must be under 5MB",
+          },
+          { status: 400 }
+        );
+      }
     }
 
     const recaptchaRes = await fetch(
@@ -34,6 +84,27 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({
         message: "Failed reCAPTCHA verification. Are you a robot?",
         status: 400,
+      });
+    }
+
+    /* eslint-disable prefer-const */
+    let attachments = [];
+
+    if (file && file.size > 0) {
+      const fileBuffer = Buffer.from(await file.arrayBuffer());
+      attachments.push({
+        content: fileBuffer.toString("base64"),
+        mime_type: file.type || "application/pdf",
+        name: file.name,
+      });
+    }
+
+    if (picture && picture.size > 0) {
+      const pictureBuffer = Buffer.from(await picture.arrayBuffer());
+      attachments.push({
+        content: pictureBuffer.toString("base64"),
+        mime_type: picture.type,
+        name: picture.name,
       });
     }
 
@@ -110,7 +181,7 @@ export async function POST(req: NextRequest) {
           <body>
             <div class="container">
               <div class="logo">
-                <img src="https://www.bharathatechno.com/logo.png" alt="BharathaTechno" />
+                <img src="https://www.bharathatechno.de/logo.png" alt="BharathaTechno" />
               </div>
 
               <div class="header">Contact Form Submission</div>
@@ -122,14 +193,36 @@ export async function POST(req: NextRequest) {
                 <p><strong>Email:</strong> ${email}</p>
 
                 <div class="message-box">
+                  <p><strong>Subject:</strong> ${subject}</p>
                   <p><strong>Message:</strong></p>
-                  <p>${subject}</p>
                   <p>${message}</p>
                 </div>
+                
+                ${
+                  attachments.length > 0
+                    ? `
+                <div class="message-box" style="background-color: #e8f5e8; border-left-color: #28a745;">
+                  <p><strong>Attachments:</strong></p>
+                  <ul>
+                    ${attachments
+                      .map(
+                        (att) =>
+                          `<li>${att.name} (${(
+                            (att.content.length * 0.75) /
+                            1024 /
+                            1024
+                          ).toFixed(2)} MB)</li>`
+                      )
+                      .join("")}
+                  </ul>
+                </div>
+                `
+                    : ""
+                }
               </div>
 
               <div class="footer">
-                &copy; ${year} <a href="https://www.bharathatechno.com/" target="_blank">BharathaTechno</a>. All rights reserved.
+                &copy; ${year} <a href="https://www.bharathatechno.de/" target="_blank">BharathaTechno</a>. All rights reserved.
               </div>
             </div>
           </body>
@@ -165,13 +258,22 @@ export async function POST(req: NextRequest) {
           to: [
             {
               email_address: {
-                address: process.env.EMAIL_ADMIN,
+                address: "rashee@bharathatechno.com",
                 name: "Info",
+              },
+            },
+          ],
+          bcc: [
+            {
+              email_address: {
+                address: "rashchop2001@gmail.com",
+                name: "BT",
               },
             },
           ],
           subject: "BharathaTechno: New Enquiry",
           htmlbody: htmlToSend,
+          attachments,
         });
       } catch (mailErr) {
         return NextResponse.json({

@@ -1,4 +1,5 @@
 import Logo from "../common/logo";
+import MultiLingual from "../common/multilingual";
 import BannerContent from "./banner-content";
 import BannerTags from "./banner-tags";
 
@@ -13,7 +14,10 @@ export default function Banner() {
         height={1}
       /> */}
       <div className="container md:container-medium relative">
-        <Logo />
+        <section className="flex justify-center gap-2 md:gap-0 md:justify-between items-end lg:mr-50">
+          <Logo />
+          <MultiLingual />
+        </section>
         <BannerContent />
         <BannerTags />
       </div>

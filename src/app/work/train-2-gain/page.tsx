@@ -7,11 +7,11 @@ import Train2gain from "@/components/case-studies/train-2-gain/case-study";
 export default async function Train2GainPage() {
   return (
     <article className="pg_work">
-      <CaseStudiesBanner data="WordPress Platform for Train2Gain - Seamless Enrollment and Lead Generation for Skill-Building Programs"/>
+      <CaseStudiesBanner data="WordPress-Plattform für Train2Gain – Nahtlose Anmeldung und Lead-Generierung für Weiterbildungsprogramme" />
       <div className="bl_case_studies">
         <div className="container container-medium">
           <CaseStudyTemplate>
-            <Train2gain/>
+            <Train2gain />
           </CaseStudyTemplate>
         </div>
       </div>

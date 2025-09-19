@@ -14,7 +14,7 @@ export async function generateMetadata({
     title: data.metaTitle,
     description: data.metaDescription,
     alternates: {
-      canonical: `https://bharathatechno.com/blog/${data.slug}`,
+      canonical: `https://bharathatechno.de/blog/${data.slug}`,
     },
   };
 }

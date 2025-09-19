@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms and conditions | BharathaTechno IT Pvt. Ltd.",
-  description: "Terms and conditions of BharathaTechno IT Pvt. Ltd.",
+  title: "Allgemeine Geschäftsbedingungen | BharathaTechno IT EU",
+  description: "Allgemeine Geschäftsbedingungen von BharathaTechno IT EU",
   alternates: {
-    canonical: "https://bharathatechno.com/terms-and-conditions",
+    canonical: "https://bharathatechno.de/terms-and-conditions",
   },
 };
 

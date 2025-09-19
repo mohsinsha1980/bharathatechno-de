@@ -3,7 +3,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 export default function ServicesBannerContent(data: { data: string }) {
-  const text1 = "Our Talents &";
+  const text1 = "Fokussierte Expertise,";
 
   const variants = {
     hidden: { opacity: 0 },
@@ -47,7 +47,7 @@ export default function ServicesBannerContent(data: { data: string }) {
 
   return (
     <div className="content">
-      <p className="mb-4 lg:mb-6 text-center lg:text-left">
+      <p className="mb-4 lg:mb-10 text-center lg:text-left">
         <motion.span
           className="mb-4"
           ref={ref1}
@@ -70,7 +70,7 @@ export default function ServicesBannerContent(data: { data: string }) {
             animate={isInView2 ? "animate" : ""}
             className="inline-block"
           >
-            Offerings
+            Maßgeschneiderte Services
           </motion.span>
         </span>
       </p>

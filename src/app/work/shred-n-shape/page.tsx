@@ -7,7 +7,7 @@ import ProjectGallery from "@/components/case-studies/shred-n-shape/project-gall
 export default async function ShredNShapePage() {
   return (
     <article className="pg_work">
-      <CaseStudiesBanner data="Shred-n-Shape - A UK-Based Fitness Web App Built for Personalized Health and Fitness Journeys" />
+      <CaseStudiesBanner data="Shred-n-Shape – Eine in Großbritannien ansässige Fitness-Web-App für personalisierte Gesundheits- und Fitnessreisen" />
       <div className="bl_case_studies">
         <div className="container container-medium">
           <CaseStudyTemplate>

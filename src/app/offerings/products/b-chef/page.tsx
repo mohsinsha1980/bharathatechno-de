@@ -48,7 +48,7 @@ export default function ProductBFit() {
 
   return (
     <article className="pg_product">
-      <ProductBanner data="Empower Your Food Business with a Cloud Kitchen Website for Seamless Delivery and Customer Engagement" />
+      <ProductBanner data="Stärken Sie Ihr Lebensmittelgeschäft mit einer Cloud-Kitchen-Website für reibungslose Lieferung und Kundenbindung" />
       <Summary>
         <motion.h2
           ref={ref2}
@@ -66,7 +66,7 @@ export default function ProductBFit() {
           animate={isInView3 ? "animate" : ""}
           className="text-center"
         >
-          <p>#Online Ordering Platform for Home Chefs and Cloud Kitchens</p>
+          <p>#Digitale Ordering-Lösung für Gastronomie und Ghost Kitchens</p>
         </motion.div>
       </Summary>
       <motion.div
@@ -76,18 +76,22 @@ export default function ProductBFit() {
         animate={isInView4 ? "animate" : ""}
         className="container container-small"
       >
-        <h4>Product Overview </h4>
+        <h4>Produktübersicht</h4>
         <p>
-          B-CHEF is a website solution for chefs, cafés, and food entrepreneurs
-          to grow their digital presence. From cloud kitchens to personal
-          brands, it helps you connect directly with customers, reduce reliance
-          on third-party apps, and scale your business. With a clean,
-          user-friendly design and powerful food delivery software, B-CHEF makes
-          your culinary journey more visible, professional, and impactful.
+          B-Chef ist eine Website-Lösung für Köche, Cafés und
+          Food-Unternehmer:innen, die ihre digitale Präsenz ausbauen möchten.
+          Von der Cloud Kitchen bis zur persönlichen Marke unterstützt B-Chef
+          dabei, Kund:innen direkt zu erreichen, die Abhängigkeit von
+          Drittanbieter-Apps zu reduzieren und das Geschäft zu skalieren. <br />{" "}
+          Mit einem klaren, benutzerfreundlichen Design und leistungsstarker
+          Food-Delivery-Software macht B-Chef die kulinarische Marke sichtbarer,
+          professioneller und wirkungsvoller.
         </p>
       </motion.div>
       <Features data={PRODUCT_BCHEF} />
-      <ProductUSP description="B-CHEF provides a user-friendly ordering website that allows food businesses to showcase their menus, gather orders, process payments, and manage availability—all without depending on third-party apps or delivery services." />
+      <ProductUSP description="B-Chef bietet eine benutzerfreundliche Bestell-Website, mit der Food-Unternehmen ihre Menüs präsentieren,
+Bestellungen entgegennehmen, Zahlungen abwickeln und die Verfügbarkeit verwalten können - alles ohne
+Abhängigkeit von Drittanbieter-Apps oder Lieferdiensten." />
 
       <ProductFeatures />
       <CaseStudy data={BCHEF_CASE_STUDY} />

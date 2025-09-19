@@ -302,9 +302,7 @@ export default function Content() {
           </li>
         </ul>
 
-        <h2>
-          Why BharathaTechno Pvt. Ltd. is the Best Next.js Development Company?
-        </h2>
+        <h2>Why BharathaTechno EU is the Best Next.js Development Company?</h2>
         <p>
           At BharathaTechno, our approach to
           <strong>Next.js website development</strong> sets us apart. We excel

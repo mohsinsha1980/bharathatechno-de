@@ -3,7 +3,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 export default function RefundBannerContent() {
-  const text1 = "Refund Policy";
+  const text1 = "Rückerstattungsrichtlinie";
 
   const variants = {
     hidden: { opacity: 0 },
@@ -55,9 +55,9 @@ export default function RefundBannerContent() {
         animate={isInView3 ? "animate" : ""}
         className="text-center lg:text-left"
       >
-        Thank you for shopping at BharathaTechno IT Private Limited. We want you
-        to be completely satisfied with your purchase. Please read our Return
-        Policy carefully.
+        Vielen Dank für Ihren Einkauf bei BharathaTechno IT EU. Wir möchten,
+        dass Sie mit Ihrem Kauf vollständig zufrieden sind. Bitte lesen Sie
+        unsere Rückerstattungsrichtlinie sorgfältig durch.
       </motion.h1>
     </div>
   );

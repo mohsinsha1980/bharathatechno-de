@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Custom Indian Food Delivery Website for Nikita's Curry Corner",
-  description: "Explore Nikita's Curry Corner, an Indian food delivery website by BharathaTechno IT in Canada, featuring future ordering, secure payments, and admin tools.",
+  title: "Maßgeschneiderte Website für die Lieferung indischer Speisen für Nikita's Curry Corner",
+  description:
+    "Entdecken Sie Nikita's Curry Corner, eine Website für die Lieferung indischer Speisen von BharathaTechno IT in Kanada mit Funktionen für zukünftige Bestellungen, sichere Zahlungen und Verwaltungstools.",
   alternates: {
-    canonical: "https://bharathatechno.com/work/nikitas-curry-corner",
+    canonical: "https://bharathatechno.de/work/nikitas-curry-corner",
   },
 };
 

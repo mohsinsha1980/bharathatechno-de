@@ -3,7 +3,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 export default function TermsBannerContent() {
-  const text1 = "Terms & Conditions";
+  const text1 = "Allgemeine Geschäftsbedingungen";
 
   const variants = {
     hidden: { opacity: 0 },
@@ -55,8 +55,9 @@ export default function TermsBannerContent() {
         animate={isInView3 ? "animate" : ""}
         className="text-center lg:text-left"
       >
-        Welcome to BharathaTechno IT Private Limited! By accessing or using our
-        website, you agree to be bound by these Terms and Conditions.
+        Willkommen bei BharathaTechno IT EU! Durch den Zugriff auf oder die
+        Nutzung unserer Website erklären Sie sich mit diesen Allgemeinen
+        Geschäftsbedingungen einverstanden.
       </motion.h1>
     </div>
   );

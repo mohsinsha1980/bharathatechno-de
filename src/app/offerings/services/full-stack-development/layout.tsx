@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Full Stack Development Services | BharathaTechno IT",
+  title: "Full-Stack-Entwicklungsdienste | BharathaTechno IT",
   description:
-    "BharathaTechno IT specializes in full-stack development, providing customized front-end and back-end solutions for seamless, high-performance app development.",
+    "BharathaTechno IT ist auf Full-Stack-Entwicklung spezialisiert und bietet maßgeschneiderte Front-End- und Back-End-Lösungen für eine nahtlose, leistungsstarke App-Entwicklung.",
   alternates: {
     canonical:
-      "https://bharathatechno.com/offerings/services/full-stack-development",
+      "https://bharathatechno.de/offerings/services/full-stack-development",
   },
 };
 

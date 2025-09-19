@@ -8,14 +8,14 @@ export default function ContactPage() {
     "@context": "https://schema.org",
     "@type": "WebPage",
     name: "Contact Us - BharathaTechnoIT Private Limited",
-    url: "https://bharathatechno.com/contact",
+    url: "https://bharathatechno.de/contact",
     headline:
       "Contact BharathaTechnoIT - Web, Mobile & Software Solutions Partner",
     description:
       "Reach out to BharathaTechnoIT Private Limited for custom software, ERP, web and mobile app development services. Send us a message or use the contact form for project inquiries, support, and technology consulting. Let’s build innovative digital solutions together.",
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://bharathatechno.com/search?q={search_term_string}",
+      target: "https://bharathatechno.de/search?q={search_term_string}",
       "query-input": "required name=search_term_string",
     },
   };

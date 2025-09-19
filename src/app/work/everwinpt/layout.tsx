@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Static Website Development for EverwinPT",
-  description: "BharathaTechno IT developed a static website for EverwinPT, providing a simple, fast-loading platform designed for performance and usability, tailored to business needs.",
+  title: "Statische Website-Entwicklung für EverwinPT",
+  description:
+    "BharathaTechno IT hat für EverwinPT eine statische Website entwickelt und bietet eine einfache, schnell ladende Plattform, die auf Leistung und Benutzerfreundlichkeit ausgelegt und auf die Geschäftsanforderungen zugeschnitten ist.",
   alternates: {
-    canonical: "https://bharathatechno.com/work/everwinpt",
+    canonical: "https://bharathatechno.de/work/everwinpt",
   },
 };
 

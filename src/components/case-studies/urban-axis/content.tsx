@@ -8,20 +8,21 @@ export default function UrbanAxisContent() {
         <h2>Urban Axis</h2>
       </Link>
       <p>
-        We created a static website for UrbanAxis using Next.js to ensure fast
-        loading times and optimal performance. The site showcases UrbanAxis&apos;s
-        services and portfolio with a modern design, complemented by effective
-        SEO implementation for better search visibility.
+        Für UrbanAxis haben wir eine statische Website mit Next.js entwickelt,
+        die durch schnelle Ladezeiten und optimale Performance überzeugt. Die
+        Seite präsentiert die Services und das Portfolio von UrbanAxis in einem
+        modernen Design und profitiert von einer gezielten SEO-Implementierung
+        für eine bessere Sichtbarkeit in den Suchmaschinen.
       </p>
-      <h3>Key Features</h3>
+      <h3>Zentrale Funktionen</h3>
       <ul>
-        <li>Fast loading times</li>
-        <li>SEO optimization</li>
-        <li>Responsive design</li>
+        <li>Schnelle Ladezeiten</li>
+        <li>SEO-Optimierung</li>
+        <li>Responsives design</li>
       </ul>
       <div className="link">
         <Link href="https://urbanaxis.co.in/" target="_blank">
-          <span>Visit Urban Axis</span> <ArrowRight size={20} />
+          <span>Jetzt Urban Axis besuchen</span> <ArrowRight size={20} />
         </Link>
       </div>
     </>

@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Professional Technical Documentation | BharathaTechno IT",
+  title: "Professionelle technische Dokumentation | BharathaTechno IT",
   description:
-    "Get professional technical documentation services from BharathaTechno IT. We provide clear, structured, and accurate documentation to support your business needs.",
+    "Profitieren Sie von professionellen technischen Dokumentationsdiensten von BharathaTechno IT. Wir bieten klare, strukturierte und präzise Dokumentation zur Unterstützung Ihrer Geschäftsanforderungen.",
   alternates: {
     canonical:
-      "https://bharathatechno.com/offerings/services/technical-documentation",
+      "https://bharathatechno.de/offerings/services/technical-documentation",
   },
 };
 

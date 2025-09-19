@@ -11,49 +11,49 @@ const DATA: Component[] = [
   {
     id: 0,
     imageSrc: "/images/home/shrednshape-case-study.webp",
-    label: "#Cast Study",
-    title: "Design & Develop a fitness first platform",
-    list: ["UI/UX Design", "Development", "Web-app"],
+    label: "#Fallstudie",
+    title: "Entwerfen und entwickeln Sie eine Fitness-First-Plattform",
+    list: ["UI/UX-Design", "Entwicklung", "Web-App"],
     link: "/work/shred-n-shape",
   },
   {
     id: 1,
     imageSrc: "/images/home/urban-axis-study.webp",
-    label: "#Cast Study",
-    title: "Developing a website for urban aesthetis",
-    list: ["UI/UX Design", "Development", "Responsive Design"],
+    label: "#Fallstudie",
+    title: "Entwicklung einer Website für urbane Ästhetik",
+    list: ["UI/UX-Design", "Entwicklung", "Responsive Design"],
     link: "/work/urban-axis",
   },
   {
     id: 3,
     imageSrc: "/images/home/nikitas-curry-corner-case-study.webp",
-    label: "#Cast Study",
-    title: "Developing a cloud kitchen platform",
-    list: ["UI/UX Design", "Development", "Web-app"],
+    label: "#Fallstudie",
+    title: "Entwicklung einer Cloud-Kitchen-Plattform",
+    list: ["UI/UX-Design", "Entwicklung", "Web-App"],
     link: "/work/nikitas-curry-corner",
   },
   {
     id: 4,
     imageSrc: "/images/home/sachniti-case-study.webp",
-    label: "#Cast Study",
-    title: "Developing a CM website",
-    list: ["UI/UX Design", "Development", "Web-app"],
+    label: "#Fallstudie",
+    title: "Entwicklung einer CM-Website",
+    list: ["UI/UX-Design", "Entwicklung", "Web-App"],
     link: "/work/sachniti",
   },
   {
     id: 5,
     imageSrc: "/images/home/everwinpt-case-study.webp",
-    label: "#Cast Study",
-    title: "Developing a static webiste",
-    list: ["UI/UX Design", "Development", "Web-app"],
+    label: "#Fallstudie",
+    title: "Entwicklung einer statischen Website",
+    list: ["UI/UX-Design", "Entwicklung", "Web-App"],
     link: "/work/everwinpt",
   },
   {
     id: 6,
     imageSrc: "/images/home/trendy-threads-case-study.webp",
-    label: "#Cast Study",
-    title: "Design & Develop a e-commerce platform",
-    list: ["UI/UX Design", "Development", "Web-app"],
+    label: "#Fallstudie",
+    title: "Aufbau einer digitalen Lösung für eine Modemarke",
+    list:["UI/UX-Design", "Entwicklung", "E-Commerce"],
     link: "/work/trendy-threads",
   },
 ];
@@ -127,7 +127,7 @@ export default function ProjectSlider() {
           animate={isInView2 ? "animate" : ""}
           className="text-center text-blue-600 mb-10"
         >
-          Check our other projects
+          Schauen Sie sich unsere anderen Projekte an
         </motion.h2>
         <motion.div
           variants={sliderVariants}

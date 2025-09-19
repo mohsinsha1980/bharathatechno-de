@@ -3,7 +3,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 export default function BannerContent() {
-  const text1 = `“Great technology doesn't speak loudly,`;
+  const text1 = `“Technologie, die nicht aufdrängt,`;
   // const text2 = `it resonates clearly.”`;
 
   const variants = {
@@ -99,7 +99,7 @@ export default function BannerContent() {
             animate="animate"
             className="inline-block"
           >
-            it resonates clearly.”
+            sondern überzeugt.”
           </motion.span>
         </span>
       </p>
@@ -110,10 +110,11 @@ export default function BannerContent() {
         animate={isInView3 ? "animate" : ""}
         className="text-center md:text-left"
       >
-        At <strong>BharathaTechno</strong>, with 40+ years of tech leadership
-        and experience, we combine innovation and strategy to craft custom web
-        application development solutions that are intelligent, scalable, and
-        intuitive.
+        Bei <strong>BharathaTechno</strong>, verbinden wir
+        über 40 Jahre technische Führungserfahrung mit Innovation und
+        strategischer Exzellenz, um maßgeschneiderte Lösungen für die
+        Entwicklung intelligenter, skalierbarer und intuitiver Webanwendungen zu
+        schaffen.
       </motion.h1>
     </div>
   );
