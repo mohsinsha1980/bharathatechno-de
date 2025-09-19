@@ -7,12 +7,12 @@ export default function ContactPage() {
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "Contact Us - BharathaTechnoIT Private Limited",
+    name: "IT-Unternehmen in Germany | BharathaTechno IT EU",
     url: "https://bharathatechno.de/contact",
     headline:
-      "Contact BharathaTechnoIT - Web, Mobile & Software Solutions Partner",
+      "IT-Unternehmen in Germany | BharathaTechno IT EU",
     description:
-      "Reach out to BharathaTechnoIT Private Limited for custom software, ERP, web and mobile app development services. Send us a message or use the contact form for project inquiries, support, and technology consulting. Let’s build innovative digital solutions together.",
+      "BharathaTechno ist ein führendes IT-Unternehmen in Deutschland, das Full-Stack-Entwicklung, sichere Weblösungen und maßgeschneiderte IT-Services für Startups und Unternehmen anbietet.",
     potentialAction: {
       "@type": "SearchAction",
       target: "https://bharathatechno.de/search?q={search_term_string}",

@@ -7,6 +7,7 @@ import LoadingSpinner from "../common/loading-spinner";
 import { useInView, motion } from "framer-motion";
 import CustomSelect from "../common/custom-select";
 import { CONTACT_SERVICES } from "@/lib/services";
+import CalendlyScheduler from "../common/calendly";
 
 const initialValue: contactFormType = {
   name: "",
@@ -53,6 +54,7 @@ export default function ContactForm() {
     useState<formErrorType>(initialErrorState);
   const [httpError, setHttpError] = useState<string>("");
   const [hasErrors, setHasErrors] = useState<boolean>(false);
+  const [openBookCall, setOpenBookCall] = useState(false);
 
   const inputChangeHandler = (e: React.FormEvent<HTMLInputElement>): void => {
     const { name, value, files } = e.currentTarget;
@@ -483,8 +485,16 @@ export default function ContactForm() {
                     ></textarea>
                   </div>
                 </div>
-                <div className="">
-                  <div className="item ">&nbsp;</div>
+                <div className="flex flex-col lg:flex-row  gap-4 justify-end mb-4">
+                  <div className="item">
+                    <button
+                      type="button"
+                      onClick={() => setOpenBookCall(true)}
+                      className="border rounded-4xl px-8 py-2 mr-3"
+                    >
+                      Book an Appointment
+                    </button>
+                  </div>
                   <div className="item text-center">
                     <button
                       type="submit"
@@ -497,6 +507,9 @@ export default function ContactForm() {
               </div>
             </form>
           </motion.div>
+          {openBookCall && (
+            <CalendlyScheduler onClose={() => setOpenBookCall(false)}/>
+          )}
         </div>
       </section>
     </>

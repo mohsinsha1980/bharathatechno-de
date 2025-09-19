@@ -7,8 +7,8 @@ author: Rajesh Sivapalan
 author_picture: rajesh.webp 
 metaTitle: React Native App-Entwicklungsunternehmen | BharathaTechno
 metaDescription: Arbeiten Sie mit BharathaTechno, einem führenden Unternehmen für die Entwicklung von React Native-Apps, zusammen, um leistungsstarke plattformübergreifende Apps zu erstellen, die das Wachstum und die Benutzerinteraktion fördern.
-canonical_url: "https://bharathatechno.de/blog/react-native-app"
-link: "/blog/react-native-app"
+canonical_url: "https://bharathatechno.de/blog/react-native"
+link: "/blog/react-native"
 
 faqs:
   - question: "Ist React Native sowohl für Startups als auch für große Unternehmen geeignet?"
@@ -134,7 +134,7 @@ Als führendes Unternehmen für React Native-App-Entwicklung in Indien wissen wi
 
 ### **Wer wir sind:**
 
-Bei BharathaTechno sind wir nicht einfach nur ein Softwareunternehmen. Mit Hauptsitz in Pune sind wir ein bewährter Marktführer in der Entwicklung hochmoderner, skalierbarer und sicherer digitaler Produkte, die echte Geschäftsergebnisse erzielen. 
+Bei BharathaTechno sind wir nicht einfach nur ein Softwareunternehmen. Mit Hauptsitz in Deutschland sind wir ein bewährter Marktführer in der Entwicklung hochmoderner, skalierbarer und sicherer digitaler Produkte, die echte Geschäftsergebnisse erzielen. 
 
 Unser größtes Kapital ist unser Team. Ein Team leidenschaftlicher, erfahrener React Native-Entwickler, die ein gemeinsames Ziel verfolgen: Spitzenleistungen zu erbringen. Im Laufe der Jahre haben wir erfolgreich Web-, Mobil- und Cloud-Anwendungen für Unternehmen weltweit entwickelt.  
 

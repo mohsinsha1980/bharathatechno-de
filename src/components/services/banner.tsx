@@ -8,7 +8,7 @@ export default function ServicesBanner({ data }: { data: string }) {
   return (
     <section className="bl_home_banner relative">
       <div className="container">
-        <section className="flex justify-center gap-2 md:gap-0 md:justify-between items-end lg:mr-50">
+        <section className="flex justify-center gap-2 md:gap-0 md:justify-between items-end lg:mr-60">
           <Logo />
           <MultiLingual />
         </section>

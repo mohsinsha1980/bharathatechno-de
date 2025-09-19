@@ -13,12 +13,12 @@ export default function ServicesDigitalMarketing() {
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "Performance Marketing Services - BharathaTechnoIT",
+    name: "Digitales Marketing | SEO & Social-Media-Services Deutschland",
     url: "https://bharathatechno.de/offerings/services/performance-marketing",
     headline:
-      "Performance Marketing - Strategic Campaigns & B2B Lead Generation",
+      "Digitales Marketing | SEO & Social-Media-Services Deutschland",
     description:
-      "BharathaTechnoIT's Performance Marketing services deliver predictable B2B lead generation with human-led, channel-optimized outreach. Services include ICP research, multi-touch personalized campaigns, appointment setting, and data-driven optimization. Add-on options include social media management and ads, all focused on maximizing conversions and supporting your sales pipeline.",
+      "BharathaTechno bietet digitales Marketing: SEO, Content & Social Media. Steigern Sie Ihre Online-Sichtbarkeit & erreichen Sie mehr Kunden in Deutschland.",
     potentialAction: {
       "@type": "SearchAction",
       target: "https://bharathatechno.de/search?q={search_term_string}",
@@ -71,7 +71,7 @@ export default function ServicesDigitalMarketing() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
       <article className="pg_service">
-        <ServicesBanner data="Performance-Marketing-Services in NIBM Road, Pune, zur gezielten Generierung und Konvertierung von B2B-Leads" />
+        <ServicesBanner data="Performance-Marketing-Services in NIBM Road, Deutschland, zur gezielten Generierung und Konvertierung von B2B-Leads" />
         <ServicesList />
         <Summary>
           <motion.h2

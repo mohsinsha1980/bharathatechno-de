@@ -907,32 +907,32 @@ export const SERVICE_STAFF_AGUMENTATION_FEATURES: ServiceFeaturesType = {
 export const SERVICE_CORPORATE_TRAINING: ServiceTechStackType[] = [
   {
     id: "corporatetraining1-1",
-    title: "MERN Stack Development",
+    title: "MERN Stack Entwicklung",
     list: [
-      "Introduction to MERN Stack: Overview of MongoDB, Express.js, React.js, and Node.js.",
-      "Building RESTful APIs with Node.js and Express: Learn how to create scalable backend services.",
-      "Frontend Development with React: Master the art of building dynamic user interfaces.",
-      "Database Management with MongoDB: Understand data modeling and querying in MongoDB.",
+      "Einführung in den MERN Stack: Überblick über MongoDB, Express.js, React.js und Node.js.",
+      "Erstellung von RESTful APIs mit Node.js und Express: Lernen Sie, skalierbare Backend-Dienste zu erstellen.",
+      "•Frontend-Entwicklung mit React: Beherrschen Sie den Aufbau dynamischer Benutzeroberflächen.",
+      "•Datenbankmanagement mit MongoDB: Verstehen Sie Datenmodellierung und Abfragen in MongoDB.",
     ],
   },
   {
     id: "corporatetraining1-2",
-    title: "MEAN Stack Development",
+    title: "MEAN Stack Entwicklung",
     list: [
-      "Introduction to MEAN Stack: Overview of MongoDB, Express.js, Angular.js, and Node.js.",
-      "Developing Single Page Applications with Angular: Create responsive and interactive web applications.",
-      "Server-Side Programming with Node.js: Build efficient server-side applications.",
-      "Integrating Angular with Express and MongoDB: Learn how to connect frontend and backend seamlessly.",
+      "•Einführung in den MEAN Stack: Überblick über MongoDB, Express.js, Angular.js und Node.js.",
+      "•Entwicklung von Single Page Applications mit Angular: Erstellen Sie responsive und interaktive Webanwendungen. ",
+      "Serverseitige Programmierung mit Node.js: Bauen Sie effiziente serverseitige Anwendungen.",
+      "•Integration von Angular mit Express und MongoDB: Lernen Sie, Frontend und Backend nahtlos zu verbinden.",
     ],
   },
   {
     id: "corporatetraining1-3",
-    title: "JavaScript Mastery",
+    title: "JavaScript-Master",
     list: [
-      "JavaScript Essentials: Covering variables, functions, objects, and more.",
-      "Advanced JavaScript Concepts: Dive into closures, promises, async/await, and ES6+ features.",
-      "Front-End Frameworks Overview: Introduction to popular frameworks like React and Angular.",
-      "Best Practices in JavaScript Development: Learn coding standards and performance optimization techniques.",
+      "JavaScript-Grundlagen: Abdeckung von Variablen, Funktionen, Objekten und mehr.",
+      "Fortgeschrittene JavaScriptKonzepte: Eintauchen in Closures, Promises, async/await und ES6+ Funktionen. ",
+      "•Überblick über Front-EndFrameworks: Einführung in beliebte Frameworks wie React und Angular.",
+      "•Best Practices in der JavaScriptEntwicklung: Lernen von Codierungsstandards und Techniken zur Leistungsoptimierung.",
     ],
   },
 ];
@@ -940,14 +940,14 @@ export const SERVICE_CORPORATE_TRAINING: ServiceTechStackType[] = [
 export const SERVICE_CORPORATE_TRAINING_DETAILS: ServiceTypeDetailsType[] = [
   {
     id: "corporate_training_details_1",
-    heading: "Why choose BharathaTechno for Corporate Training?",
+    heading: "Warum BharathaTechno für Unternehmensschulungen wählen?",
     content: `
       <ul>
-        <li>Expert Trainers: Our trainers are industry experts with extensive experience in MERN and MEAN stack development. They bring real-world insights and practical knowledge to the training sessions.</li>
-        <li>Customized Training Programs: We tailor our training modules to meet your specific business needs and skill gaps, ensuring maximum relevance and impact.</li>
-        <li>Hands-On Learning: Our programs emphasize practical, hands-on learning experiences that enable participants to apply new skills immediately in their work environment.</li>
-        <li>Flexible Delivery Options: We offer both on-site and virtual training sessions to accommodate your team's schedule and location preferences.</li>
-        <li>Comprehensive Curriculum: Our training covers a wide range of topics from basic JavaScript fundamentals to advanced full-stack development techniques.</li>
+        <li>Experten-Trainer: Unsere Trainer sind Branchenexperten mit umfangreicher Erfahrung in der MERN- und MEANStack-Entwicklung. Sie bringen praxisnahe Einblicke und praktisches Wissen in die Schulungssitzungen ein.</li>
+        <li>Angepasste Schulungsprogramme: Wir passen unsere Schulungsmodule an Ihre spezifischen Geschäftsbedürfnisseund Fähigkeitslücken an, um maximale Relevanz und Wirkung zu gewährleisten.</li>
+        <li>Praktisches Lernen: Unsere Programme legen großen Wert auf praktisches, praxisorientiertes Lernen, das es den Teilnehmern ermöglicht, neue Fähigkeiten sofort in ihrer Arbeitsumgebung anzuwenden.</li>
+        <li>Flexible Lieferoptionen: Wir bieten sowohl Vor-Ort- als auch virtuelle Schulungssitzungen an, um den Zeitplan und die Standortpräferenzen Ihres Teams zu berücksichtigen.</li>
+        <li>Umfassender Lehrplan: Unsere Schulungen decken ein breites Themenspektrum ab, von den grundlegenden JavaScript-Grundlagen bis hin zu fortgeschrittenen Full-Stack-Entwicklungstechniken.</li>
       <ul>
       `,
   },
@@ -1037,7 +1037,7 @@ export const MERN_STACK_BLOG_DETAILS: ServiceTypeDetailsType[] = [
     id: "full_stack_details_6",
     heading: "Which is the best web development company near me?",
     content: `<p>
-        BharathaTechno IT Private Limited is a MERN stack web development company located at Kondhwa, Pune, Maharashtra. They specialize in MERN and MEAN full-stack development.
+        BharathaTechno IT Private Limited is a MERN stack web development company located at Kondhwa, Deutschland, Maharashtra. They specialize in MERN and MEAN full-stack development.
       </p>
       `,
   },
@@ -1492,11 +1492,11 @@ export const OFFICE_LOCATION: OfficeLocationType[] = [
     country: "India",
     flag: "🇮🇳",
     address:
-      "Sunshree Woods, Office number, F28 to 32, NIBM Rd, Kondhwa, Pune, Maharashtra 411048",
+      "Sunshree Woods, Office number, F28 to 32, NIBM Rd, Kondhwa, Deutschland, Maharashtra 411048",
     email: "info@bharathatechno.com",
     phone: "+91-932-563-6885",
     mapPosition: "left",
-    city: "Pune",
+    city: "Deutschland",
     embedMapUrl:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.6486359819146!2d73.91437727592636!3d18.454255771195115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eba952eb29fd%3A0x1fd1cfdcdf9f0974!2sBharathaTechno%20IT%20Private%20Limited!5e0!3m2!1sen!2sin!4v1740480008318!5m2!1sen!2sin",
   },

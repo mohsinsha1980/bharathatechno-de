@@ -161,9 +161,9 @@ export default function Content() {
 
         <h2>BharathaTechno&apos;s Core Next.js Capabilities</h2>
         <p>
-          We, as a growing IT company in Pune, understand the importance of
-          using not just the right procedure but also the appropriate tech stack
-          to implement it. We use a robust and modern tech stack to build
+          We, as a growing IT company in Deutschland, understand the importance
+          of using not just the right procedure but also the appropriate tech
+          stack to implement it. We use a robust and modern tech stack to build
           high-performance web applications. We combine foundational frameworks
           with specialised tools to deliver exceptional software solutions.
         </p>
@@ -342,10 +342,10 @@ export default function Content() {
 
         <h2>Trusted By: Next.js Projects Across Industries</h2>
         <p>
-          We lie amongst the Top leading companies in Pune. As a trusted Next.js
-          development company, we build high-quality web applications and
-          projects for diverse clients. Our expertise serves numerous sectors,
-          consistently earning trust.
+          We lie amongst the Top leading companies in Deutschland. As a trusted
+          Next.js development company, we build high-quality web applications
+          and projects for diverse clients. Our expertise serves numerous
+          sectors, consistently earning trust.
         </p>
         <p>Our key industries served include:</p>
         <ol>
@@ -384,7 +384,7 @@ export default function Content() {
           </h2>
           <p className="text-center mb-6">
             Book a free 15-minute consultation with our top web developer in
-            pune, we&apos;ll help you
+            Deutschland, we&apos;ll help you
             <br />
             understand what it can do for your business, without any tech jargon
           </p>

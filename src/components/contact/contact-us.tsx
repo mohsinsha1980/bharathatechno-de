@@ -38,6 +38,7 @@ export default function ContactUs() {
   const isInView2 = useInView(ref2, { once: true });
   // const isInView3 = useInView(ref3, { once: true });
   const isInView4 = useInView(ref4, { once: true });
+
   return (
     <section className="bl_contact_us mb-[150px]">
       <div className="container container-small">

@@ -2,10 +2,19 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
+import { usePathname, useSearchParams } from "next/navigation";
 
 export default function MultiLingual() {
   const [open, setOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement>(null);
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+
+  const query = searchParams?.toString();
+  const pathWithQuery = `${pathname || "/"}${query ? `?${query}` : ""}`;
+
+  const englishUrl = `https://bharathatechno.com${pathWithQuery}`;
+  const germanUrl = `https://bharathatechno.de${pathWithQuery}`;
 
   useEffect(() => {
     const onDocClick = (e: MouseEvent) => {
@@ -25,7 +34,7 @@ export default function MultiLingual() {
           aria-haspopup="menu"
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
-          className="flex gap-1 px-4 py-2 md:gap-3 items-center justify-center md:w-[84px] md:h-[42px] rounded-md border border-white/20 text-white text-sm md:text-[20px] font-bold shadow-sm"
+          className="flex cursor-pointer gap-1 px-4 py-2 md:gap-3 items-center justify-center md:w-[84px] md:h-[42px] rounded-md border border-white/20 text-white text-sm md:text-[20px] font-bold shadow-sm"
         >
           <Image
             src="/images/flags/de.webp"
@@ -44,7 +53,7 @@ export default function MultiLingual() {
             className="absolute right-0 top-[46px] min-w-[80px] rounded-lg border border-white/20 bg-gray-900 text-white shadow-lg overflow-hidden"
           >
             <Link
-              href="https://bharathatechno.com/"
+              href={englishUrl}
               target="_blank"
               rel="noopener noreferrer"
               role="menuitem"
@@ -61,7 +70,7 @@ export default function MultiLingual() {
               EN
             </Link>
             <Link
-              href="https://bharathatechno.de/"
+              href={germanUrl}
               target="_blank"
               rel="noopener noreferrer"
               role="menuitem"

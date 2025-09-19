@@ -1308,6 +1308,14 @@ h2 {
           font-size: 24px;
           font-weight: 700;
           margin-bottom: 10px;
+          hyphens: auto;
+          -webkit-hyphens: auto;
+          -ms-hyphens: auto;
+
+          overflow-wrap: anywhere;
+          word-break: break-word;
+          white-space: normal;
+          max-width: 100%;
         }
 
         p {
@@ -1357,6 +1365,14 @@ h2 {
           font-weight: 700;
           line-height: 30px;
           margin-bottom: 6px;
+          hyphens: auto;
+          -webkit-hyphens: auto;
+          -ms-hyphens: auto;
+
+          overflow-wrap: anywhere;
+          word-break: break-word;
+          white-space: normal;
+          max-width: 100%;
         }
 
         p {
@@ -2260,7 +2276,7 @@ h2 {
     img {
       margin: auto;
       width: 600px;
-      height: 300px;
+      height: 350px;
       margin-top: 50px;
     }
 
@@ -2817,7 +2833,6 @@ h2 {
 }
 
 @media only screen and (max-width: 1370px) {
-
   /* xl */
 
   .main_header .container {
@@ -2846,7 +2861,7 @@ h2 {
 
 
   .pg_home .bl_home_banner .container .content {
-    margin-top: 71px;
+    margin-top: 61px;
     width: 70%;
   }
 
@@ -2866,34 +2881,35 @@ h2 {
   }
 
   .pg_about .bl_home_banner .container>div .content p {
-    font-size: 45px;
-    line-height: 56px;
-    margin-bottom: 40px;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 20px;
   }
 
   .pg_about .bl_home_banner .container>div .content p>span.highlight {
-    font-size: 56px;
-    line-height: 71px;
+    font-size: 48px;
+    line-height: 61px;
   }
 
   .pg_about .bl_home_banner .container>div .content h1 {
-    font-size: 22px;
+    font-size: 19px;
     line-height: 150%;
   }
 
   .pg_about .bl_home_banner .container>div .content {
     width: 100%;
-    margin-top: 71px;
+    margin-top: 61px;
   }
 
   .pg_service .bl_home_banner .container>div .content p {
-    font-size: 45px;
+    font-size: 40px;
     line-height: 56px;
+    margin-bottom: 0;
   }
 
   .pg_service .bl_home_banner .container>div .content p>span.highlight {
-    font-size: 56px;
-    line-height: 71px;
+    font-size: 43px;
+    line-height: 51px;
   }
 
   .pg_service .bl_home_banner .container>div .content h1 {
@@ -2903,7 +2919,29 @@ h2 {
 
   .pg_service .bl_home_banner .container>div .content {
     width: 100%;
-    margin-top: 102px;
+    margin-top: 62px;
+  }
+
+  .pg_service .bl_home_banner .bl_services_cards .bl_service_card a svg {
+    width: 18px;
+    margin: 0;
+  }
+
+  .pg_service .bl_home_banner .bl_services_cards .bl_service_card {
+    height: 100px;
+    width: 180px;
+  }
+
+  .pg_service .bl_home_banner .bl_services_cards .bl_service_card a h3 {
+    font-size: 14px;
+  }
+
+  .pg_service .bl_services_list .bl_services_list_item a {
+    gap: 7px;
+  }
+
+  .pg_about .bl_journey_steps .bl_journey_step a h3 {
+    font-size: 13px;
   }
 
   .pg_work .bl_home_banner .container>div .content {
@@ -2911,17 +2949,18 @@ h2 {
   }
 
   .pg_work .bl_home_banner .container>div .content p {
-    font-size: 45px;
-    line-height: 56px;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 20px;
   }
 
   .pg_work .bl_home_banner .container>div .content p>span.highlight {
-    font-size: 56px;
-    line-height: 71px;
+    font-size: 48px;
+    line-height: 61px;
   }
 
   .pg_work .bl_home_banner .container>div .content h1 {
-    font-size: 22px;
+    font-size: 19px;
     line-height: 150%;
   }
 
@@ -2929,18 +2968,23 @@ h2 {
     width: 100%;
   }
 
+  .pg_work .bl_home_banner .banner_logo {
+    margin-top: 50px;
+  }
+
   .pg_contact .bl_home_banner .container>div .content p {
-    font-size: 45px;
-    line-height: 56px;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 20px;
   }
 
   .pg_contact .bl_home_banner .container>div .content p>span.highlight {
-    font-size: 56px;
-    line-height: 71px;
+    font-size: 48px;
+    line-height: 61px;
   }
 
   .pg_contact .bl_home_banner .container>div .content h1 {
-    font-size: 22px;
+    font-size: 19px;
     line-height: 150%;
   }
 
@@ -2950,29 +2994,36 @@ h2 {
   }
 
   .pg_static .bl_home_banner .container>div .content p {
-    font-size: 45px;
-    line-height: 56px;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    white-space: nowrap;
   }
 
   .pg_static .bl_home_banner .container>div .content p>span.highlight {
-    font-size: 56px;
-    line-height: 71px;
+   font-size: 48px;
+    line-height: 61px;
   }
 
   .pg_static .bl_home_banner .container>div .content h1 {
-    font-size: 22px;
+     font-size: 19px;
     line-height: 150%;
   }
 
   .pg_static .bl_home_banner .container>div .content {
     width: 100%;
-    margin-top: 71px;
+    margin-top: 101px;
   }
 
   .pg_product .bl_home_banner .container>div .content p {
     font-size: 45px;
     line-height: 56px;
   }
+
+  .pg_product .bl_home_banner .banner_logo {
+    margin-top: 50px;
+  }
+
 
   .pg_product .bl_home_banner .container>div .content p>span.highlight {
     font-size: 56px;
@@ -3218,14 +3269,14 @@ h2 {
 
   .pg_about .bl_journey_steps {
     flex-wrap: wrap;
-    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(3, 1fr); */
   }
 
   .pg_about .bl_journey_steps .bl_journey_step {
     /* width: calc(50% - 20px); */
     flex: auto;
     margin-bottom: 50px;
-    height: 130px;
+    /* height: 130px; */
     margin-bottom: 30px;
   }
 
@@ -3515,7 +3566,7 @@ h2 {
   }
 
   .pg_about .bl_journey .bl_journey_steps .bl_journey_step p {
-    font-size: 16px;
+    font-size: 12px;
   }
 
   .pg_about .bl_philosophy h2 {
@@ -3881,9 +3932,12 @@ h2 {
     margin-bottom: 50px;
   }
 
+  .pg_about .bl_journey .bl_journey_steps .bl_journey_step p{
+    font-size: 16px;
+  }
   .pg_about .bl_journey_steps .bl_journey_step {
     margin-bottom: 50px;
-    height: auto;
+    /* height: auto; */
   }
 
   h2 {
@@ -3983,7 +4037,7 @@ h2 {
     font-size: 12px;
   }
 
-  .pg_work .bl_home_banner .banner_logo{
+  .pg_work .bl_home_banner .banner_logo {
     margin-top: 100px;
   }
 }

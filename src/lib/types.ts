@@ -128,3 +128,10 @@ export interface OfficeLocationType {
   city: string;
   embedMapUrl: string;
 }
+
+
+export interface Attachment {
+  content: string;
+  mime_type: string;
+  name: string;
+}

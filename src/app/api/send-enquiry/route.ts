@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { SendMailClient } from "zeptomail";
 import handlebars from "handlebars";
+import { Attachment } from "@/lib/types";
 
 export async function POST(req: NextRequest) {
   try {
@@ -87,8 +88,7 @@ export async function POST(req: NextRequest) {
       });
     }
 
-    /* eslint-disable prefer-const */
-    let attachments = [];
+    const attachments: Attachment[] = [];
 
     if (file && file.size > 0) {
       const fileBuffer = Buffer.from(await file.arrayBuffer());
@@ -258,7 +258,7 @@ export async function POST(req: NextRequest) {
           to: [
             {
               email_address: {
-                address: "rashee@bharathatechno.com",
+                address: process.env.EMAIL_ADMIN,
                 name: "Info",
               },
             },
@@ -266,7 +266,7 @@ export async function POST(req: NextRequest) {
           bcc: [
             {
               email_address: {
-                address: "rashchop2001@gmail.com",
+                address: process.env.EMAIL,
                 name: "BT",
               },
             },
