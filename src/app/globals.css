@@ -3001,12 +3001,12 @@ h2 {
   }
 
   .pg_static .bl_home_banner .container>div .content p>span.highlight {
-   font-size: 48px;
+    font-size: 48px;
     line-height: 61px;
   }
 
   .pg_static .bl_home_banner .container>div .content h1 {
-     font-size: 19px;
+    font-size: 19px;
     line-height: 150%;
   }
 
@@ -3932,9 +3932,10 @@ h2 {
     margin-bottom: 50px;
   }
 
-  .pg_about .bl_journey .bl_journey_steps .bl_journey_step p{
+  .pg_about .bl_journey .bl_journey_steps .bl_journey_step p {
     font-size: 16px;
   }
+
   .pg_about .bl_journey_steps .bl_journey_step {
     margin-bottom: 50px;
     /* height: auto; */
@@ -4391,8 +4392,12 @@ h2 {
 
   .pg_static .bl_home_banner .container>div .content p {
     font-size: 18px;
-    line-height: 30px;
     margin-bottom: 20px;
+    white-space: wrap;
+  }
+
+  .pg_static .bl_home_banner .container>div .content p span {
+    line-height: 30px;
   }
 
   .pg_static .bl_home_banner .container>div .content p>span.highlight {
@@ -4434,7 +4439,11 @@ h2 {
 
   .bl_static_content .accordion .accordion__item .accordion__heading .accordion__button {
     font-size: 20px;
-    line-height: 45px;
+    line-height: 40px;
+  }
+
+  .bl_static_content .accordion .accordion__panel>div {
+    font-size: 16px;
   }
 
   .pg_static .bl_static_content .container ol li {

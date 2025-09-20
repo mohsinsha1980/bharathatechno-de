@@ -71,7 +71,7 @@ export default function ServicesDigitalMarketing() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
       <article className="pg_service">
-        <ServicesBanner data="Performance-Marketing-Services in NIBM Road, Deutschland, zur gezielten Generierung und Konvertierung von B2B-Leads" />
+        <ServicesBanner data="Performance-Marketing-Services in Deutschland, zur gezielten Generierung und Konvertierung von B2B-Leads" />
         <ServicesList />
         <Summary>
           <motion.h2
