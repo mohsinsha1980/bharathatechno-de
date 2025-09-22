@@ -19,7 +19,7 @@ export default function FooterNav() {
           <Link href="/refund-policy">Rückerstattungsrichtlinie</Link>
         </li>
         <li>
-          <Link href="/blog">Blog</Link>
+          <Link href="/blog">Blogs</Link>
         </li>
       </ul>
     </nav>

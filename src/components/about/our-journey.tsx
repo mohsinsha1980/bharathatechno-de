@@ -76,9 +76,9 @@ export default function OurJourney() {
                   <label>November 2023</label>
                   <p>
                     BharathaTechno IT Private Limited wurde als eines der
-                    aufstrebenden IT-Unternehmen in Pune gegründet und markiert
-                    den Beginn unserer spannenden und erfolgreichen Reise in der
-                    Technologiebranche.
+                    aufstrebenden IT-Unternehmen in Deutschland gegründet und
+                    markiert den Beginn unserer spannenden und erfolgreichen
+                    Reise in der Technologiebranche.
                   </p>
                 </div>
               </motion.span>
@@ -101,7 +101,7 @@ export default function OurJourney() {
                     Wir erhielten Anerkennung im Rahmen der Start-up India
                     Initiative (DIPP154250), was unseren innovativen Ansatz und
                     unsere Wachstumsorientierung im aufstrebenden
-                    ITStartup-Ökosystem von Pune bestätigt
+                    ITStartup-Ökosystem von Deutschland bestätigt
                   </p>
                 </div>
               </motion.span>
@@ -112,7 +112,7 @@ export default function OurJourney() {
                     Wir erhielten Anerkennung im Rahmen der Start-up India
                     Initiative (DIPP154250), was unseren innovativen Ansatz und
                     unsere Wachstumsorientierung im aufstrebenden
-                    ITStartup-Ökosystem von Pune bestätigt
+                    ITStartup-Ökosystem von Deutschland bestätigt
                   </p>
                 </div>
               </motion.span>

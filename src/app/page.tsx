@@ -14,12 +14,12 @@ export default function Home() {
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "BharathaTechnoIT Private Limited - Web & Mobile App Development",
+    name: "Benutzerdefinierte Web-App-Entwicklung in Deutschland | Global Services",
     url: "https://bharathatechno.de/",
     headline:
-      "BharathaTechnoIT - Custom Software, ERP & App Development Company",
+      "Benutzerdefinierte Web-App-Entwicklung in Deutschland | Global Services",
     description:
-      "BharathaTechnoIT Private Limited is a leading IT company specializing in custom software development, web and mobile application solutions, and end-to-end ERP systems. Empower your business with innovative digital products, reliable support, and expert consulting for growth in a digital world.",
+      "BharathaTechno IT EU mit Sitz in Deutschland bietet weltweit kundenspezifische Web-App-Entwicklungsdienste an und stellt skalierbare und intuitive Lösungen zur Förderung des Wachstums bereit.",
     potentialAction: {
       "@type": "SearchAction",
       target: "https://bharathatechno.de/search?q={search_term_string}",

@@ -77,7 +77,7 @@ export default function ServicesCorporateTraining() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
       <article className="pg_service">
-        <ServicesBanner data="Unternehmensschulung in NIBM Rd, Pune, um Ihr Team mit modernsten technischen Fähigkeiten auszustatten" />
+        <ServicesBanner data="Unternehmensschulung in NIBM Rd, Deutschland, um Ihr Team mit modernsten technischen Fähigkeiten auszustatten" />
         <ServicesList />
         <Summary>
           <motion.h2

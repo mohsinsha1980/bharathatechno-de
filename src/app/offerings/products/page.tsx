@@ -69,11 +69,11 @@ const items = {
 const schemaData = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  name: "Ready-to-Grow Digital Products - B-Fit, B-Store, B-Chef | BharathaTechnoIT",
+  name: "Maßgeschneiderte Softwareprodukte für Unternehmen | BharathaTechno IT",
   url: "https://bharathatechno.de/offerings/products",
-  headline: "Our Products - B-Fit, B-Store, B-Chef for Business Growth",
+  headline: "Maßgeschneiderte Softwareprodukte für Unternehmen | BharathaTechno IT",
   description:
-    "Explore BharathaTechnoIT's ready-to-grow products: B-Fit for fitness business management, B-Store for e-commerce brands, and B-Chef for online food delivery. Our scalable, user-friendly platforms empower gyms, retailers, and food brands to grow their business, reach more customers, and build a modern online presence.",
+    "BharathaTechno ist ein führendes IT-Unternehmen in Deutschland, das Full-Stack-Entwicklung, sichere Weblösungen und maßgeschneiderte IT-Services für Startups und Unternehmen anbietet.",
   potentialAction: {
     "@type": "SearchAction",
     target: "https://bharathatechno.de/search?q={search_term_string}",

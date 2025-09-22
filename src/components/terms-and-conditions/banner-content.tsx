@@ -3,7 +3,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 export default function TermsBannerContent() {
-  const text1 = "Allgemeine Geschäftsbedingungen";
+  const text1 = "Allgemeine";
 
   const variants = {
     hidden: { opacity: 0 },
@@ -25,9 +25,23 @@ export default function TermsBannerContent() {
     },
   };
 
+  const pullupVariant = {
+    initial: { y: 0, opacity: 0 },
+    animate: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        delay: 2,
+        duration: 1,
+      },
+    },
+  };
+
   const letters = text1.split("");
   const ref1 = useRef(null);
   const ref3 = useRef(null);
+  const ref2 = useRef(null);
+  const isInView2 = useInView(ref2, { once: true });
   const isInView1 = useInView(ref1, { once: true });
   const isInView3 = useInView(ref3, { once: true });
 
@@ -47,6 +61,18 @@ export default function TermsBannerContent() {
             </motion.span>
           ))}
         </motion.span>
+        <span className="highlight">
+          <motion.span
+            ref={ref2}
+            variants={pullupVariant}
+            initial="initial"
+            // animate="animate"
+            animate={isInView2 ? "animate" : ""}
+            className="inline-block"
+          >
+            Geschäftsbedingungen
+          </motion.span>
+        </span>
       </p>
       <motion.h1
         ref={ref3}

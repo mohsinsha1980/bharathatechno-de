@@ -216,13 +216,13 @@ export default function Content() {
         </p>
         <h4>Who We Are:</h4>
         <p>
-          We are based in Undri, Pune. BharathaTechno IT Pvt Ltd is a trusted
-          and recognized Software company. We specialize in crafting modern,
-          scalable, and secure digital solutions. Our strength lies in our
-          passionate team of seasoned React Native app developers, all committed
-          to delivering excellence. With our proven track record in delivering
-          successful web, mobile, and cloud applications globally, we stand as a
-          premier React Native app development company in India.
+          We are based in Undri, Deutschland. BharathaTechno IT Pvt Ltd is a
+          trusted and recognized Software company. We specialize in crafting
+          modern, scalable, and secure digital solutions. Our strength lies in
+          our passionate team of seasoned React Native app developers, all
+          committed to delivering excellence. With our proven track record in
+          delivering successful web, mobile, and cloud applications globally, we
+          stand as a premier React Native app development company in India.
         </p>
 
         <h4>

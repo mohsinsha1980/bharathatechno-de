@@ -7,12 +7,12 @@ export default function Work() {
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "Our Projects & Case Studies - BharathaTechnoIT",
+    name: "Full-Stack-Lösungen für Web und Mobilgeräte | BharathaTechno IT EU",
     url: "https://bharathatechno.de/work",
     headline:
-      "BharathaTechnoIT Portfolio: Custom Software, App & ERP Solutions",
+      "Full-Stack-Lösungen für Web und Mobilgeräte | BharathaTechno IT EU",
     description:
-      "Explore BharathaTechnoIT's project portfolio and case studies, highlighting successful digital solutions for diverse clients. Discover how our expertise in web and mobile app development, ERP, and digital transformation drives measurable business growth and exceptional outcomes.",
+      "BharathaTechno IT ist auf die Full-Stack-Entwicklung für Web- und mobile Apps spezialisiert und liefert sichere, skalierbare und robuste Anwendungen, die den globalen Geschäftsanforderungen gerecht werden.",
     potentialAction: {
       "@type": "SearchAction",
       target: "https://bharathatechno.de/search?q={search_term_string}",

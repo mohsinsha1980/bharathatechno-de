@@ -106,7 +106,7 @@ export default function ServicesStaffAugmentation() {
         </Summary>
         <Technology
           title="Expertise in MERN & MEAN Stack"
-          description="Our augmented staff brings deep expertise in both MERN and MEAN stacks, enabling them to deliver high-quality web applications that are robust, scalable, and feature-rich:"
+          description="Unsere erweiterten Teams bringen tiefgehendes Fachwissen in beiden Stacks mit und liefern hochwertige Webanwendungen, die robust, skalierbar und funktionsreich sind:"
           tech={SERVICE_STAFF_AGUMENTATION}
         />
         <DetailsAccordion items={SERVICE_STAFF_AGUMENTATION_DETAILS} />

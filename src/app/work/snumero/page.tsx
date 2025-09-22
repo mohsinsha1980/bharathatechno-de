@@ -7,7 +7,7 @@ import Snumero from "@/components/case-studies/snumero/case-study";
 export default async function SnumeroPage() {
   return (
     <article className="pg_work">
-      <CaseStudiesBanner data="Snumero – Eine Next.js-Website mit lokaler SEO in Pune zur Verbesserung der Sichtbarkeit und des Benutzerengagements" />
+      <CaseStudiesBanner data="Snumero – Eine Next.js-Website mit lokaler SEO in Deutschland zur Verbesserung der Sichtbarkeit und des Benutzerengagements" />
       <div className="bl_case_studies">
         <div className="container container-medium">
           <CaseStudyTemplate>

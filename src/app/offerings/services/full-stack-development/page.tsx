@@ -21,12 +21,12 @@ export default function ServicesFullStackDevelopment() {
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "Full Stack Development - MERN & MEAN Experts | BharathaTechnoIT",
+    name: "Full-Stack-Entwicklung | Web- & App-Entwicklung Deutschland",
     url: "https://bharathatechno.de/offerings/services/full-stack-development",
     headline:
-      "Full Stack Web & Mobile App Development Using MERN & MEAN | Custom ERP Solutions",
+      "Full-Stack-Entwicklung | Web- & App-Entwicklung Deutschland",
     description:
-      "BharathaTechnoIT delivers robust, scalable full stack development using MERN & MEAN. We build custom web apps, mobile apps, SPAs, PWAs, e-commerce platforms, and enterprise ERP systems. Expertise in React, Angular, NodeJs, Express, MongoDB, cloud infrastructure, and user-focused UI/UX. Partner with us to turn your vision into reality.",
+      "BharathaTechno bietet Full-Stack-Entwicklung für skalierbare, sichere Web- & Mobile-Apps. Individuelle Softwarelösungen für Unternehmen in Deutschland.",
     potentialAction: {
       "@type": "SearchAction",
       target: "https://bharathatechno.de/search?q={search_term_string}",
@@ -80,7 +80,7 @@ export default function ServicesFullStackDevelopment() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
       <article className="pg_service">
-        <ServicesBanner data="Fachmännische Full-Stack-Entwicklung in Pune für leistungsstarke Webanwendungen" />
+        <ServicesBanner data="Fachmännische Full-Stack-Entwicklung in Deutschland für leistungsstarke Webanwendungen" />
         <ServicesList />
         <Summary>
           <motion.h2

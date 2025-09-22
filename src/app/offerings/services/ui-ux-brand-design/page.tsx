@@ -19,12 +19,12 @@ export default function ServicesUXBrandDesign() {
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "UI/UX & Brand Design Services - BharathaTechnoIT",
+    name: "UI/UX-Design | Benutzerfreundliche Web- & App-Oberflächen",
     url: "https://bharathatechno.de/offerings/services/ui-ux-brand-design",
     headline:
-      "UI/UX & Brand Design - Intuitive Digital Experiences & Brand Identity",
+      "UI/UX-Design | Benutzerfreundliche Web- & App-Oberflächen",
     description:
-      "Transform your business with BharathaTechnoIT's UI/UX & Brand Design services. We craft people-first digital products with expert user research, wireframes, prototypes, and visual design using Figma, XD, and more. Elevate your brand’s impact across web, mobile, and e-commerce through seamless, research-backed, and cross-platform experiences.",
+      "BharathaTechno bietet UI/UX-Design für intuitive, benutzerfreundliche Web- & Mobile-Oberflächen. Optimieren Sie Ihre Customer Experience in Deutschland.",
     potentialAction: {
       "@type": "SearchAction",
       target: "https://bharathatechno.de/search?q={search_term_string}",
@@ -77,7 +77,7 @@ export default function ServicesUXBrandDesign() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
       <article className="pg_service">
-        <ServicesBanner data="Pixelgenaue UI/UX- und Markendesign-Services in Pune für makellose digitale Erlebnisse" />
+        <ServicesBanner data="Pixelgenaue UI/UX- und Markendesign-Services in Deutschland für makellose digitale Erlebnisse" />
         <ServicesList />
         <Summary>
           <motion.h2
