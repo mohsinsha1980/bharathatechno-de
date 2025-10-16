@@ -29,7 +29,10 @@ const initialErrorState: companyInfoErrorType = {
 const emailRegEx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const phoneRegex = /^[0-9+()-\s]*$/;
 
-export default function CompanyInfoForm({ defaultValues, onNext }: CompanyProps) {
+export default function CompanyInfoForm({
+  defaultValues,
+  onNext,
+}: CompanyProps) {
   const [companyInfo, setCompanyInfo] = useState<CompanyInfo>(defaultValues);
   const [errors, setErrors] = useState<companyInfoErrorType>(initialErrorState);
 
@@ -202,8 +205,11 @@ export default function CompanyInfoForm({ defaultValues, onNext }: CompanyProps)
           </div>
 
           <div className="item m-auto">
-            <button type="submit" className="border rounded-3xl px-8 py-2">
-              Submit
+            <button
+              type="submit"
+              className="border rounded-3xl px-8 py-2 text-lg"
+            >
+              Next
             </button>
           </div>
         </div>

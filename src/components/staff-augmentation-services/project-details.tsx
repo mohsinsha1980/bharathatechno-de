@@ -37,7 +37,7 @@ export default function ProjectDetailsForm({ defaultValues, onSubmit }: Props) {
       className="bl_contact_form"
     >
       <form onSubmit={handleSubmit} className="bl_form">
-        <div className="row">
+        <div className="row mb-2">
           <div className="item">
             <label>Tools and Platforms (Optional)</label>
             <input
@@ -62,9 +62,9 @@ export default function ProjectDetailsForm({ defaultValues, onSubmit }: Props) {
           </div>
         </div>
 
-        <div className="row">
+        <div className="row mb-2">
           <div className="item">
-            <label>Additional Notes (Optional)</label>
+            <label className="text-lg">Additional Notes (Optional)</label>
             <textarea
               value={formData.additionalNotes || ""}
               onChange={(e) => handleChange("additionalNotes", e.target.value)}
@@ -77,7 +77,7 @@ export default function ProjectDetailsForm({ defaultValues, onSubmit }: Props) {
         </div>
 
         <div className="item m-auto mt-4">
-          <button type="submit" className="border rounded-3xl px-8 py-2">
+          <button type="submit" className="border rounded-3xl px-8 py-2 text-lg">
             Submit
           </button>
         </div>

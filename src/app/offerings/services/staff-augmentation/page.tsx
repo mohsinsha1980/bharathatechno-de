@@ -120,7 +120,10 @@ export default function ServicesStaffAugmentation() {
           className="text-center md:text-left"
         >
           <div className="text-center">
-            <Link href="/staff-augmentation-services" className="underline">
+            <Link
+              href="/staff-augmentation-services"
+              className="inline bg-transparent border-0 p-0 text-[25px] m-0 text-blue-500 underline decoration-1 hover:text-blue-400"
+            >
               Jetzt Kontakt aufnehmen für das ideale Tech-Team
             </Link>
           </div>

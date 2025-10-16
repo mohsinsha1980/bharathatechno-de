@@ -10,6 +10,47 @@ const prisma = new PrismaClient();
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
+
+    const info = {
+      full_name: body.companyInfo?.fullName || "",
+      company_name: body.companyInfo?.companyName || "",
+      business_email: body.companyInfo?.email || "",
+      phone_number: body.companyInfo?.phone || "",
+      company_website: body.companyInfo?.website || "",
+      company_address: body.companyInfo?.address || "",
+
+      roles:
+        body.staffRequire?.roles?.length > 0
+          ? body.staffRequire.roles
+          : body.projectOverview?.roles || [],
+      number_of_resources:
+        body.staffRequire?.numberOfResources ||
+        body.projectOverview?.numberOfResources ||
+        0,
+      experience_level:
+        body.staffRequire?.experienceLevel ||
+        body.projectOverview?.experienceLevel ||
+        "",
+      skills:
+        body.staffRequire?.skills?.length > 0
+          ? body.staffRequire.skills
+          : body.projectOverview?.skills || [],
+      duration:
+        body.staffRequire?.duration || body.projectOverview?.duration || "",
+      availability:
+        body.staffRequire?.availability ||
+        body.projectOverview?.availability ||
+        "",
+      budget: body.staffRequire?.budget || body.projectOverview?.budget || "",
+
+      tools: body.projectDetails?.toolsAndPlatforms || "",
+      project_domain_experience:
+        body.projectDetails?.requiredDomainExperience || "",
+      additional_notes: body.projectDetails?.additionalNotes || "",
+
+      token: body.token,
+    };
+
     const {
       full_name,
       company_name,
@@ -17,7 +58,7 @@ export async function POST(req: NextRequest) {
       phone_number,
       company_website,
       company_address,
-      roles, // string[]
+      roles,
       number_of_resources,
       experience_level,
       skills,
@@ -28,7 +69,7 @@ export async function POST(req: NextRequest) {
       project_domain_experience,
       additional_notes,
       token,
-    } = body ?? {};
+    } = info;
 
     const recaptchaRes = await fetch(
       "https://www.google.com/recaptcha/api/siteverify",
@@ -125,7 +166,7 @@ export async function POST(req: NextRequest) {
         required_roles,
         number_of_resources: parsedNumberOfResources,
         experience_level,
-        skills: skills ?? null,
+        skills: skills?.join(", ") || "",
         duration: duration ?? null,
         availability,
         budget: budget ?? null,
@@ -175,7 +216,9 @@ export async function POST(req: NextRequest) {
       await client.sendMail({
         from: { address: process.env.EMAIL_FROM, name: "noreply" },
         to: [
-          { email_address: { address: process.env.EMAIL_ADMIN, name: "Info" } },
+          {
+            email_address: { address: process.env.EMAIL_ADMIN, name: "Info" },
+          },
         ],
         bcc: [{ email_address: { address: process.env.EMAIL, name: "BT" } }],
         subject: "BharathaTechno: New Staff Augmentation Request",

@@ -96,10 +96,10 @@ export default function StaffRequirementForm({ defaultValues, onNext }: Props) {
     >
       <form onSubmit={handleSubmit} className="bl_form">
         {/* Roles Multi-select */}
-        <div className="flex flex-col gap-2 mb-4">
+        <div className="flex flex-col gap-2 mb-6">
           <span className="font-medium">Roles:</span>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-3 w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-5 w-full">
             {ROLE_OPTIONS.map((role) => (
               <label
                 key={role}
@@ -151,7 +151,7 @@ export default function StaffRequirementForm({ defaultValues, onNext }: Props) {
         </div>
 
         {/* Number of resources */}
-        <div className="row">
+        <div className="row mb-2">
           <div className="item">
             <label className="text-white/90">Number of Resources:</label>
             <input
@@ -192,7 +192,7 @@ export default function StaffRequirementForm({ defaultValues, onNext }: Props) {
         </div>
 
         {/* Skills */}
-        <div className="row">
+        <div className="row  mb-2">
           <div className="item">
             <label className="text-white/90">Skills (comma separated):</label>
             <input
@@ -237,7 +237,7 @@ export default function StaffRequirementForm({ defaultValues, onNext }: Props) {
         </div>
 
         {/* Availability */}
-        <div className="row">
+        <div className="row mb-2">
           <div className="item">
             <label className="text-white/90">Availability:</label>
             <CustomSelect
@@ -271,8 +271,8 @@ export default function StaffRequirementForm({ defaultValues, onNext }: Props) {
         </div>
 
         <div className="item m-auto mt-4">
-          <button type="submit" className="border rounded-3xl px-8 py-2">
-            Submit
+          <button type="submit" className="border rounded-3xl px-8 py-2 text-lg">
+            Next
           </button>
         </div>
       </form>

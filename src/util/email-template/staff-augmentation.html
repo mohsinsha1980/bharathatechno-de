@@ -1,88 +1,222 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BharathaTechno: Staff Augmentation Request</title>
-    <style>
-      body { font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; color: #333; }
-      .container { max-width: 800px; margin: 30px auto; background-color: #ffffff; padding: 30px; border-radius: 8px; border: 1px solid #e0e0e0; }
-      .logo { text-align: center; margin-bottom: 20px; }
-      .logo img { max-height: 60px; }
-      .header { text-align: center; font-size: 22px; font-weight: 600; color: #2c3e50; margin-bottom: 14px; }
-      table { width: 100%; border-collapse: collapse; }
-      th, td { border: 1px solid #e5e7eb; padding: 10px 12px; text-align: left; vertical-align: top; }
-      th { background: #f3f4f6; color: #374151; font-weight: 600; width: 18%; }
-      td { background: #fafbfc; }
-      .section { margin-top: 16px; padding: 12px; border-left: 4px solid #3498db; background: #f6fbff; border-radius: 4px; }
-      .muted { color: #6b7280; }
-      .footer { text-align: center; font-size: 12px; color: #777; margin-top: 28px; }
-      .footer a { color: #777; text-decoration: none; }
-      .pre { white-space: pre-wrap; }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="logo">
-        <img src="https://www.bharathatechno.de/logo.png" alt="BharathaTechno" />
-      </div>
-      <div class="header">New Staff Augmentation Request</div>
 
-      <table role="presentation" cellpadding="0" cellspacing="0">
-        <tr>
-          <th>Full Name</th>
-          <td>{{full_name}}</td>
-          <th>Business Email</th>
-          <td>{{business_email}}</td>
-        </tr>
-        <tr>
-          <th>Phone Number</th>
-          <td>{{phone_number}}</td>
-          <th>Company Name</th>
-          <td>{{company_name}}</td>
-        </tr>
-        <tr>
-          <th>Company Website</th>
-          <td>{{company_website}}</td>
-          <th>Company Address</th>
-          <td>{{company_address}}</td>
-        </tr>
-        <tr>
-          <th>Required Roles</th>
-          <td>{{required_roles}}</td>
-          <th>Number of Resources</th>
-          <td>{{number_of_resources}}</td>
-        </tr>
-        <tr>
-          <th>Experience Level</th>
-          <td>{{experience_level}}</td>
-          <th>Availability</th>
-          <td>{{availability}}</td>
-        </tr>
-        <tr>
-          <th>Duration</th>
-          <td>{{duration}}</td>
-          <th>Budget</th>
-          <td>{{budget}}</td>
-        </tr>
-      </table>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BharathaTechno: Staff Augmentation Request</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
 
-      <div class="section">
-        <p><strong>Skills</strong></p>
-        <p class="pre">{{skills}}</p>
-      </div>
-      <div class="section">
-        <p><strong>Domain Experience</strong></p>
-        <p class="pre">{{project_domain_experience}}</p>
-      </div>
-      <div class="section">
-        <p><strong>Additional Notes</strong></p>
-        <p class="pre">{{additional_notes}}</p>
-      </div>
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 8px;
+      border: 1px solid #e0e0e0;
+    }
 
-      <p class="muted">Submitted On: {{created_at}}</p>
+    .logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
 
-      <div class="footer">&copy; {{year}} <a href="https://www.bharathatechno.de/" target="_blank">BharathaTechno IT PVT LTD</a>. All rights reserved.</div>
+    .logo img {
+      max-height: 60px;
+    }
+
+    .header {
+      text-align: center;
+      font-size: 22px;
+      font-weight: 600;
+      color: #2c3e50;
+      margin-bottom: 14px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      border: 1px solid #e5e7eb;
+      padding: 10px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #f3f4f6;
+      color: #374151;
+      font-weight: 600;
+      width: 18%;
+    }
+
+    td {
+      background: #fafbfc;
+      word-wrap: break-word;
+      word-break: break-word;
+      white-space: normal;
+      width: 32%;
+    }
+
+    .section {
+      margin-top: 16px;
+      padding: 12px;
+      border-left: 4px solid #3498db;
+      background: #f6fbff;
+      border-radius: 4px;
+    }
+
+    .muted {
+      color: #6b7280;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      color: #777;
+      margin-top: 28px;
+    }
+
+    .footer a {
+      color: #777;
+      text-decoration: none;
+    }
+
+    .pre {
+      white-space: pre-wrap;
+    }
+
+    @media (max-width: 700px) {
+
+      table,
+      thead,
+      tbody,
+      th,
+      td,
+      tr {
+        display: block;
+        width: 100%;
+      }
+
+      thead {
+        display: none;
+      }
+
+      tr {
+        margin-bottom: 1rem;
+        border: 1px solid #e5e7eb;
+        border-radius: 6px;
+        overflow: hidden;
+      }
+
+      th,
+      td {
+        border: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 10px;
+        text-align: left;
+      }
+
+      th::after {
+        content: ":";
+        margin-left: 4px;
+      }
+
+      td {
+        background: #fff;
+      }
+
+      td::before {
+        content: attr(data-label);
+        font-weight: 600;
+        color: #374151;
+        flex: 0 0 40%;
+      }
+
+      td span {
+        flex: 1;
+        text-align: right;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="https://www.bharathatechno.de/logo.png" alt="BharathaTechno" />
     </div>
-  </body>
-</html>
+    <div class="header">New Staff Augmentation Request</div>
 
+    <table role="presentation" cellpadding="0" cellspacing="0">
+      <tr>
+        <th>Full Name</th>
+        <td>{{full_name}}</td>
+        <th>Business Email</th>
+        <td>
+          sedrtfyhuijmkoecrtvgbyhunjimdrftgybhunjimrctvybunimed5rftgyhuji54rtyhuji5rty7hu5rfgt6yhu5frtgyhurftgyhurftgybht
+        </td>
+      </tr>
+      <tr>
+        <th>Phone Number</th>
+        <td>{{phone_number}}</td>
+        <th>Company Name</th>
+        <td>{{company_name}}</td>
+      </tr>
+      <tr>
+        <th>Company Website</th>
+        <td>{{company_website}}</td>
+        <th>Company Address</th>
+        <td>{{company_address}}</td>
+      </tr>
+      <tr>
+        <th>Required Roles</th>
+        <td>{{required_roles}}</td>
+        <th>Number of Resources</th>
+        <td>{{number_of_resources}}</td>
+      </tr>
+      <tr>
+        <th>Experience Level</th>
+        <td>{{experience_level}}</td>
+        <th>Availability</th>
+        <td>{{availability}}</td>
+      </tr>
+      <tr>
+        <th>Duration</th>
+        <td>{{duration}}</td>
+        <th>Budget</th>
+        <td>{{budget}}</td>
+      </tr>
+    </table>
+
+    <div class="section">
+      <p><strong>Skills</strong></p>
+      <p class="pre">{{skills}}</p>
+    </div>
+    <div class="section">
+      <p><strong>Domain Experience</strong></p>
+      <p class="pre">{{project_domain_experience}}</p>
+    </div>
+    <div class="section">
+      <p><strong>Additional Notes</strong></p>
+      <p class="pre">{{additional_notes}}</p>
+    </div>
+
+    <p class="muted">Submitted On: {{created_at}}</p>
+
+    <div class="footer">&copy; {{year}} <a href="https://www.bharathatechno.de/" target="_blank">BharathaTechno IT PVT
+        LTD</a>. All rights reserved.</div>
+  </div>
+</body>
+
+</html>
