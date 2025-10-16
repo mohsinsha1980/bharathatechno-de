@@ -1,0 +1,29 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model StaffRequest {
+  id                       Int      @id @default(autoincrement())
+  full_name                String
+  company_name             String?
+  business_email           String
+  phone_number             String
+  company_website          String? 
+  company_address          String? 
+  required_roles           String  // array of roles seperated by ,
+  number_of_resources      Int
+  experience_level         String
+  skills                   String?
+  duration                 String?
+  availability             String
+  budget                   String?
+  tools                    String?
+  project_domain_experience String?
+  additional_notes         String?
+  created_at               DateTime @default(now())
+}
