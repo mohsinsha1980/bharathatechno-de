@@ -3,6 +3,7 @@ import BlogsArticles from "@/components/home/blogs-articles";
 import ExperienceQuote from "@/components/home/experience-quote";
 import OurOffering from "@/components/home/our-offerings";
 import OurWork from "@/components/home/our-work";
+import StaffAugmentationForm from "@/components/home/staff-augmentation-form";
 import Testimonials from "@/components/home/testimonials";
 import WhyChooseUs from "@/components/home/why-choose-us";
 import { getAllPosts } from "@/lib/post-utils";
@@ -43,6 +44,7 @@ export default function Home() {
         <OurWork />
         <Testimonials />
         <BlogsArticles BLOGS={posts} />
+        <StaffAugmentationForm />
       </article>
     </>
   );

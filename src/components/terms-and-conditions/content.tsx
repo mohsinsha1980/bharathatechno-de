@@ -57,7 +57,7 @@ export default function TermsContent() {
         <ul>
           <li>
             BharathaTechno IT EU:{" "}
-            <Link href="tel:+919325636885">+91 932 563 6885</Link>
+            <Link href="tel:+49 175 650 2851">+49 175 650 2851</Link>
           </li>
           <li>
             Email:{" "}

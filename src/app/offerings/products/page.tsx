@@ -96,7 +96,7 @@ export default function Product() {
 Mit modernster Full-Stack-Technologie realisiert, werden alle Lösungen individuell auf Ihre Anforderungen zugeschnitten,
 sodass Sie flexibel arbeiten und mit voller Überzeugung skalieren können.`}
         />
-        <div className="container mt-8">
+        <div className="container mt-8 mb-30">
           <h2
             className="mb-10 text-center"
             style={{ color: `var(--text-orange)` }}
@@ -104,7 +104,7 @@ sodass Sie flexibel arbeiten und mit voller Überzeugung skalieren können.`}
             Our Products
           </h2>
           <motion.div
-            className="bl_blogs_list grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-[60px]"
+            className="bl_blogs_list grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-[60px] mb-30"
             variants={container}
             initial="hidden"
             whileInView="show"

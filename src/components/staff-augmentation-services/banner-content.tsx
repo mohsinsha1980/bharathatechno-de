@@ -2,8 +2,8 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
-export default function BannerContent() {
-  const text1 = "Tech und Softwareentwicklungs blogs";
+export default function ContactBannerContent() {
+  const text1 = "Personalaufstockungsdienste";
 
   const variants = {
     hidden: { opacity: 0 },
@@ -12,6 +12,7 @@ export default function BannerContent() {
       transition: { delay: i * 0.05 + 1, duration: 1 },
     }),
   };
+
 
   const fadeVariant = {
     initial: { y: 10, opacity: 0 },
@@ -28,14 +29,14 @@ export default function BannerContent() {
   const letters = text1.split("");
   const ref1 = useRef(null);
   const ref3 = useRef(null);
-  const isInView3 = useInView(ref3, { once: true });
   const isInView1 = useInView(ref1, { once: true });
+  const isInView3 = useInView(ref3, { once: true });
 
   return (
-    <div className="content">
-      <p className="mt-8 lg:mt-0 lg:mb-16 text-center lg:text-left">
+    <div className="content col-span-1 lg:col-span-2">
+      <p className="mb-4 lg:mb-16 text-center lg:text-left">
         <motion.span
-          className="lg:mb-4"
+          className="mb-4"
           ref={ref1}
           initial="hidden"
           animate={isInView1 ? "show" : ""}
@@ -53,10 +54,10 @@ export default function BannerContent() {
         variants={fadeVariant}
         initial="initial"
         animate={isInView3 ? "animate" : ""}
-        className="text-center lg:text-left md:text-justify"
+        className="text-center lg:text-left"
       >
-        Entdecken Sie Expertenartikel zu Webentwicklung, App-Lösungen und
-        IT-Trends.
+        Stellen Sie mit unseren fachkundigen Personalaufstockungsdiensten Ihr
+        ideales Technikteam zusammen.
       </motion.h1>
     </div>
   );

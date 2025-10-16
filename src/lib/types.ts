@@ -129,9 +129,63 @@ export interface OfficeLocationType {
   embedMapUrl: string;
 }
 
-
 export interface Attachment {
   content: string;
   mime_type: string;
   name: string;
+}
+
+export interface CompanyInfo {
+  fullName: string;
+  companyName?: string;
+  email: string;
+  phone: string;
+  website?: string;
+  address?: string;
+}
+
+export interface StaffingRequirements {
+  roles: (
+    | "Frontend Developer"
+    | "Backend Developer"
+    | "Full Stack Developer"
+    | "QA Engineer"
+    | "UI/UX Designer"
+    | "DevOps"
+    | "Project Manager"
+    | "Cloud Engineer"
+    | "AI Engineer"
+  )[];
+  numberOfResources: number;
+  experienceLevel:
+    | "Select Option"
+    | "Junior"
+    | "Mid-level (3–5 Years)"
+    | "Senior (5–9 Years)"
+    | "Super Senior (9+ Years)";
+  skills?: string[];
+  duration?:
+    | "Select Option"
+    | "1–3 months"
+    | "3–6 months"
+    | "6–12 months"
+    | "Ongoing";
+  availability?:
+    | "Select Option"
+    | "Within 2 weeks"
+    | "Within 4 weeks"
+    | "Flexible";
+  budget?: string;
+}
+
+export interface ProjectDetails {
+  toolsAndPlatforms?: string;
+  requiredDomainExperience?: string;
+  additionalNotes?: string;
+}
+
+export interface ProjectFormData {
+  companyInfo: CompanyInfo;
+  staffRequire: StaffingRequirements;
+  projectDetails: ProjectDetails;
 }

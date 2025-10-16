@@ -14,6 +14,7 @@ import ServicesContact from "@/components/services/contact";
 import { useInView, motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 import Script from "next/script";
+import Link from "next/link";
 
 export default function ServicesStaffAugmentation() {
   const schemaData = {
@@ -111,6 +112,22 @@ export default function ServicesStaffAugmentation() {
         />
         <DetailsAccordion items={SERVICE_STAFF_AGUMENTATION_DETAILS} />
         <ServicesFeatures data={SERVICE_STAFF_AGUMENTATION_FEATURES} />
+        <motion.div
+          ref={ref3}
+          variants={fadeVariant}
+          initial="initial"
+          animate={isInView3 ? "animate" : ""}
+          className="text-center md:text-left"
+        >
+          <div className="text-center">
+            <Link
+              href="/staff-augmentation-services"
+              className="inline bg-transparent border-0 p-0 text-[25px] m-0 text-blue-500 underline decoration-1 hover:text-blue-400"
+            >
+              Jetzt Kontakt aufnehmen für das ideale Tech-Team
+            </Link>
+          </div>
+        </motion.div>
         <ServicesContact
           title="Bereit, Ihr Team zu erweitern?"
           description="Lassen Sie uns besprechen, wie unsere Personalaufstockungsdienste Ihnen helfen können, Ihre
