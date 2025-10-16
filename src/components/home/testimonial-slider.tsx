@@ -123,9 +123,7 @@ export default function TestimonialSlider() {
             className="slide"
           >
             <div className="slide_content">
-              <div
-                className="logo"
-              >
+              <div className="logo">
                 <Image
                   src={DATA[activeImageIndex].logo}
                   alt={DATA[activeImageIndex].client}
@@ -145,7 +143,14 @@ export default function TestimonialSlider() {
                   <p className="title">{DATA[activeImageIndex].title}</p>
                 ) : null}
                 {DATA[activeImageIndex].title ? (
-                  <p className="title underline hover:!text-(--text-orange) "><Link href={DATA[activeImageIndex].link}>Visit Website</Link></p>
+                  <p className="title underline">
+                    <Link
+                      href={DATA[activeImageIndex].link}
+                      className="hover:!text-(--text-orange)"
+                    >
+                      Visit Website
+                    </Link>
+                  </p>
                 ) : null}
               </div>
             </div>

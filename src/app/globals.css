@@ -6,6 +6,7 @@
   --text-orange: #f49e0a;
   --text-blue: #0a52eb;
   --text-blue-dark: #18206f;
+  --footer: #fffc;
 }
 
 /* html {
@@ -73,7 +74,8 @@ svg {
 .pg_contact,
 .pg_static,
 .pg_product,
-.pg_blogs {
+.pg_blogs,
+.pg_staff {
   .bl_home_banner {
     /* position: relative; */
     width: 100%;
@@ -129,8 +131,9 @@ svg {
   }
 
   .bl_home_banner .banner_logo {
-    max-width: 30%;
+    /* max-width: 30%; */
     margin: auto;
+    margin-top: 200px;
     /* position: absolute;
     right: 20px;
     top: 50%;
@@ -294,8 +297,6 @@ svg {
 
       &:hover {
         background-color: #000;
-        /* box-shadow: inset 0px 0px 30px rgba(255, 255, 255, 0.5),
-        0px 30px 30px rgba(255, 255, 255, 0.1); */
         border-color: #484848;
 
         h3 {
@@ -578,16 +579,26 @@ svg {
       p {
         font-size: 18px;
       }
+
+      &:hover h3 {
+        color: var(--text-orange);
+
+        .go-link {
+          animation: goOut 0.5s ease-in-out forwards;
+        }
+      }
     }
   }
 }
 
 .pg_blogs .bl_home_banner .content {
-  margin-top: 350px;
+  margin-top: 200px;
 }
 
-.pg_blogs .bl_home_banner .banner_logo {
-  margin-top: 250px;
+
+.pg_blogs .bl_blogs_list .bl_blog h3 div a .go-link {
+  width: 30px;
+  height: 30px;
 }
 
 .pg_home .bl_home_banner .content {
@@ -638,7 +649,7 @@ svg {
 
 main.bl_page {
   position: relative;
-  min-height: 2000px;
+  /* min-height: 2000px; */
   padding-bottom: 20px;
 }
 
@@ -810,8 +821,6 @@ main.bl_page {
 .main_header .header_btn a {
   height: 48px;
   line-height: 48px;
-  /* background-color: #fff;
-  color: #040404; */
   background-color: #040404;
   color: #fff;
   border-radius: 24px;
@@ -1039,13 +1048,13 @@ h2 {
     }
 
     .banner_logo {
-      margin-top: 100px;
+      margin-top: 150px;
     }
 
     .bl_services_cards {
       .bl_service_card {
         width: 240px;
-        height: 140px;
+        height: 160px;
         border: 1px solid #fff3;
         background-color: rgba(0, 0, 0, 0.5);
         backdrop-filter: blur(10px);
@@ -1092,7 +1101,7 @@ h2 {
         transition: all 0.3s ease;
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;
 
         svg.service_icon {
           width: 40px;
@@ -1541,7 +1550,6 @@ h2 {
     margin-bottom: 150px;
 
     .slider-container {
-      /* overflow: hidden; */
       position: relative;
     }
 
@@ -1550,7 +1558,6 @@ h2 {
       margin: auto;
 
       .slide_content {
-        /* padding: 50px 20px 20px; */
         width: 100%;
         max-width: 600px;
 
@@ -1739,30 +1746,29 @@ h2 {
         margin-bottom: 0;
       }
 
-      /* there */
       p {
         hyphens: auto;
         -webkit-hyphens: auto;
         -ms-hyphens: auto;
-
         overflow-wrap: anywhere;
-        /* best fallback */
         word-break: break-word;
-        /* legacy fallback */
         white-space: normal;
-        /* ensure wrapping */
         max-width: 100%;
       }
-    }
-
-    .banner_logo {
-      top: 50%;
     }
   }
 
   .bl_static_content {
     .container {
       margin-bottom: 150px;
+
+      h1 {
+        font-size: 32px;
+        text-decoration: underline;
+        font-weight: 700;
+        margin-top: 50px;
+        margin-bottom: 12px;
+      }
 
       h2 {
         font-size: 32px;
@@ -1827,10 +1833,6 @@ h2 {
 }
 
 .pg_product {
-  .bl_home_banner .banner_logo {
-    margin-top: 150px;
-  }
-
   .bl_usp {
     text-align: center;
 
@@ -1981,7 +1983,7 @@ h2 {
 
   .bl_excel {
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 
     h3 {
       font-size: 40px;
@@ -2081,8 +2083,6 @@ h2 {
           overflow-wrap: break-word;
           hyphens: auto;
           max-width: 100%;
-          display: -webkit-box;
-          -webkit-line-clamp: 4;
           -webkit-box-orient: vertical;
           overflow: hidden;
         }
@@ -2212,6 +2212,90 @@ h2 {
     }
   }
 }
+
+.pg_staff {
+  .bl_contact_form {
+    h2 {
+      font-size: 38px;
+      font-weight: 700;
+      text-align: center;
+      color: var(--text-orange);
+    }
+
+    .bl_form {
+      background-color: #040404;
+      border-radius: 24px;
+      padding: 40px;
+      width: 700px;
+
+      .row {
+        display: flex;
+        gap: 60px;
+        align-items: center;
+        justify-content: center;
+
+        .item {
+          width: 50%;
+          margin-bottom: 20px;
+
+          &.full {
+            width: 100%;
+          }
+
+          input,
+          textarea {
+            width: 100%;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 16px;
+            line-height: 30px;
+            height: 50px;
+
+            &:focus {
+              outline: 0 none;
+            }
+          }
+
+          textarea {
+            height: 100px;
+            resize: none;
+          }
+
+          button {
+            border: 1px solid white;
+            padding: 10px 30px;
+            border-radius: 50px;
+            cursor: pointer;
+          }
+
+          .formError {
+            font-size: 14px;
+            color: red;
+          }
+        }
+      }
+    }
+  }
+}
+
+.progress-stepper {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  gap: 40px;
+  width: 10 0%;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.progress-stepper>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  flex: none;
+}
+
 
 .loader_wrapper {
   background-color: rgba(0, 0, 0, 0.7);
@@ -2361,8 +2445,6 @@ h2 {
   visibility: hidden;
 }
 
-
-/* Custom Select Component Styles */
 .custom-select-container {
   position: relative;
   width: 100%;
@@ -2601,9 +2683,20 @@ h2 {
     line-height: 150%;
   }
 
-  .pg_about .bl_home_banner .container>div .content {
-    width: 100%;
-    margin-top: 71px;
+  .pg_blogs .bl_home_banner .container>div .content p {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 40px;
+  }
+
+  .pg_blogs .bl_home_banner .container>div .content p>span.highlight {
+    font-size: 48px;
+    line-height: 71px;
+  }
+
+  .pg_blogs .bl_home_banner .container>div .content h1 {
+    font-size: 22px;
+    line-height: 150%;
   }
 
   .pg_service .bl_home_banner .container>div .content p {
@@ -2622,22 +2715,12 @@ h2 {
     line-height: 150%;
   }
 
-  .pg_service .bl_home_banner .container>div .content {
-    width: 100%;
-    margin-top: 102px;
-  }
-
   .pg_service .bl_home_banner .bl_services_cards .bl_service_card {
     height: 130px;
   }
 
   .pg_service .bl_home_banner .bl_services_cards .bl_service_card a h3 {
-    /* here */
     font-size: 18px;
-  }
-
-  .pg_work .bl_home_banner .container>div .content {
-    margin-top: 71px;
   }
 
   .pg_work .bl_home_banner .container>div .content p {
@@ -2653,10 +2736,6 @@ h2 {
   .pg_work .bl_home_banner .container>div .content h1 {
     font-size: 22px;
     line-height: 150%;
-  }
-
-  .pg_work .bl_home_banner .container>div .content {
-    width: 100%;
   }
 
   .pg_contact .bl_home_banner .container>div .content p {
@@ -2714,14 +2793,6 @@ h2 {
     line-height: 150%;
   }
 
-  .pg_product .bl_home_banner .container>div .content {
-    width: 100%;
-    margin-top: 151px;
-  }
-
-  .pg_product .bl_home_banner .banner_logo {
-    margin-top: 141px;
-  }
 
   .pg_product .bl_summary h2 {
     font-size: 54px;
@@ -2743,10 +2814,6 @@ h2 {
   .main_header nav ul li.cursor {
     height: calc(100% - 40px);
     top: 20px;
-  }
-
-  .pg_service .bl_home_banner .banner_logo {
-    margin-top: 10px;
   }
 
   .pg_service .bl_home_banner .service {
@@ -2830,6 +2897,50 @@ h2 {
   .pg_static .bl_static_content .container p {
     font-size: 18px;
   }
+
+  .pg_static .bl_static_content .banner_logo {
+    margin-top: 20px;
+  }
+
+  .pg_home,
+  .pg_about,
+  .pg_service,
+  .pg_work,
+  .pg_contact,
+  .pg_product,
+  .pg_blogs {
+    .bl_home_banner .banner_logo {
+      margin-top: 100px;
+      max-width: 40%;
+    }
+  }
+
+  .pg_static {
+    .bl_home_banner .banner_logo {
+      margin-top: 100px;
+      max-width: 45%;
+    }
+  }
+
+  .pg_blogs {
+    .bl_home_banner .banner_logo {
+      margin-top: 100px;
+      max-width: 30%;
+    }
+  }
+
+  .pg_home,
+  .pg_about,
+  .pg_service,
+  .pg_work,
+  .pg_contact,
+  .pg_static,
+  .pg_product,
+  .pg_blogs {
+    .bl_home_banner .container>div .content {
+      margin-top: 100px;
+    }
+  }
 }
 
 @media only screen and (max-width: 1370px) {
@@ -2859,6 +2970,35 @@ h2 {
     }
   }
 
+  .pg_home,
+  .pg_about,
+  .pg_work,
+  .pg_contact,
+  .pg_product {
+    .bl_home_banner .banner_logo {
+      max-width: 30%;
+      margin-top: 50px;
+    }
+  }
+
+  .pg_service,
+  .pg_blogs {
+    .bl_home_banner .banner_logo {
+      max-width: 20%;
+      margin-top: 50px;
+    }
+  }
+
+  .pg_static {
+    .bl_home_banner .banner_logo {
+      max-width: 35%;
+      margin-top: 50px;
+    }
+  }
+
+  .pg_home .bl_home_choose .banner_logo svg {
+    max-width: 70%;
+  }
 
   .pg_home .bl_home_banner .container .content {
     margin-top: 61px;
@@ -2928,12 +3068,12 @@ h2 {
   }
 
   .pg_service .bl_home_banner .bl_services_cards .bl_service_card {
-    height: 100px;
-    width: 180px;
+    height: 80px;
+    width: 150px;
   }
 
   .pg_service .bl_home_banner .bl_services_cards .bl_service_card a h3 {
-    font-size: 14px;
+    font-size: 10px;
   }
 
   .pg_service .bl_services_list .bl_services_list_item a {
@@ -2966,10 +3106,6 @@ h2 {
 
   .pg_work .bl_home_banner .container>div .content {
     width: 100%;
-  }
-
-  .pg_work .bl_home_banner .banner_logo {
-    margin-top: 50px;
   }
 
   .pg_contact .bl_home_banner .container>div .content p {
@@ -3020,11 +3156,6 @@ h2 {
     line-height: 56px;
   }
 
-  .pg_product .bl_home_banner .banner_logo {
-    margin-top: 50px;
-  }
-
-
   .pg_product .bl_home_banner .container>div .content p>span.highlight {
     font-size: 56px;
     line-height: 71px;
@@ -3050,12 +3181,24 @@ h2 {
     top: 20px;
   }
 
-  .pg_service .bl_home_banner .banner_logo {
-    margin-top: 10px;
-  }
-
   .pg_service .bl_home_banner .service {
     bottom: 100px;
+  }
+
+  .pg_blogs .bl_home_banner .content {
+    margin-top: 70px;
+  }
+
+  .pg_static .bl_home_banner .container>div .content p {
+    white-space: normal;
+  }
+
+  footer .bl_footer nav a {
+    font-size: 16px;
+  }
+
+  footer .bl_footer p {
+    font-size: 16px;
   }
 }
 
@@ -3253,7 +3396,7 @@ h2 {
   }
 
   .pg_about .bl_home_banner .container>div .content p {
-    font-size: 30px;
+    font-size: 25px;
     line-height: 30px;
     font-weight: 700;
   }
@@ -3327,6 +3470,22 @@ h2 {
     line-height: 65px;
   }
 
+  .pg_blogs .bl_home_banner .container>div .content p {
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 700;
+  }
+
+  .pg_blogs .bl_home_banner .container>div .content p>span.highlight {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .pg_blogs .bl_home_banner .container>div .content h1 {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
   .pg_contact .bl_home_banner .banner_logo {
     right: 100px;
   }
@@ -3336,13 +3495,13 @@ h2 {
   }
 
   .pg_contact .bl_home_banner .container>div .content p {
-    font-size: 18px;
+    font-size: 25px;
     line-height: 30px;
     margin-bottom: 20px;
   }
 
   .pg_contact .bl_home_banner .container>div .content p>span.highlight {
-    font-size: 28px;
+    font-size: 30px;
     line-height: 36px;
   }
 
@@ -3376,13 +3535,13 @@ h2 {
   }
 
   .pg_work .bl_home_banner .container>div .content p {
-    font-size: 18px;
+    font-size: 25px;
     line-height: 30px;
     margin-bottom: 20px;
   }
 
   .pg_work .bl_home_banner .container>div .content p>span.highlight {
-    font-size: 28px;
+    font-size: 30px;
     line-height: 36px;
   }
 
@@ -3415,13 +3574,17 @@ h2 {
     padding-top: 10px;
   }
 
+  .pg_service .bl_home_banner .container>div .content h1 {
+    font-size: 14px;
+  }
+
   .pg_service .bl_home_banner .content p>span {
-    font-size: 35px;
+    font-size: 25px;
     margin: 0;
   }
 
   .pg_service .bl_home_banner .content p>span.highlight {
-    font-size: 45px;
+    font-size: 30px;
   }
 
 
@@ -3480,13 +3643,13 @@ h2 {
   }
 
   .pg_static .bl_home_banner .container>div .content p {
-    font-size: 18px;
+    font-size: 25px;
     line-height: 30px;
     margin-bottom: 20px;
   }
 
   .pg_static .bl_home_banner .container>div .content p>span.highlight {
-    font-size: 28px;
+    font-size: 30px;
     line-height: 36px;
   }
 
@@ -3614,13 +3777,13 @@ h2 {
   }
 
   .pg_product .bl_home_banner .container>div .content p {
-    font-size: 18px;
+    font-size: 25px;
     line-height: 30px;
     margin-bottom: 20px;
   }
 
   .pg_product .bl_home_banner .container>div .content p>span.highlight {
-    font-size: 28px;
+    font-size: 30px;
     line-height: 36px;
   }
 
@@ -3753,16 +3916,6 @@ h2 {
     font-size: 11px;
     height: 46px;
   }
-
-  /* .bl_home_banner .container {
-    position: relative;
-  }
-
-  .bl_home_banner .bg {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-  } */
 
   .pg_home .bl_home_banner .tags {
     writing-mode: unset;
@@ -4040,6 +4193,11 @@ h2 {
 
   .pg_work .bl_home_banner .banner_logo {
     margin-top: 100px;
+  }
+
+  .pg_static .bl_home_banner .container>div .content p {
+    font-size: 28px;
+    white-space: normal;
   }
 }
 
@@ -4439,7 +4597,7 @@ h2 {
 
   .bl_static_content .accordion .accordion__item .accordion__heading .accordion__button {
     font-size: 20px;
-    line-height: 40px;
+    line-height: 45px;
   }
 
   .bl_static_content .accordion .accordion__panel>div {
@@ -4662,7 +4820,7 @@ h2 {
   }
 
   footer .copyright {
-    padding: 0 20px;
+    padding: 20px;
   }
 
   .pg_home .bl_blogs_list .bl_blog h3 a {
@@ -4728,7 +4886,7 @@ h2 {
   }
 
   .pg_blogs .bl_home_banner .banner_logo {
-    margin-top: 200px;
+    margin-top: 100px;
   }
 
   .pg_blogs .bl_blogs_list .container {
@@ -4745,5 +4903,20 @@ h2 {
 
   .pg_static .bl_home_banner .banner_logo {
     margin-top: 100px;
+  }
+}
+
+@media only screen and (max-width:400px) {
+  .pg_home .bl_home_banner .container .content p {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .pg_home .bl_home_banner .container .content p span {
+    line-height: 35px;
+  }
+
+  .pg_home .bl_home_banner .tags {
+    font-size: 10px;
   }
 }

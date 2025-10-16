@@ -127,6 +127,13 @@ export default function ContactForm() {
       };
     }
 
+    if (formData.phone.trim().length > 13) {
+      errors.phone = {
+        invalid: true,
+        message: "Phone number cannot exceed 13 digits",
+      };
+    }
+
     if (formData.subject.trim() === "") {
       errors.subject = { invalid: true, message: "Subject is required" };
     }
@@ -508,7 +515,7 @@ export default function ContactForm() {
             </form>
           </motion.div>
           {openBookCall && (
-            <CalendlyScheduler onClose={() => setOpenBookCall(false)}/>
+            <CalendlyScheduler onClose={() => setOpenBookCall(false)} />
           )}
         </div>
       </section>

@@ -1,8 +1,7 @@
-import BharathaIconAnimatedSm from "@/components/common/animated-icons/bharatha-icon-sm";
-import BharathaIconAnimatedXs from "@/components/common/animated-icons/bharatha-icon-xs";
+import BharathaIconAnimatedSm from "../common/animated-icons/bharatha-icon-sm";
+import BharathaIconAnimatedXs from "../common/animated-icons/bharatha-icon-xs";
 
-
-export default function BannerLogo() {
+export default function ContactBannerLogo() {
   return (
     <>
       <div className="banner_logo xl:hidden lg:hidden">

@@ -90,7 +90,7 @@ export default function LookingAhead() {
             animate={isInView1 ? "show" : ""}
             variants={imageVariant}
           >
-            <p className="mb-6">
+            <p className="mb-6 text-justify">
               Während wir weiter wachsen, bleibt unser Fokus auf Innovation und
               Kundenerfolg unverändert. Wir gestalten transformative digitale
               Lösungen für Unternehmen in unterschiedlichsten Branchen und
@@ -104,7 +104,7 @@ export default function LookingAhead() {
           </motion.div>
 
           <motion.div
-            className="flex-1 flex justify-center items-center"
+            className="flex-2 flex justify-center items-center"
             ref={ref2}
             initial="hidden"
             animate={isInView2 ? "show" : ""}

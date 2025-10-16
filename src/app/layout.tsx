@@ -37,6 +37,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-TR39V4K7');`}
       </Script>
+      <meta name="google" content="notranslate" />
       <meta
         name="google-site-verification"
         content="Vyhh55vqPv7HGet_m9KDsTaxs9ZLXQ0UtDPI2S1nFUQ"
@@ -48,7 +49,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
           }}
         />
-        <ReCaptchaProvider reCaptchaKey="6LctziUpAAAAADgXItgeelQ-KRULImXcvzFSqrt4">
+        <ReCaptchaProvider reCaptchaKey={process.env.RECAPTCHA_SITE_KEY}>
           <main className="bl_page">
             <Header />
             {children}

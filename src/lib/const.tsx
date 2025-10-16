@@ -64,7 +64,7 @@ export const SERVICES: ServiceType[] = [
   },
   {
     id: 6,
-    title: "Personalldienstleistung",
+    title: "Flexible Expertenunterstützung",
     description: "IT-Experten / Buchhaltung",
     icon: <UsersRound className="service_icon" />,
     link: "/offerings/services/staff-augmentation",
@@ -777,7 +777,7 @@ export const SERVICE_CLOUD_INFRASTRCUTRE_FEATURES: ServiceFeaturesType = {
         },
         {
           id: "feature_3",
-          title: "Bedrohungserkennung und - reaktion:",
+          title: "Bedrohungserkennung und - reaktion",
           description:
             "Setzen Sie fortschrittliche Überwachungstools für die Echtzeit-Bedrohungserkennung und -reaktion ein.",
         },
@@ -1489,6 +1489,17 @@ export const SERVICE_TECHNICAL_DOCUMENTATION_FEATURES: ServiceExcelType[] = [
 
 export const OFFICE_LOCATION: OfficeLocationType[] = [
   {
+    country: "Germany",
+    flag: "🇩🇪",
+    address: "Bruckwiesenweg 2, 70734 Fellbach, Germany",
+    email: "kourosh.bagherian@bharathatechno.de",
+    phone: "+49 175 650 2851",
+    mapPosition: "right",
+    city: "Germany",
+    embedMapUrl:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2627.3681314023916!2d9.276763576753924!3d48.81303710389667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799c5e941bef899%3A0xf3c8bbb2ac3c21b8!2sBruckwiesenweg%202%2C%2070734%20Fellbach%2C%20Germany!5e0!3m2!1sen!2sin!4v1758112154768!5m2!1sen!2sin",
+  },
+  {
     country: "India",
     flag: "🇮🇳",
     address:
@@ -1500,15 +1511,39 @@ export const OFFICE_LOCATION: OfficeLocationType[] = [
     embedMapUrl:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.6486359819146!2d73.91437727592636!3d18.454255771195115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eba952eb29fd%3A0x1fd1cfdcdf9f0974!2sBharathaTechno%20IT%20Private%20Limited!5e0!3m2!1sen!2sin!4v1740480008318!5m2!1sen!2sin",
   },
-  {
-    country: "Germany",
-    flag: "🇩🇪",
-    address: "Bruckwiesenweg 2, 70734 Fellbach, Germany",
-    email: "kourosh.bagherian@bharathatechno.de",
-    phone: "+91-932-563-6885",
-    mapPosition: "right",
-    city: "Germany",
-    embedMapUrl:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2627.3681314023916!2d9.276763576753924!3d48.81303710389667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799c5e941bef899%3A0xf3c8bbb2ac3c21b8!2sBruckwiesenweg%202%2C%2070734%20Fellbach%2C%20Germany!5e0!3m2!1sen!2sin!4v1758112154768!5m2!1sen!2sin",
-  },
 ];
+
+export const EXPERIENCE_OPTIONS = [
+  { label: "Select Option", value: "Select Option" },
+  { label: "Junior", value: "Junior" },
+  { label: "Mid-level (3 - 5 Years)", value: "Mid-level (3 - 5 Years)" },
+  { label: "Senior (5 - 9 Years)", value: "Senior (5 - 9 Years)" },
+  { label: "Super Senior (9+ Years)", value: "Super Senior (9+ Years)" },
+];
+
+export const DURATION_OPTIONS = [
+  { label: "Select Option", value: "Select Option" },
+  { label: "1 - 3 months", value: "1 - 3 months" },
+  { label: "3 - 6 months", value: "3 - 6 months" },
+  { label: "6 - 12 months", value: "6 - 12 months" },
+  { label: "Ongoing", value: "Ongoing" },
+];
+
+export const AVAILABILITY_OPTIONS = [
+  { label: "Select Option", value: "Select Option" },
+  { label: "Within 2 weeks", value: "Within 2 weeks" },
+  { label: "Within 4 weeks", value: "Within 4 weeks" },
+  { label: "Flexible", value: "Flexible" },
+];
+
+export const ROLE_OPTIONS = [
+  "Frontend Developer",
+  "Backend Developer",
+  "Full Stack Developer",
+  "QA Engineer",
+  "UI/UX Designer",
+  "DevOps",
+  "Project Manager",
+  "Cloud Engineer",
+  "AI Engineer",
+] as const;

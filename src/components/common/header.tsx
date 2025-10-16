@@ -18,7 +18,7 @@ export default function Header() {
     show: {
       opacity: 1,
       y: 0,
-      transition: { type: "spring", bounce: 0.5, delay: isLandingPage ? 5 : 0 },
+      transition: { type: "spring", bounce: 0.5, delay: isLandingPage ? 3 : 0 },
     },
   };
 

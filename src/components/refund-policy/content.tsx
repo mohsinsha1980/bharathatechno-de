@@ -24,7 +24,7 @@ export default function RefundContent() {
              kourosh.bagherian@bharathatechno.de
           </Link>{" "}
           oder rufen Sie uns unter
-          <Link href="tel:+919325636885">+91 932 563 6885</Link> an, um eine
+          <Link href="tel:+49 175 650 2851">+49 175 650 2851</Link> an, um eine
           Rückerstattung zu beantragen. Unser Team wird Sie durch den
           Rückerstattungsprozess führen.
         </p>
@@ -37,7 +37,7 @@ export default function RefundContent() {
         <ul>
           <li>
             BharathaTechno IT Private Limited Cell:{" "}
-            <Link href="tel:+919325636885">+91 932 563 6885</Link>
+            <Link href="tel:+49 175 650 2851">+49 175 650 2851</Link>
           </li>
           <li className="hyphen-auto break-words">
             Email:{" "}

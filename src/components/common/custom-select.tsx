@@ -74,12 +74,26 @@ const CustomSelect = forwardRef<CustomSelectRef, CustomSelectProps>(
       };
     }, []);
 
-    // Check if current value is a custom value (not in options)
+    // Reset internal state when parent clears the value
+    useEffect(() => {
+      if (!value) {
+        setIsCustomValue(false);
+        setCustomValue("");
+        setIsOpen(false);
+      }
+    }, [value]);
+
     useEffect(() => {
       const isValueInOptions = options.some((option) => option.value === value);
+
       if (value && !isValueInOptions) {
         setIsCustomValue(true);
         setCustomValue(value);
+      } else if (!value) {
+        // ✅ When parent clears the value, reset everything
+        setIsCustomValue(false);
+        setCustomValue("");
+        setIsOpen(false);
       }
     }, [value, options]);
 

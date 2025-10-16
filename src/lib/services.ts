@@ -29,8 +29,8 @@ export const CONTACT_SERVICES: ServiceOption[] = [
     value: "cloud-infrastruktur-management",
   },
   {
-    label: "Personalldienstleistung",
-    value: "personalldienstleistung",
+    label: "Flexible Expertenunterstützung",
+    value: "flexible-expertenunterstützung",
   },
   {
     label: "Personalschulung",
@@ -65,4 +65,3 @@ export const CONTACT_SERVICES: ServiceOption[] = [
     value: "consulting",
   },
 ];
-
