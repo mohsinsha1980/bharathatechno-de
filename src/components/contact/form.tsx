@@ -117,11 +117,17 @@ export default function ContactForm() {
     }
 
     if (formData.phone.trim() === "") {
-      errors.phone = { invalid: true, message: "Telefonnummer ist erforderlich" };
+      errors.phone = {
+        invalid: true,
+        message: "Telefonnummer ist erforderlich",
+      };
     }
 
     if (formData?.message.trim() === "") {
-      errors.message = { invalid: true, message: "Deine Naehrichtaums ist erforderlich." };
+      errors.message = {
+        invalid: true,
+        message: "Deine Naehrichtaums ist erforderlich.",
+      };
     }
 
     if (
@@ -138,7 +144,8 @@ export default function ContactForm() {
     if (formData.phone.trim().length > 13) {
       errors.phone = {
         invalid: true,
-        message: "Telefonnummer Die Nummer darf nicht länger als 13 Ziffern sein",
+        message:
+          "Telefonnummer Die Nummer darf nicht länger als 13 Ziffern sein",
       };
     }
 
@@ -490,7 +497,7 @@ export default function ContactForm() {
                   <div className="item full">
                     <textarea
                       cols={10}
-                      rows={5}
+                      rows={1}
                       name="message"
                       placeholder="Deine Naehrichtaums"
                       value={contact.message}
