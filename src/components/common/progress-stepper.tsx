@@ -15,7 +15,7 @@ export default function ProgressStepper({
 }) {
   return (
     <nav aria-label="Progress" className={className ? className : undefined}>
-      <ol className="flex items-center justify-center w-full p-3 space-x-5 text-sm font-medium text-center text-gray-500 bg-white border border-gray-200 rounded-lg shadow-xs dark:text-gray-400 sm:text-base dark:bg-gray-800 dark:border-gray-700 sm:p-4 sm:space-x-4 rtl:space-x-reverse">
+      <ol className="flex items-center justify-center md:justify-around w-full p-3 space-x-5 text-sm font-medium text-center text-gray-500 bg-white border border-gray-200 rounded-[24px] shadow-xs dark:text-gray-400 sm:text-base dark:bg-gray-800 dark:border-gray-700 sm:p-4 sm:space-x-4 rtl:space-x-reverse">
         {data.map((step, idx) => {
           const isActive =
             step.status === "in-progress" || step.status === "completed";
@@ -28,7 +28,9 @@ export default function ProgressStepper({
 
           return (
             <li key={step.label} className={liClass}>
-              <span className={circleClass}>{idx + 1}</span>
+              <span className={circleClass}>
+                {step.icon ? step.icon : idx + 1}
+              </span>
               <span className="hidden md:block">{step.label}</span>
               {idx < data.length - 1 && (
                 <svg

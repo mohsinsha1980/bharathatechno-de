@@ -2,14 +2,35 @@
 import React, { useState } from "react";
 import { motion, useInView } from "framer-motion";
 import { ProjectDetails } from "@/lib/types";
+import CustomSelect from "../common/custom-select";
+import { AVAILABILITY_OPTIONS } from "@/lib/const";
+
+export type projectDetailsErrorType = {
+  availability: { invalid: boolean; message: string };
+  budget?: { invalid: boolean; message: string };
+  toolsAndPlatforms?: { invalid: boolean; message: string };
+  requiredDomainExperience?: { invalid: boolean; message: string };
+  additionalNotes?: { invalid: boolean; message: string };
+};
+
+const initialErrorState: projectDetailsErrorType = {
+  availability: { invalid : false, message: ""},
+};
 
 type Props = {
   defaultValues: ProjectDetails;
   onSubmit: (data: ProjectDetails) => void;
+  onBack: () => void;
 };
 
-export default function ProjectDetailsForm({ defaultValues, onSubmit }: Props) {
+export default function ProjectDetailsForm({
+  defaultValues,
+  onSubmit,
+  onBack,
+}: Props) {
   const [formData, setFormData] = useState<ProjectDetails>(defaultValues);
+  const [errors, setErrors] =
+    useState<projectDetailsErrorType>(initialErrorState);
 
   const pullupVariant = {
     initial: { y: 5, opacity: 0 },
@@ -19,14 +40,38 @@ export default function ProjectDetailsForm({ defaultValues, onSubmit }: Props) {
   const ref = React.useRef(null);
   const isInView = useInView(ref, { once: true });
 
-  const handleChange = (field: keyof ProjectDetails, value: string) => {
+  const handleChange = (
+    field: keyof ProjectDetails,
+    value: ProjectDetails[keyof ProjectDetails]
+  ) => {
     setFormData((prev) => ({ ...prev, [field]: value }));
   };
 
   const handleSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault();
+    validateForm();
     onSubmit(formData);
   };
+
+   const validateForm = () => {
+      const validationErrors: projectDetailsErrorType = {
+        availability: {
+          invalid: false,
+          message: ""
+        }
+      };
+  
+      if (!formData.availability || formData.availability.length === 0) {
+        validationErrors.availability = {
+          invalid: true,
+          message: "Select at least one role",
+        };
+      }
+
+      setErrors(validationErrors);
+  
+      return Object.keys(validationErrors).length === 0;
+    };
 
   return (
     <motion.div
@@ -39,45 +84,85 @@ export default function ProjectDetailsForm({ defaultValues, onSubmit }: Props) {
       <form onSubmit={handleSubmit} className="bl_form">
         <div className="row mb-2">
           <div className="item">
-            <label>Tools and Platforms (Optional)</label>
+            <CustomSelect
+              name="availability"
+              placeholder="Verfügbarkeit *"
+              value={formData.availability || ""}
+              onChange={(v) =>
+                handleChange(
+                  "availability",
+                  v as ProjectDetails["availability"]
+                )
+              }
+              options={AVAILABILITY_OPTIONS}
+              allowCustomValue={false}
+              className={errors.availability ? "error" : ""}
+              error={Boolean(errors.availability)}
+            />
+            {errors.availability && (
+              <div className="formError">{errors.availability.message}</div>
+            )}
+          </div>
+          <div className="item">
+            <input
+              type="text"
+              value={formData.budget || ""}
+              onChange={(e) => handleChange("budget", e.target.value)}
+              placeholder="Budget"
+            />
+          </div>
+        </div>
+        <div className="row mb-2">
+          <div className="item">
             <input
               type="text"
               value={formData.toolsAndPlatforms || ""}
               onChange={(e) =>
                 handleChange("toolsAndPlatforms", e.target.value)
               }
-              placeholder="Tools and Platforms"
+              placeholder="Tools and Plattformen"
             />
           </div>
           <div className="item">
-            <label>Required Domain Experience (Optional)</label>
             <input
               type="text"
               value={formData.requiredDomainExperience || ""}
               onChange={(e) =>
                 handleChange("requiredDomainExperience", e.target.value)
               }
-              placeholder="Required Domain Experience"
+              placeholder="Gewünschte Branchenerfahrung "
             />
           </div>
         </div>
 
         <div className="row mb-2">
-          <div className="item">
-            <label className="text-lg">Additional Notes (Optional)</label>
+          <div className="item full">
             <textarea
               value={formData.additionalNotes || ""}
-              onChange={(e) => handleChange("additionalNotes", e.target.value)}
-              placeholder="Additional Notes"
-              rows={4}
-              className="w-full"
+              onChange={(e) => {
+                e.target.style.height = "auto";
+                e.target.style.height = e.target.scrollHeight + "px";
+                handleChange("additionalNotes", e.target.value);
+              }}
+              placeholder="Sonstiges"
+              rows={1}
+              className="w-full resize"
             />
           </div>
-          <div className="item"></div>
         </div>
 
         <div className="item m-auto mt-4">
-          <button type="submit" className="border rounded-3xl px-8 py-2 text-lg">
+          <button
+            type="button"
+            onClick={onBack}
+            className="border rounded-3xl px-8 py-2 text-lg mb-4 mr-4"
+          >
+            Back
+          </button>
+          <button
+            type="submit"
+            className="border rounded-3xl px-8 py-2 text-lg"
+          >
             Submit
           </button>
         </div>

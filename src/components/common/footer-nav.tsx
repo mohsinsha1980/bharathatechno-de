@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function FooterNav() {
   return (
     <nav>
-      <ul className="flex flex-col justify-end flex-wrap gap-8 lg:flex-row md:flex-row">
+      <ul className="flex flex-col justify-center lg:justify-end max-w-[600px] flex-wrap gap-8 lg:flex-row md:flex-row">
         <li>
           <Link href="/contact">Kontaktieren Sie uns</Link>
         </li>

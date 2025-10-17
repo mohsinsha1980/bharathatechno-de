@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="container bl_footer">
-        <div className="flex justify-between items-center mb-10 flex-col lg:flex-row text-center md:text-left gap-12">
+        <div className="flex justify-between items-center mb-10 flex-col lg:flex-row text-center md:text-left gap-8">
           <FooterLogo />
           <FooterNav />
         </div>
