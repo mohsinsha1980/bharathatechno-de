@@ -1708,7 +1708,7 @@ h2 {
             border-bottom: 1px solid rgba(255, 255, 255, 0.2);
             font-size: 16px;
             line-height: 30px;
-            height: 50px;
+            /* height: 50px; */
 
             &:focus {
               outline: 0 none;
@@ -2300,7 +2300,7 @@ h2 {
             border-bottom: 1px solid rgba(255, 255, 255, 0.2);
             font-size: 16px;
             line-height: 30px;
-            height: 50px;
+            /* height: 50px; */
 
             &:focus {
               outline: 0 none;
@@ -2308,7 +2308,7 @@ h2 {
           }
 
           textarea {
-            height: 100px;
+            /* height: 100px; */
             resize: none;
           }
 
@@ -4385,7 +4385,7 @@ h2 {
   .pg_staff .bl_home_banner .container>div {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
-    margin-top: 150px;
+    margin-top: 100px;
   }
 
   .pg_staff .bl_home_banner .container>div .content {
@@ -4709,7 +4709,7 @@ h2 {
   .pg_contact .bl_home_banner .container>div {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
-    margin-top: 70px;
+    margin-top: 10px;
   }
 
   .pg_contact .bl_home_banner .container>div .content {
