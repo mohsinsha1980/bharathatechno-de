@@ -3,7 +3,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 export default function BannerContent() {
-  const text1 = `“Technologie, die nicht aufdrängt,`;
+  const text1 = `„Technologie, die nicht aufdrängt,`;
   // const text2 = `it resonates clearly.”`;
 
   const variants = {
@@ -99,7 +99,7 @@ export default function BannerContent() {
             animate="animate"
             className="inline-block"
           >
-            sondern überzeugt.”
+            sondern überzeugt.“
           </motion.span>
         </span>
       </p>

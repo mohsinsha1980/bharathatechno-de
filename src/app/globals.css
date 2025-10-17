@@ -85,6 +85,7 @@ svg {
     background-size: 400% 400%;
     animation: gradient-animation 10s infinite ease-in-out;
     overflow: hidden;
+    max-height: 1080px;
   }
 
   .bl_home_banner .container {
@@ -3364,7 +3365,9 @@ h2 {
   .pg_home .bl_home_banner .tags {
     font-size: 10px;
   }
-
+.pg_home .bl_home_banner .container{
+  margin: 30px 0;
+}
   .pg_home .bl_home_banner .container .content {
     max-width: calc(100% - 40px);
     margin-top: 40px;

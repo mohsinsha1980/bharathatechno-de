@@ -20,10 +20,10 @@ export default function ProgressStepper({
           const isActive =
             step.status === "in-progress" || step.status === "completed";
           const liClass = isActive
-            ? "flex items-center text-orange-500 dark:text-orange-500"
+            ? "flex items-center text-(--text-orange) dark:text-(--text-orange)"
             : "flex items-center";
           const circleClass = isActive
-            ? "flex items-center justify-center w-5 h-5 me-2 text-xs border border-orange-500 rounded-full shrink-0 dark:border-orange-500"
+            ? "flex items-center justify-center w-5 h-5 me-2 text-xs border border-(--text-orange) rounded-full shrink-0 dark:border-(--text-orange)"
             : "flex items-center justify-center w-5 h-5 me-2 text-xs border border-gray-500 rounded-full shrink-0 dark:border-gray-400";
 
           return (

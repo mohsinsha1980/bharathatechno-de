@@ -50,7 +50,7 @@ export type contactFormType = {
   email: string;
   phone: string;
   subject: string;
-  message?: string;
+  message: string;
   picture?: File | string;
   file?: File;
 };
@@ -67,6 +67,7 @@ export type formErrorType = {
   subject: formErrorObjType;
   picture: formErrorObjType;
   file: formErrorObjType;
+  message: formErrorObjType;
 };
 
 export interface ProductFeaturesType {

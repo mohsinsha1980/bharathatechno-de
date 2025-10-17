@@ -14,7 +14,7 @@ export type projectDetailsErrorType = {
 };
 
 const initialErrorState: projectDetailsErrorType = {
-  availability: { invalid : false, message: ""},
+  availability: { invalid: false, message: "" },
 };
 
 type Props = {
@@ -53,26 +53,26 @@ export default function ProjectDetailsForm({
     onSubmit(formData);
   };
 
-   const validateForm = () => {
-      const validationErrors: projectDetailsErrorType = {
-        availability: {
-          invalid: false,
-          message: ""
-        }
-      };
-  
-      if (!formData.availability || formData.availability.length === 0) {
-        validationErrors.availability = {
-          invalid: true,
-          message: "Select at least one role",
-        };
-      }
-
-      setErrors(validationErrors);
-  
-      return Object.keys(validationErrors).length === 0;
+  const validateForm = () => {
+    const validationErrors: projectDetailsErrorType = {
+      availability: {
+        invalid: false,
+        message: "",
+      },
     };
 
+    if (!formData.availability || formData.availability.length === 0) {
+      validationErrors.availability = {
+        invalid: true,
+        message: "Select at least one role",
+      };
+    }
+
+    setErrors(validationErrors);
+
+    return Object.keys(validationErrors).length === 0;
+  };
+  console.log(errors);
   return (
     <motion.div
       ref={ref}
@@ -96,8 +96,7 @@ export default function ProjectDetailsForm({
               }
               options={AVAILABILITY_OPTIONS}
               allowCustomValue={false}
-              className={errors.availability ? "error" : ""}
-              error={Boolean(errors.availability)}
+              className={errors.availability.invalid ? "error" : ""}
             />
             {errors.availability && (
               <div className="formError">{errors.availability.message}</div>

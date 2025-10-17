@@ -62,6 +62,12 @@ export default function CompanyInfoForm({
     if (formData.phone.trim() === "") {
       errors.phone = { invalid: true, message: "Phone is required" };
     }
+    if (formData.phone.trim().length > 13) {
+      errors.phone = {
+        invalid: true,
+        message: "Phone number cannot exceed 13 digits",
+      };
+    }
 
     if (
       formData.phone.trim() !== "" &&
