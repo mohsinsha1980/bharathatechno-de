@@ -60,21 +60,21 @@ export default function StaffRequirementForm({
     if (!formData.roles || formData.roles.length === 0) {
       validationErrors.roles = {
         invalid: true,
-        message: "Select at least one role",
+        message: "Wählen Sie mindestens eine Rolle aus",
       };
     }
 
     if (!formData.numberOfResources || formData.numberOfResources <= 0) {
       validationErrors.numberOfResources = {
         invalid: true,
-        message: "Enter number of resources",
+        message: "Geben Sie die Anzahl der Ressourcen ein",
       };
     }
 
     if (!formData.experienceLevel) {
       validationErrors.experienceLevel = {
         invalid: true,
-        message: "Select experience level",
+        message: "Wählen Sie die Erfahrungsstufe aus",
       };
     }
 

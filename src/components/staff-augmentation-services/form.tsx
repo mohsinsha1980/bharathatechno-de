@@ -39,6 +39,7 @@ export default function ProjectInquiryForm() {
   const [data, setData] = useState<ProjectFormData>(defaultValues);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [formMessage, setFormMessage] = useState<string>("");
+  const [httpError, setHttpError] = useState<boolean>(false);
 
   const steps = [
     { label: "Unternehmen", id: 0 },
@@ -79,17 +80,19 @@ export default function ProjectInquiryForm() {
       const response = await res.json();
       if (res.ok && response.status === 200) {
         setFormMessage(
-          "Form submitted successfully! We'll get back to you soon."
+          "Formular erfolgreich abgeschickt! Wir melden uns in Kürze bei Ihnen."
         );
+        setHttpError(true);
         setData(defaultValues);
       } else {
-        setFormMessage(response?.message || "Submission failed. Try again.");
+        
+        setFormMessage(response?.message || "Übermittlung fehlgeschlagen. Versuchen Sie es erneut.");
       }
     } catch (error: unknown) {
       if (error instanceof Error) {
         setFormMessage(error.message);
       } else {
-        setFormMessage("Something went wrong.");
+        setFormMessage("Etwas ist schief gelaufen.");
       }
     } finally {
       setIsSubmitted(false);
@@ -108,7 +111,7 @@ export default function ProjectInquiryForm() {
     if (target === 2) return !!data.staffRequire?.roles;
     return false;
   };
-  console.log(data.staffRequire?.roles);
+
   return (
     <>
       {isSubmitted && <LoadingSpinner />}
@@ -156,7 +159,9 @@ export default function ProjectInquiryForm() {
 
             {formMessage && (
               <p
-                className="mb-4 text-center font-semibold text-blue-600"
+                className={`mb-4 text-center font-semibold  ${
+                  httpError ? "text-red-600" : "text-green-600"
+                }`}
                 style={{ fontSize: 16 }}
               >
                 {formMessage}

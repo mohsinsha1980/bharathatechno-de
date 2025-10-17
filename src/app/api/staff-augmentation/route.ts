@@ -31,10 +31,9 @@ export async function POST(req: NextRequest) {
         body.staffRequire?.experienceLevel ||
         body.projectOverview?.experienceLevel ||
         "",
-      skills:
-        body.staffRequire?.skills
-          ? body.staffRequire.skills
-          : body.projectOverview?.skills || "",
+      skills: body.staffRequire?.skills
+        ? body.staffRequire.skills
+        : body.projectOverview?.skills || "",
       duration:
         body.staffRequire?.duration || body.projectOverview?.duration || "",
       availability:
@@ -217,7 +216,7 @@ export async function POST(req: NextRequest) {
         from: { address: process.env.EMAIL_FROM, name: "noreply" },
         to: [
           {
-            email_address: { address: "rashchop2001@gmail.com", name: "Info" },
+            email_address: { address: process.env.EMAIL_ADMIN, name: "Info" },
           },
         ],
         bcc: [{ email_address: { address: process.env.EMAIL, name: "BT" } }],

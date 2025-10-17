@@ -102,7 +102,7 @@ export default function ContactForm() {
     const errors = { ...initialErrorState };
 
     if (formData.name.trim() === "") {
-      errors.name = { invalid: true, message: "Name is required" };
+      errors.name = { invalid: true, message: "Vor&Nachname ist erforderlich" };
     }
 
     if (formData.email.trim() === "") {
@@ -117,11 +117,17 @@ export default function ContactForm() {
     }
 
     if (formData.phone.trim() === "") {
-      errors.phone = { invalid: true, message: "Phone is required" };
+      errors.phone = {
+        invalid: true,
+        message: "Telefonnummer ist erforderlich",
+      };
     }
 
     if (formData?.message.trim() === "") {
-      errors.message = { invalid: true, message: "Message is Required." };
+      errors.message = {
+        invalid: true,
+        message: "Deine Naehrichtaums ist erforderlich.",
+      };
     }
 
     if (
@@ -131,31 +137,32 @@ export default function ContactForm() {
     ) {
       errors.phone = {
         invalid: true,
-        message: "Invalid phone (+1231234567890)",
+        message: "Invalid Telefonnummer (+1231234567890)",
       };
     }
 
     if (formData.phone.trim().length > 13) {
       errors.phone = {
         invalid: true,
-        message: "Phone number cannot exceed 13 digits",
+        message:
+          "Telefonnummer Die Nummer darf nicht länger als 13 Ziffern sein",
       };
     }
 
     if (formData.subject.trim() === "") {
-      errors.subject = { invalid: true, message: "Subject is required" };
+      errors.subject = { invalid: true, message: "Betreff ist erforderlich" };
     }
 
     if (formData.picture instanceof File) {
       if (!formData.picture.type.startsWith("image/")) {
         errors.picture = {
           invalid: true,
-          message: "Only image files are allowed",
+          message: "Es sind nur Bilddateien zulässig",
         };
       } else if (formData.picture.size > 5 * 1024 * 1024) {
         errors.picture = {
           invalid: true,
-          message: "Picture must be under 5MB",
+          message: "Das Bild muss kleiner als 5 MB sein",
         };
       }
     }
@@ -165,7 +172,7 @@ export default function ContactForm() {
       if (formData.file.type !== "application/pdf") {
         errors.file = {
           invalid: true,
-          message: "Only PDF files are allowed",
+          message: "Es sind nur PDF-Dateien zulässig",
         };
       } else if (formData.file.size > 10 * 1024 * 1024) {
         errors.file = { invalid: true, message: "PDF must be under 10MB" };
@@ -298,7 +305,6 @@ export default function ContactForm() {
   const fileInputRef = useRef<HTMLInputElement>(null);
   const isInView2 = useInView(ref2, { once: true });
   const isInView3 = useInView(ref3, { once: true });
-  console.log(formErrors);
   return (
     <>
       {isSubmitted && <LoadingSpinner />}
@@ -324,11 +330,12 @@ export default function ContactForm() {
               <div className="bl_form">
                 {httpError ? (
                   <p
-                    className="mb-4"
+                    className={`mb-4 ${
+                      hasErrors ? "text-red-600" : "text-green-600"
+                    }`}
                     style={{
                       fontSize: 16,
                       fontWeight: 700,
-                      color: "blue",
                       textAlign: "center",
                     }}
                   >
@@ -388,7 +395,7 @@ export default function ContactForm() {
                   <div className="item">
                     <CustomSelect
                       name="subject"
-                      placeholder="Select a service or choose 'Other'"
+                      placeholder="Wählen Sie einen Dienst oder „Andere“ aus."
                       value={contact.subject}
                       onChange={selectChangeHandler}
                       options={CONTACT_SERVICES}
@@ -416,7 +423,7 @@ export default function ContactForm() {
                         color: "#666",
                       }}
                     >
-                      Upload Image (Optional)
+                      Bild hochladen
                     </label>
                     <input
                       type="file"
@@ -458,7 +465,7 @@ export default function ContactForm() {
                         color: "#666",
                       }}
                     >
-                      Upload PDF Document (Optional)
+                      Laden Sie ein PDF-Dokument hoch
                     </label>
                     <input
                       type="file"
@@ -490,7 +497,7 @@ export default function ContactForm() {
                   <div className="item full">
                     <textarea
                       cols={10}
-                      rows={5}
+                      rows={1}
                       name="message"
                       placeholder="Deine Naehrichtaums"
                       value={contact.message}

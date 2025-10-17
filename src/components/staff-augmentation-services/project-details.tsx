@@ -49,30 +49,32 @@ export default function ProjectDetailsForm({
 
   const handleSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault();
-    validateForm();
-    onSubmit(formData);
+    if (validateForm()) {
+      onSubmit(formData);
+    }
   };
 
   const validateForm = () => {
     const validationErrors: projectDetailsErrorType = {
-      availability: {
-        invalid: false,
-        message: "",
-      },
+      availability: { invalid: false, message: "" },
     };
 
     if (!formData.availability || formData.availability.length === 0) {
       validationErrors.availability = {
         invalid: true,
-        message: "Select at least one role",
+        message: "Verfügbarkeit auswählen",
       };
     }
 
     setErrors(validationErrors);
 
-    return Object.keys(validationErrors).length === 0;
+    const hasError = Object.values(validationErrors).some(
+      (field) => field?.invalid
+    );
+
+    return !hasError;
   };
-  console.log(errors);
+
   return (
     <motion.div
       ref={ref}
