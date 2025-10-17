@@ -62,6 +62,12 @@ export default function CompanyInfoForm({
     if (formData.phone.trim() === "") {
       errors.phone = { invalid: true, message: "Phone is required" };
     }
+    if (formData.phone.trim().length > 13) {
+      errors.phone = {
+        invalid: true,
+        message: "Phone number cannot exceed 13 digits",
+      };
+    }
 
     if (
       formData.phone.trim() !== "" &&
@@ -122,7 +128,7 @@ export default function CompanyInfoForm({
               <input
                 type="text"
                 name="fullName"
-                placeholder="Full Name"
+                placeholder="Full Name *"
                 value={companyInfo.fullName}
                 onChange={inputChangeHandler}
                 className={errors.fullName.invalid ? "inputError" : ""}
@@ -151,7 +157,7 @@ export default function CompanyInfoForm({
               <input
                 type="email"
                 name="email"
-                placeholder="Company Email"
+                placeholder="Company Email * "
                 value={companyInfo.email}
                 onChange={inputChangeHandler}
                 className={errors.email.invalid ? "inputError" : ""}
@@ -164,7 +170,7 @@ export default function CompanyInfoForm({
               <input
                 type="tel"
                 name="phone"
-                placeholder="Company Phone"
+                placeholder="Company Phone*"
                 value={companyInfo.phone}
                 onChange={inputChangeHandler}
                 className={errors.phone.invalid ? "inputError" : ""}

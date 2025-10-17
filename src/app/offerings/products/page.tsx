@@ -104,7 +104,7 @@ sodass Sie flexibel arbeiten und mit voller Überzeugung skalieren können.`}
             Our Products
           </h2>
           <motion.div
-            className="bl_blogs_list grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-[60px] mb-30"
+            className="bl_blogs_list grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-[20px] lg:gap-[60px] mb-30"
             variants={container}
             initial="hidden"
             whileInView="show"

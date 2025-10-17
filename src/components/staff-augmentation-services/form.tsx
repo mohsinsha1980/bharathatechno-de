@@ -1,6 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
-import Link from "next/link";
+import { useState } from "react";
 import CompanyInfoStep from "./company-info";
 import { ProjectFormData } from "@/lib/types";
 import ProgressStepper from "../common/progress-stepper";
@@ -21,25 +20,25 @@ const defaultValues: ProjectFormData = {
   staffRequire: {
     roles: [],
     numberOfResources: 0,
-    experienceLevel: "Select Option",
-    skills: [],
-    duration: "Select Option",
-    availability: "Select Option",
-    budget: "",
+    experienceLevel: undefined,
+    skills: "",
+    duration: undefined,
   },
   projectDetails: {
+    availability: undefined,
+    budget: "",
     toolsAndPlatforms: "",
     requiredDomainExperience: "",
     additionalNotes: "",
   },
 };
 
-const ProjectInquiryForm = () => {
+export default function ProjectInquiryForm() {
   const { executeRecaptcha } = useReCaptcha();
   const [step, setStep] = useState(0);
   const [data, setData] = useState<ProjectFormData>(defaultValues);
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [httpError, setHttpError] = useState<string>("");
+  const [formMessage, setFormMessage] = useState<string>("");
 
   const steps = [
     { label: "Unternehmen", id: 0 },
@@ -53,81 +52,63 @@ const ProjectInquiryForm = () => {
   };
 
   const handleProjectOverview = (values: ProjectFormData["staffRequire"]) => {
-    setData((prev) => ({ ...prev, projectOverview: values }));
+    setData((prev) => ({ ...prev, staffRequire: values }));
     setStep(2);
   };
 
   const handleTechnicalDetails = async (
     values: ProjectFormData["projectDetails"]
   ) => {
-    setData((prev) => ({ ...prev, projectDetails: values }));
-    await handleSubmit({ ...data, projectDetails: values });
-    handleSubmit(data);
+    const finalData = { ...data, projectDetails: values };
+    setData(finalData);
+    await handleSubmit(finalData);
   };
 
   const handleSubmit = async (finalData: ProjectFormData) => {
-    setData(finalData);
     setIsSubmitted(true);
-  };
+    try {
+      const token = await executeRecaptcha("form_submit");
+      const updatedContact = { ...finalData, token };
 
-  useEffect(() => {
-    const controller = new AbortController();
+      const res = await fetch("/api/staff-augmentation", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(updatedContact),
+      });
 
-    const sendMessageHandler = async () => {
-      try {
-        if (isSubmitted) {
-          if (httpError) {
-            setIsSubmitted(false);
-          } else {
-            const token = await executeRecaptcha("form_submit");
-            const updatedContact = {
-              ...data,
-              token,
-            };
-            const res = await fetch("/api/staff-augmentation", {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify(updatedContact),
-            });
-
-            const response = await res.json();
-            if (res.ok && response.status === 200) {
-              setHttpError(
-                "Form submitted successfully! We'll get back to you soon."
-              );
-            } else if (response && response.message) {
-              setHttpError(response.message);
-            } else {
-              setHttpError("");
-              setData(defaultValues);
-            }
-            setIsSubmitted(false);
-          }
-        }
-      } catch (e: unknown) {
-        const error =
-          e instanceof Error ? e : new Error("Something went wrong!");
-        setHttpError(error.message);
-        setIsSubmitted(false);
+      const response = await res.json();
+      if (res.ok && response.status === 200) {
+        setFormMessage(
+          "Form submitted successfully! We'll get back to you soon."
+        );
+        setData(defaultValues);
+      } else {
+        setFormMessage(response?.message || "Submission failed. Try again.");
       }
-    };
-
-    sendMessageHandler();
-
-    return () => {
-      controller.abort();
-    };
-  }, [isSubmitted, data, httpError, executeRecaptcha]);
+    } catch (error: unknown) {
+      if (error instanceof Error) {
+        setFormMessage(error.message);
+      } else {
+        setFormMessage("Something went wrong.");
+      }
+    } finally {
+      setIsSubmitted(false);
+    }
+  };
 
   const canGoToStep = (target: number) => {
+    setFormMessage("");
     if (target === 0) return true;
-    if (target === 1) return !!data.companyInfo;
-    if (target === 2) return !!data.staffRequire;
+    if (target === 1)
+      return (
+        !!data.companyInfo?.email &&
+        !!data.companyInfo?.fullName &&
+        !!data.companyInfo?.phone
+      );
+    if (target === 2) return !!data.staffRequire?.roles;
     return false;
   };
-
+  console.log(data.staffRequire?.roles);
   return (
     <>
       {isSubmitted && <LoadingSpinner />}
@@ -155,35 +136,33 @@ const ProjectInquiryForm = () => {
                   label: s.label,
                   status,
                   icon: (
-                    <Link
-                      href="#"
+                    <button
                       className="no-underline text-inherit"
                       onClick={() =>
                         canGoToStep(i)
                           ? setStep(i)
-                          : alert("Please complete previous steps first.")
+                          : setFormMessage(
+                              "Bitte vorherige Schritte abschließen."
+                            )
                       }
                     >
                       {s.id + 1}
-                    </Link>
+                    </button>
                   ),
                 };
               })}
               className="my-8"
             />
-            {httpError ? (
+
+            {formMessage && (
               <p
-                className="mb-4"
-                style={{
-                  fontSize: 16,
-                  fontWeight: 700,
-                  color: "blue",
-                  textAlign: "center",
-                }}
+                className="mb-4 text-center font-semibold text-blue-600"
+                style={{ fontSize: 16 }}
               >
-                {httpError}
+                {formMessage}
               </p>
-            ) : null}
+            )}
+
             {step === 0 && (
               <CompanyInfoStep
                 onNext={handleCompanyInfo}
@@ -194,12 +173,14 @@ const ProjectInquiryForm = () => {
               <StaffRequirementForm
                 onNext={handleProjectOverview}
                 defaultValues={data.staffRequire}
+                onBack={() => setStep(0)}
               />
             )}
             {step === 2 && (
               <ProjectDetailsForm
                 onSubmit={handleTechnicalDetails}
                 defaultValues={data.projectDetails}
+                onBack={() => setStep(1)}
               />
             )}
           </div>
@@ -207,6 +188,4 @@ const ProjectInquiryForm = () => {
       </section>
     </>
   );
-};
-
-export default ProjectInquiryForm;
+}

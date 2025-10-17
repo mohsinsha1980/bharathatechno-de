@@ -4,7 +4,6 @@ import { motion, useInView } from "framer-motion";
 import { StaffingRequirements } from "@/lib/types";
 import CustomSelect from "../common/custom-select";
 import {
-  AVAILABILITY_OPTIONS,
   DURATION_OPTIONS,
   EXPERIENCE_OPTIONS,
   ROLE_OPTIONS,
@@ -24,13 +23,18 @@ export type staffRequirementErrorType = {
 type Props = {
   defaultValues: StaffingRequirements;
   onNext: (data: StaffingRequirements) => void;
+  onBack: () => void;
 };
 
 const initialErrorState: staffRequirementErrorType = {};
 
 type RoleType = StaffingRequirements["roles"][number];
 
-export default function StaffRequirementForm({ defaultValues, onNext }: Props) {
+export default function StaffRequirementForm({
+  defaultValues,
+  onNext,
+  onBack,
+}: Props) {
   const [formData, setFormData] = useState<StaffingRequirements>(defaultValues);
   const [errors, setErrors] =
     useState<staffRequirementErrorType>(initialErrorState);
@@ -97,7 +101,7 @@ export default function StaffRequirementForm({ defaultValues, onNext }: Props) {
       <form onSubmit={handleSubmit} className="bl_form">
         {/* Roles Multi-select */}
         <div className="flex flex-col gap-2 mb-6">
-          <span className="font-medium">Roles:</span>
+          <span className="font-medium">Fachbereich: *</span>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-5 w-full">
             {ROLE_OPTIONS.map((role) => (
@@ -153,15 +157,14 @@ export default function StaffRequirementForm({ defaultValues, onNext }: Props) {
         {/* Number of resources */}
         <div className="row mb-2">
           <div className="item">
-            <label className="text-white/90">Number of Resources:</label>
             <input
-              type="number"
+              type="text"
               value={formData.numberOfResources}
               onChange={(e) =>
                 handleChange("numberOfResources", Number(e.target.value))
               }
-              className={`${errors.numberOfResources ? "inputError" : ""} `}
-              placeholder="e.g., 3"
+              className={`${errors.numberOfResources ? "inputError" : " "}`}
+              placeholder="Anzahl an Entwickler *"
             />
             {errors.numberOfResources && (
               <div className="formError">
@@ -172,13 +175,15 @@ export default function StaffRequirementForm({ defaultValues, onNext }: Props) {
 
           {/* Experience Level */}
           <div className="item">
-            <label className="text-white/90">Experience Level:</label>
             <CustomSelect
               name="experienceLevel"
-              placeholder="Select experience"
+              placeholder="Erfahrung *"
               value={formData.experienceLevel || ""}
               onChange={(v) =>
-                handleChange("experienceLevel", v as StaffingRequirements["experienceLevel"])
+                handleChange(
+                  "experienceLevel",
+                  v as StaffingRequirements["experienceLevel"]
+                )
               }
               options={EXPERIENCE_OPTIONS}
               allowCustomValue={false}
@@ -194,22 +199,14 @@ export default function StaffRequirementForm({ defaultValues, onNext }: Props) {
         {/* Skills */}
         <div className="row  mb-2">
           <div className="item">
-            <label className="text-white/90">Skills (comma separated):</label>
             <input
               type="text"
-              value={formData?.skills?.join(", ")}
-              onChange={(e) =>
-                handleChange(
-                  "skills",
-                  e.target.value
-                    .split(",")
-                    .map((s) => s.trim())
-                    .filter(Boolean)
-                )
-              }
-              className={`${errors.skills ? "inputError" : ""} `}
-              placeholder="React, Node, AWS"
+              value={formData?.skills || ""}
+              onChange={(e) => handleChange("skills", e.target.value)}
+              className={`${errors.skills ? "inputError" : ""}`}
+              placeholder="Kompetenzen"
             />
+
             {errors.skills && (
               <div className="formError">{errors.skills.message}</div>
             )}
@@ -217,10 +214,9 @@ export default function StaffRequirementForm({ defaultValues, onNext }: Props) {
 
           {/* Duration */}
           <div className="item">
-            <label className="text-white/90">Duration:</label>
             <CustomSelect
               name="duration"
-              placeholder="Select duration"
+              placeholder="Einsatzdauer"
               value={formData.duration || ""}
               onChange={(v) =>
                 handleChange("duration", v as StaffingRequirements["duration"])
@@ -237,41 +233,20 @@ export default function StaffRequirementForm({ defaultValues, onNext }: Props) {
         </div>
 
         {/* Availability */}
-        <div className="row mb-2">
-          <div className="item">
-            <label className="text-white/90">Availability:</label>
-            <CustomSelect
-              name="availability"
-              placeholder="Select availability"
-              value={formData.availability || ""}
-              onChange={(v) =>
-                handleChange(
-                  "availability",
-                  v as StaffingRequirements["availability"]
-                )
-              }
-              options={AVAILABILITY_OPTIONS}
-              allowCustomValue={false}
-              className={errors.availability ? "error" : ""}
-              error={Boolean(errors.availability)}
-            />
-            {errors.availability && (
-              <div className="formError">{errors.availability.message}</div>
-            )}
-          </div>
-          <div className="item">
-            <label className="text-white/90">Budget (Optional):</label>
-            <input
-              type="text"
-              value={formData.budget || ""}
-              onChange={(e) => handleChange("budget", e.target.value)}
-              placeholder="e.g., €5000/month"
-            />
-          </div>
-        </div>
+        
 
         <div className="item m-auto mt-4">
-          <button type="submit" className="border rounded-3xl px-8 py-2 text-lg">
+          <button
+            type="button"
+            onClick={onBack}
+            className="border rounded-3xl px-8 py-2 text-lg mb-4 mr-4"
+          >
+            Back
+          </button>
+          <button
+            type="submit"
+            className="border rounded-3xl px-8 py-2 text-lg"
+          >
             Next
           </button>
         </div>

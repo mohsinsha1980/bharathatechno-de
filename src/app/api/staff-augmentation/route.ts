@@ -32,16 +32,16 @@ export async function POST(req: NextRequest) {
         body.projectOverview?.experienceLevel ||
         "",
       skills:
-        body.staffRequire?.skills?.length > 0
+        body.staffRequire?.skills
           ? body.staffRequire.skills
-          : body.projectOverview?.skills || [],
+          : body.projectOverview?.skills || "",
       duration:
         body.staffRequire?.duration || body.projectOverview?.duration || "",
       availability:
-        body.staffRequire?.availability ||
+        body.projectDetails?.availability ||
         body.projectOverview?.availability ||
         "",
-      budget: body.staffRequire?.budget || body.projectOverview?.budget || "",
+      budget: body.projectDetails?.budget || body.projectOverview?.budget || "",
 
       tools: body.projectDetails?.toolsAndPlatforms || "",
       project_domain_experience:
@@ -166,7 +166,7 @@ export async function POST(req: NextRequest) {
         required_roles,
         number_of_resources: parsedNumberOfResources,
         experience_level,
-        skills: skills?.join(", ") || "",
+        skills: skills || "",
         duration: duration ?? null,
         availability,
         budget: budget ?? null,
@@ -217,7 +217,7 @@ export async function POST(req: NextRequest) {
         from: { address: process.env.EMAIL_FROM, name: "noreply" },
         to: [
           {
-            email_address: { address: process.env.EMAIL_ADMIN, name: "Info" },
+            email_address: { address: "rashchop2001@gmail.com", name: "Info" },
           },
         ],
         bcc: [{ email_address: { address: process.env.EMAIL, name: "BT" } }],

@@ -1503,7 +1503,7 @@ export const OFFICE_LOCATION: OfficeLocationType[] = [
     country: "India",
     flag: "🇮🇳",
     address:
-      "Sunshree Woods, Office number, F28 to 32, NIBM Rd, Kondhwa, Deutschland, Maharashtra 411048",
+      "Sunshree Woods, Office number, F28 to 32, NIBM Rd, Kondhwa, Pune, Maharashtra 411048",
     email: "info@bharathatechno.com",
     phone: "+91-932-563-6885",
     mapPosition: "left",
@@ -1514,7 +1514,6 @@ export const OFFICE_LOCATION: OfficeLocationType[] = [
 ];
 
 export const EXPERIENCE_OPTIONS = [
-  { label: "Select Option", value: "Select Option" },
   { label: "Junior", value: "Junior" },
   { label: "Mid-level (3 - 5 Years)", value: "Mid-level (3 - 5 Years)" },
   { label: "Senior (5 - 9 Years)", value: "Senior (5 - 9 Years)" },
@@ -1522,7 +1521,6 @@ export const EXPERIENCE_OPTIONS = [
 ];
 
 export const DURATION_OPTIONS = [
-  { label: "Select Option", value: "Select Option" },
   { label: "1 - 3 months", value: "1 - 3 months" },
   { label: "3 - 6 months", value: "3 - 6 months" },
   { label: "6 - 12 months", value: "6 - 12 months" },
@@ -1530,7 +1528,6 @@ export const DURATION_OPTIONS = [
 ];
 
 export const AVAILABILITY_OPTIONS = [
-  { label: "Select Option", value: "Select Option" },
   { label: "Within 2 weeks", value: "Within 2 weeks" },
   { label: "Within 4 weeks", value: "Within 4 weeks" },
   { label: "Flexible", value: "Flexible" },

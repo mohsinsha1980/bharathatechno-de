@@ -50,7 +50,7 @@ export type contactFormType = {
   email: string;
   phone: string;
   subject: string;
-  message?: string;
+  message: string;
   picture?: File | string;
   file?: File;
 };
@@ -67,6 +67,7 @@ export type formErrorType = {
   subject: formErrorObjType;
   picture: formErrorObjType;
   file: formErrorObjType;
+  message: formErrorObjType;
 };
 
 export interface ProductFeaturesType {
@@ -158,27 +159,24 @@ export interface StaffingRequirements {
   )[];
   numberOfResources: number;
   experienceLevel:
-    | "Select Option"
     | "Junior"
     | "Mid-level (3–5 Years)"
     | "Senior (5–9 Years)"
-    | "Super Senior (9+ Years)";
-  skills?: string[];
+    | "Super Senior (9+ Years)" | undefined;
+  skills?: string;
   duration?:
-    | "Select Option"
     | "1–3 months"
     | "3–6 months"
     | "6–12 months"
-    | "Ongoing";
-  availability?:
-    | "Select Option"
-    | "Within 2 weeks"
-    | "Within 4 weeks"
-    | "Flexible";
-  budget?: string;
+    | "Ongoing" | undefined;
 }
 
 export interface ProjectDetails {
+  availability?:
+    | "Within 2 weeks"
+    | "Within 4 weeks"
+    | "Flexible" | undefined;
+  budget?: string;
   toolsAndPlatforms?: string;
   requiredDomainExperience?: string;
   additionalNotes?: string;

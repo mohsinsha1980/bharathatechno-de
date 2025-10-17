@@ -85,6 +85,7 @@ svg {
     background-size: 400% 400%;
     animation: gradient-animation 10s infinite ease-in-out;
     overflow: hidden;
+    max-height: 1080px;
   }
 
   .bl_home_banner .container {
@@ -589,16 +590,24 @@ svg {
       }
     }
   }
+}
 
-  .bl_contact {
-    margin-top: 100px;
-    margin-bottom: 130px;
+.pg_home .bl_contact {
+  margin-top: 100px;
+  margin-bottom: 130px;
 
+  .container {
     h3 {
       font-size: 40px;
       font-weight: 700;
       margin-bottom: 20px;
       text-align: center;
+      hyphens: auto;
+      -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+      white-space: normal;
     }
 
     p {
@@ -611,6 +620,7 @@ svg {
       margin-bottom: 40px;
     }
   }
+
 }
 
 .pg_blogs .bl_home_banner .content {
@@ -1706,7 +1716,7 @@ h2 {
           }
 
           textarea {
-            height: 100px;
+            /* height: 50px; */
             resize: none;
           }
 
@@ -2253,7 +2263,7 @@ h2 {
   }
 
   .bl_contact_form {
-    h2 {
+    h1 {
       font-size: 38px;
       font-weight: 700;
       text-align: center;
@@ -3055,6 +3065,7 @@ h2 {
 
   .pg_home .bl_home_choose .banner_logo svg {
     max-width: 70%;
+    margin: auto;
   }
 
   .pg_home .bl_home_banner .container .content {
@@ -3354,7 +3365,9 @@ h2 {
   .pg_home .bl_home_banner .tags {
     font-size: 10px;
   }
-
+.pg_home .bl_home_banner .container{
+  margin: 30px 0;
+}
   .pg_home .bl_home_banner .container .content {
     max-width: calc(100% - 40px);
     margin-top: 40px;
@@ -3646,7 +3659,7 @@ h2 {
   }
 
 
-  .pg_contact .bl_contact_form h2 {
+  .pg_contact .bl_contact_form h1 {
     font-size: 35px;
   }
 
@@ -3685,7 +3698,11 @@ h2 {
     gap: 20px;
   }
 
+  .pg_product .bl_home_banner .container > div .content{
+    margin-top: 20px;
+  }
   .pg_service .bl_home_banner .container>div .content {
+    margin-top: 10px;
     left: 20%;
   }
 
@@ -3733,6 +3750,14 @@ h2 {
   }
 
   .pg_service .bl_contact p {
+    font-size: 20px;
+  }
+
+  .pg_home .bl_contact .container h3 {
+    font-size: 30px;
+  }
+
+  .pg_home .bl_contact .container p {
     font-size: 20px;
   }
 
@@ -3979,6 +4004,7 @@ h2 {
 
   .pg_product .bl_blogs_list .bl_blog p {
     font-size: 16px;
+    text-align: justify;
   }
 
   .bl_home_banner .container>a>svg {
@@ -4270,7 +4296,7 @@ h2 {
   }
 
   .pg_service .bl_home_banner .banner_logo {
-    margin-top: 80px;
+    margin-top: 10px;
   }
 
   .pg_service .bl_service_details .accordion .accordion__panel ul li {
@@ -4323,6 +4349,10 @@ h2 {
   .pg_static .bl_home_banner .container>div .content p {
     font-size: 28px;
     white-space: normal;
+  }
+
+  .pg_product .bl_excel .bl_excel_list .bl_list_item h4{
+    font-size: 18px;
   }
 }
 
@@ -4620,6 +4650,16 @@ h2 {
     line-height: 28px;
   }
 
+  .pg_home .bl_contact .container h3 {
+    font-size: 20px;
+    white-space: wrap;
+  }
+
+  .pg_home .bl_contact .container p {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
   .pg_service .bl_home_banner .bl_services_cards .bl_service_card {
     height: 110px;
   }
@@ -4628,7 +4668,7 @@ h2 {
     font-size: 14px;
   }
 
-  .pg_contact .bl_contact_form h2 {
+  .pg_contact .bl_contact_form h1 {
     font-size: 25px;
   }
 
@@ -5081,6 +5121,29 @@ h2 {
 
   .pg_staff .bl_contact_form .bl_form {
     width: 300px;
+  }
+
+  .pg_static .bl_static_content .container a {
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    white-space: normal;
+  }
+
+
+  .pg_staff .container h1 {
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    white-space: normal;
+  }
+
+  .pg_static .bl_static_content .container h1 {
+    font-size: 22px;
   }
 }
 

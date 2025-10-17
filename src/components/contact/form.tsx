@@ -44,6 +44,10 @@ const initialErrorState: formErrorType = {
     invalid: false,
     message: "",
   },
+  message: {
+    invalid: false,
+    message: "",
+  },
 };
 
 export default function ContactForm() {
@@ -114,6 +118,10 @@ export default function ContactForm() {
 
     if (formData.phone.trim() === "") {
       errors.phone = { invalid: true, message: "Phone is required" };
+    }
+
+    if (formData?.message.trim() === "") {
+      errors.message = { invalid: true, message: "Message is Required." };
     }
 
     if (
@@ -290,7 +298,7 @@ export default function ContactForm() {
   const fileInputRef = useRef<HTMLInputElement>(null);
   const isInView2 = useInView(ref2, { once: true });
   const isInView3 = useInView(ref3, { once: true });
-
+  console.log(formErrors);
   return (
     <>
       {isSubmitted && <LoadingSpinner />}
@@ -303,8 +311,7 @@ export default function ContactForm() {
             animate={isInView2 ? "animate" : ""}
             className="mb-[80px]"
           >
-            &ldquo;Jede großartige Lösung beginnt mit einem simplen
-            Gespräch&rdquo;
+            „Jede großartige Lösung beginnt mit einem simplen Gespräch“
           </motion.h2>
 
           <motion.div
@@ -490,6 +497,11 @@ export default function ContactForm() {
                       onChange={textareaChangeHandler}
                       autoComplete="off"
                     ></textarea>
+                    {formErrors.message?.invalid && (
+                      <div className="formError">
+                        {formErrors.message.message}
+                      </div>
+                    )}
                   </div>
                 </div>
                 <div className="flex flex-col lg:flex-row  gap-4 justify-end mb-4">

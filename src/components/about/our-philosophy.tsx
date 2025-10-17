@@ -150,12 +150,12 @@ export default function OurPhilosophy() {
           animate={isInView3 ? "animate" : ""}
         >
           <p className="text-center highlight">
-            “Unter der Führung von Mohsin, Rajesh und Kourosh schafft
+            „Unter der Führung von Mohsin, Rajesh und Kourosh schafft
             <br />
             BharathaTechno nicht einfach Software, sondern gestaltet digitale
             <br />
             Zukunftslösungen und baut langfristige Partnerschaften <br /> mit
-            unseren Kunden auf.”
+            unseren Kunden auf.“
           </p>
         </motion.div>
       </div>
