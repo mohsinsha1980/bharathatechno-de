@@ -3365,9 +3365,7 @@ h2 {
   .pg_home .bl_home_banner .tags {
     font-size: 10px;
   }
-.pg_home .bl_home_banner .container{
-  margin: 30px 0;
-}
+
   .pg_home .bl_home_banner .container .content {
     max-width: calc(100% - 40px);
     margin-top: 40px;
@@ -3698,9 +3696,10 @@ h2 {
     gap: 20px;
   }
 
-  .pg_product .bl_home_banner .container > div .content{
+  .pg_product .bl_home_banner .container>div .content {
     margin-top: 20px;
   }
+
   .pg_service .bl_home_banner .container>div .content {
     margin-top: 10px;
     left: 20%;
@@ -4351,7 +4350,7 @@ h2 {
     white-space: normal;
   }
 
-  .pg_product .bl_excel .bl_excel_list .bl_list_item h4{
+  .pg_product .bl_excel .bl_excel_list .bl_list_item h4 {
     font-size: 18px;
   }
 }
@@ -5144,6 +5143,19 @@ h2 {
 
   .pg_static .bl_static_content .container h1 {
     font-size: 22px;
+  }
+
+  .pg_home .bl_testimonials h2 {
+    font-size: 30px;
+  }
+
+  .pg_home .bl_blogs_list h2 {
+    font-size: 30px;
+  }
+
+  .pg_home .bl_contact {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 
