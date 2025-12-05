@@ -1255,6 +1255,10 @@ h2 {
 
         .accordion__heading {
           .accordion__button {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
             font-size: 32px;
             line-height: 84px;
             font-weight: 700;
@@ -2449,6 +2453,10 @@ h2 {
 
       .accordion__heading {
         .accordion__button {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
           font-size: 28px;
           line-height: 64px;
           font-weight: 700;
@@ -3601,6 +3609,17 @@ h2 {
   }
 
   .pg_service .bl_service_details .accordion .accordion__item .accordion__heading .accordion__button {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    line-height: 65px;
+  }
+
+  .bl_static_content .accordion .accordion__item .accordion__heading .accordion__button {
+    text-align: center;
+    display: flex;
+    justify-content: center;
     font-size: 25px;
     line-height: 65px;
   }
@@ -4558,6 +4577,16 @@ h2 {
   }
 
   .pg_service .bl_service_details .accordion .accordion__item .accordion__heading .accordion__button:after {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  .bl_static_content .accordion .accordion__item .accordion__heading .accordion__button {
+    font-size: 18px;
+    line-height: 45px;
+  }
+
+  .bl_static_content .accordion .accordion__item .accordion__heading .accordion__button:after {
     font-size: 35px;
     line-height: 45px;
   }

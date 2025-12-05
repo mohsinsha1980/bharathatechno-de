@@ -25,7 +25,7 @@ faqs:
     answer: "Costs vary based on complexity, features, and team location, but it is generally considered to be more cost-effective than building separate native apps."
   - question: "What is the typical timeline for a React Native app development project?"
     answer: "Timelines are generally shorter than native development. Launch can take around 2–4 months due to code reusability and efficient tools like Hot Reloading."
-  - question: "Why choose an offshore React Native development company like BharathaTechno IT Pvt Ltd?"
+  - question: "Why choose an offshore React Native development company like BharathaTechno?"
     answer: "Offshore partners like us (BharathaTechno IT Pvt Ltd in India) offer competitive costs, access to a vast talent pool, potentially faster development due to time zone advantages, and end-to-end service."
   - question: "What kind of post-launch support and maintenance do you offer?"
     answer: "We provide a comprehensive set of post-launch support, including bug fixes, security updates, feature enhancements, and continuous performance monitoring."

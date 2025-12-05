@@ -9,7 +9,7 @@ export async function generateMetadata({
   params,
 }: BlogPostProps): Promise<Metadata> {
   const slugData = (await params).slug;
-  if (slugData) notFound();
+  if (!slugData) notFound();
   const data = getPostData(slugData);
   return {
     title: data.metaTitle,
@@ -26,7 +26,7 @@ export default async function BlogDetails({
   params: Promise<{ slug: string }>;
 }) {
   const slugData = (await params).slug;
-  if (slugData) notFound();
+  if (!slugData) notFound();
   const postData = getPostData(slugData);
 
   return (
